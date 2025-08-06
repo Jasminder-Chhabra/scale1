@@ -1,0 +1,198 @@
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  ShoppingCart,
+  Brain,
+  IdCard,
+  Users,
+  School,
+  FolderOpenDot,
+  ClipboardPaste,
+  DockIcon,
+  BrainCircuit,
+  Handshake,
+  Sparkles,
+  HandPlatter,
+  ShoppingBag,
+  ShoppingBagIcon,
+  Airplay,
+  IdCardIcon,
+} from "lucide-react";
+import Link from "next/link";
+
+const leftMenuItems = [
+  {
+    id: "Ecommerce",
+    title: "Ecommerce , grocery App, ",
+    icon: <ShoppingCart />,
+  },
+  { id: "Ecommerce1", title: "Food Ordering Apps", icon: <FolderOpenDot /> },
+  { id: "Ecommerce2", title: "Laundary Service Apps", icon: <ClipboardPaste /> },
+  {
+    id: "Ecommerce6",
+    title: "Cab Booking & Ride Sharing App",
+    icon: <ShoppingCart />,
+  },
+  { id: "Ecommerce3", title: "School App", icon: <School /> },
+  { id: "Ecommerce4", title: "Doctor & Pharmacy App", icon: <DockIcon /> },
+  { id: "Ecommerce5", title: "Service Provider App", icon: <ShoppingCart /> },
+  { id: "AI", title: "Ultimate AI", icon: <Brain /> },
+  { id: "SimplyTap", title: "Simply Tap It", icon: <IdCard /> },
+  { id: "PeopleHub", title: "People Hub", icon: <Users /> },
+];
+
+const rightContent = {
+  Ecommerce: [
+    { icon: <BrainCircuit className="h-10 w-10"/>, title: "bharat AI", desc: "AI App" , link : "/bharataipragati" },
+    {
+      icon: <Sparkles  className="h-10 w-10" />,
+      title: "Pixel Profile",
+      desc: "Website in 10 Minutes",
+      link : "/pixel-profile"
+    },
+     { icon: <Handshake className="h-10 w-10" />, title: "GrowthHunt", desc: "Content Generation Website" , link : "/growthhunt" },
+     { icon: <HandPlatter className="h-10 w-10" />, title: "Restaurant POS", desc: "Food Management App" , link : "/restaurant-POS" },
+  
+  ],
+  Ecommerce1: [
+      { icon: <ShoppingBagIcon className="h-10 w-10" />, title: "Shop App", desc: "Shopping App" , link : "/shopping" },
+     { icon: <Airplay className="h-10 w-10" />, title: "Analytics App", desc: "All-in-one web analytics" , link : "/analytics" },
+     { icon: <IdCardIcon className="h-10 w-10" />, title: "Simplytap App", desc: "Do everything with one platform." , link : "/Simplytap" },
+  ],
+  Ecommerce2: [
+    { icon: "🟢", title: "Delivoo", desc: "All in 1 Delivery App (7 Apps)" , link : "/product-1" },
+    {
+      icon: "📦",
+      title: "CourierOne",
+      desc: "Peer to peer delivery App (5 Apps)",
+      link : "/product-1"
+    },
+  ],
+  Ecommerce3: [
+    { icon: "🟢", title: "Delivoo", desc: "All in 1 Delivery App (7 Apps)", link : "/product-1" },
+    {
+      icon: "📦",
+      title: "CourierOne",
+      desc: "Peer to peer delivery App (5 Apps)",
+      link : "/product-1"
+    },
+  ],
+  Ecommerce4: [
+    { icon: "🟢", title: "Delivoo", desc: "All in 1 Delivery App (7 Apps)" ,link : "/product-1" },
+    {
+      icon: "📦",
+      title: "CourierOne",
+      desc: "Peer to peer delivery App (5 Apps)",
+      link : "/product-1"
+    },
+     { icon: "🟢", title: "Delivoo", desc: "All in 1 Delivery App (7 Apps)" , link : "/product-1" },
+  ],
+  Ecommerce5: [
+    { icon: "🟢", title: "Delivoo", desc: "All in 1 Delivery App (7 Apps)" , link : "/product-1" },
+    {
+      icon: "📦",
+      title: "CourierOne",
+      desc: "Peer to peer delivery App (5 Apps)",
+      link : "/product-1"
+    },
+  ],
+  Ecommerce6: [
+    { icon: "🟢", title: "Delivoo", desc: "All in 1 Delivery App (7 Apps)" , link : "/product-1" },
+    {
+      icon: "📦",
+      title: "CourierOne",
+      desc: "Peer to peer delivery App (5 Apps)",
+      link : "/product-1"
+    },
+  ],
+  AI: [
+    { icon: "🛍️", title: "ShopHour", desc: "Custom eCommerce App (7 Apps)" , link : "/product-1" },
+    {
+      icon: "🥦",
+      title: "Groshop",
+      desc: "Custom Grocery Ordering App (7 Apps)",
+      link : "/product-1"
+    },
+  ],
+  SimplyTap: [
+    { icon: "🧼", title: "QuickWash", desc: "Laundry App with Pickup Service" , link : "/product-1" },
+    { icon: "👕", title: "DressFresh", desc: "Dry Clean Booking App" ,link : "/product-1" },
+  ],
+  PeopleHub: [
+    { icon: "🧼", title: "QuickWash", desc: "Laundry App with Pickup Service" , link : "/product-1" },
+    { icon: "👕", title: "DressFresh", desc: "Dry Clean Booking App" , link : "/product-1" },
+  ],
+};
+
+const ProductsMenu = () => {
+  const [hoveredItem, setHoveredItem] = useState(null);
+
+  return (
+ <div
+className="absolute top-full mt-1 z-50 max-w-[1100px] overflow-hidden p-4 rounded-[20px] border glass-card "
+
+  onMouseLeave={() => setHoveredItem(null)}
+>
+      <motion.div
+        className="rounded-xl flex overflow-hidden z-50"
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 10 }}
+      >
+        {/* Left Side List */}
+        <div className="w-[260px] text-white p-3 space-y-4 ">
+          <ul className="space-y-2 flex flex-col">
+            {leftMenuItems.map((item) => (
+              <li
+                key={item.id}
+                onMouseEnter={() => setHoveredItem(item.id)}
+                className=" px-3 py-2 rounded-lg hover:bg-white/5 transition-colors  duration-200"
+                style={{ padding: "10px 0px" }}
+              >
+                <div className="px-3 flex items-start gap-3 opacity-60 hover:opacity-100">
+                  <span className="text-lg">{item.icon}</span>
+                <span>{item.title}</span>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Right Content Panel */}
+        <AnimatePresence mode="wait">
+          {hoveredItem && rightContent[hoveredItem] && (
+            <motion.div
+              key={hoveredItem}
+              className="w-[400px] h-fit p-6 grid grid-cols-2 gap-4"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 10 }}
+              transition={{ duration: 0.2, ease: "easeInOut" }}
+            >
+              {rightContent[hoveredItem].map((app, index) => (
+               <Link href={app.link}>
+             <motion.div
+  key={index}
+  className="relative overflow-hidden p-4 rounded-[20px] border border-white/30 bg-white/10 backdrop-blur-[26px] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_8px_4px_rgba(255,255,255,0.4)] transition-all shadow-xl h-32"
+  initial={{ opacity: 0, y: 10 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: index * 0.05 }}
+>
+
+                  <div className="text-3xl mb-2">{app.icon}</div>
+                  <div className="font-semibold text-gray-200 text-[14px]">
+                    {app.title}
+                  </div>
+                  <div className="text-gray-200 text-[12px]">{app.desc}</div>
+                </motion.div>
+               </Link>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.div>
+    </div>
+  );
+};
+
+export default ProductsMenu;

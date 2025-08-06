@@ -1,0 +1,184 @@
+.card-bg-user-android::after,
+.card-bg-user-ios::after,
+.card-bg-provider-android::after,
+.card-bg-provider-ios::after,
+.card-bg-admin::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: -40px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1; /* tweak for visibility */
+  z-index: 0;
+  height: 110px;
+  width: 100px;
+  border-radius: inherit;
+  overflow:hidden;
+}
+.card-bg-user-android,
+.card-bg-user-ios,
+.card-bg-provider-android,
+.card-bg-provider-ios,
+.card-bg-admin {
+    position: relative;
+}
+.card-bg-user-android::after {
+  background-image: url('/img/assets/Android.png') !important;
+}
+
+.card-bg-user-ios::after {
+  background-image: url('/img/assets/apple.png') !important;
+}
+
+.card-bg-provider-android::after {
+  background-image: url('/img/assets/Android.png') !important;
+}
+
+.card-bg-provider-ios::after {
+   background-image: url('/img/assets/apple.png') !important;
+}
+
+.card-bg-admin::after {
+  background-image: url('/img/assets/download-removebg-preview.png') !important;
+  filter: invert(1);
+  height: 100px;
+ top: 10px;
+}
+
+
+@media(max-width:780px){
+  .card-bg-user-android::after,
+.card-bg-user-ios::after,
+.card-bg-provider-android::after,
+.card-bg-provider-ios::after,
+.card-bg-admin::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -40px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1; /* tweak for visibility */
+  z-index: 0;
+  height: 150px;
+  width: 150px;
+  border-radius: inherit;
+  overflow:hidden;
+}
+.card-bg-user-android,
+.card-bg-user-ios,
+.card-bg-provider-android,
+.card-bg-provider-ios,
+.card-bg-admin {
+    position: relative;
+    height: 150px;
+  width: 100%;
+}
+}
+.pulse{
+ 
+  
+    border-radius: 50%;
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    animation: animate-pulse 3s linear infinite;
+    cursor: pointer
+}
+@keyframes animate-pulse{
+    0%{
+        box-shadow: 0 0 0 0 rgba(255,255,255,0.2),  0 0 0 0 rgba(255,255,255,0.5);
+    }
+    40%{
+        box-shadow: 0 0 0 50px rgba(255,109,74,0.0),  0 0 0 0 rgba(255,255,255,0.7);
+    }
+    80%{
+        box-shadow: 0 0 0 50px rgba(255,109,74,0.0),  0 0 0 30px rgba(255,109,74,0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(255,109,74,0.0),  0 0 0 30px rgba(255,109,74,0);
+    }
+    
+}
+
+.myswiperx .swiper-button-prev1 {
+    left: 30%;
+}
+.prev2 {
+    left: 16%  !important;
+
+}
+
+
+.myswiperx  .swiper-button-prev1::after , .myswiperx .swiper-button-next1::after {
+  content: " " !important;
+}
+
+ .swiper-button-prev::after , .swiper-button-next::after {
+  content: " " !important;
+}
+.myswiperx .swiper-button-next1::after {
+  content: " " !important;
+}
+
+.swiper-button-next1:after, .swiper-rtl .swiper-button-prev1:after , .prev2::after {
+    content: ' ' !important;
+}
+
+.myswiperx  .swiper-button-next1 {
+    right: 30%;
+}
+
+.next2 {
+    right: 16% !important;  
+    z-index: 11111111;
+}
+
+
+.mySwiper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.mySwiper .swiper-button-prev1, .mySwiper .swiper-button-next1  {
+    padding: 10px;
+    border-radius: 50%;
+    height: 40px !important;
+    width: 40px !important;
+    box-shadow: 1px 1px 5px 2px purple !important;
+    background: black;
+}
+
+.mySwiper .swiper-button-prev1:after, .mySwiper .swiper-button-next1:after {
+    font-size: 18px  !important;
+    color: white !important;
+}
+
+
+@media(max-width:760px){
+  .myswiperx  .swiper-button-prev1 {
+    left: 8%;
+}
+
+.prev2 {
+    left: 0%  !important;
+}
+.myswiperx  .swiper-button-prev1::after , .myswiperx .swiper-button-next1::after {
+  content: " " !important;
+}
+.myswiperx  .swiper-button-next1 {
+    right: 8%;
+}
+
+.next2 {
+    right: 0% !important;
+}
+
+}

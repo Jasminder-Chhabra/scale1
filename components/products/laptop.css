@@ -1,0 +1,12 @@
+.embla__slide img {
+  /* Adjust these values based on your frame's content area */
+  clip-path: inset(10px 15px 10px 15px); /* Example: 10px top/bottom, 15px left/right */
+}
+
+.embla__container {
+  position: relative;
+  mask-image: url('/img/assets/web_frame.png');
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+}

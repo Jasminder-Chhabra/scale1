@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /temp/
+Disallow: /admin/
+
+User-agent: Googlebot
+Allow: /
+
+Sitemap: https://scaleus.in/sitemap.xml

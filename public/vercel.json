@@ -1,0 +1,88 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains; preload"
+        }
+      ]
+    },
+    {
+      "source": "/((?!varun).*)\\.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, must-revalidate, proxy-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/((?!varun).*)\\.(jpg|jpeg|png|gif|svg|webp|css|js|webm|mp4|woff2|woff|ttf|otf|pdf)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/video/(.*)\\.webm",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "video/webm"
+        }
+      ]
+    },
+    {
+      "source": "/video/(.*)\\.mp4",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "video/mp4"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/varun/:path*",
+      "destination": "https://varun.scaleus.in/:path*"
+    },
+    {
+      "source": "/people/:path*", 
+      "destination": "https://people.scaleus.in/:path*"
+    },
+    {
+      "source": "/:path((?!varun|people).*)",
+      "destination": "/$1.html"
+    }
+  ],
+  "trailingSlash": false,
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/:path+\\.html",
+      "destination": "/:path+",
+      "permanent": true
+    }
+  ]
+}
