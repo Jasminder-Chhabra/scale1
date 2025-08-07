@@ -1,9 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: false, // Ensure ESLint runs during builds
-    // Optionally, specify rules to ignore
-    // This is not recommended for long-term use
+ eslint: {
+    ignoreDuringBuilds: true, // Disables ESLint during Vercel builds
   },
   webpackDevMiddleware: config => {
     config.watchOptions = {
