@@ -173,7 +173,7 @@ footer#bringer-footer {
   box-shadow: 0 0 10px #000, 0 0 5px #000;
 }
 .glass-card {
-background: rgba(27, 26, 26, 0.9);
+background: rgb(18, 19, 22 , 0.9);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 backdrop-filter: blur(13px);

@@ -254,7 +254,7 @@ export default function Portfolio() {
                   <img
                     className="bringer-lazy"
                     src="/img/null.png"
-                    data-src="/img/portfolio-img/saliah/img5.webp"
+                    data-src="/img/portfolio-single-img/salah.png"
                     alt=""
                     width="1200"
                     height="1200"
@@ -276,7 +276,7 @@ export default function Portfolio() {
                   <img
                     className="bringer-lazy"
                     src="/img/null.png"
-                    data-src="/img/portfolio-img/simplytapit/img1.webp"
+                    data-src="/img/portfolio-single-img/simpletap.png"
                     alt=""
                     width="1200"
                     height="1200"
@@ -300,7 +300,7 @@ export default function Portfolio() {
                     className="bringer-lazy"
                     style={{ height: "347px" }}
                     src="/img/portfolio-img/belloRicco/img2.webp"
-                    data-src="/img/portfolio-img/belloRicco/img2.webp"
+                    data-src="/img/portfolio-single-img/bella.png"
                     alt=""
                     width="1200"
                     height="1200"
@@ -324,7 +324,7 @@ export default function Portfolio() {
                   <img
                     className="bringer-lazy"
                     src="/img/null.png"
-                    data-src="/img/portfolio-img/berryclick/img3.webp"
+                    data-src="/img/portfolio-single-img/berryclick.png"
                     alt=""
                     style={{ height: "300px" }}
                     width="1200"
@@ -349,7 +349,7 @@ export default function Portfolio() {
                     className="bringer-lazy "
                     style={{ height: "347px" }}
                     src="/img/portfolio-img/natrax/img1.png"
-                    data-src="/img/portfolio-img/natrax/img1.png"
+                    data-src="/img/portfolio-single-img/natrax.png"
                     alt=""
                     loading="lazy"
                   />
@@ -371,7 +371,7 @@ export default function Portfolio() {
                   <img
                     className="bringer-lazy"
                     src="/img/null.png"
-                    data-src="/img/portfolio-img/shulkportal/img7.jpg"
+                    data-src="/img/portfolio-single-img/shulk.png"
                     alt=""
                     width="1200"
                     height="1200"
@@ -394,7 +394,7 @@ export default function Portfolio() {
                     className="bringer-lazy "
                     style={{ height: "347px" }}
                     src="/img/portfolio-img/anphar/img7.jpeg"
-                    data-src="/img/portfolio-img/anphar/img7.jpeg"
+                    data-src="/img/portfolio-single-img/pharma.png"
                     alt=""
                     loading="lazy"
                   />
@@ -415,7 +415,7 @@ export default function Portfolio() {
                     className="bringer-lazy "
                     style={{ height: "347px" }}
                     src="/img/portfolio-img/anphar/img7.jpeg"
-                    data-src="/img/portfolio-img/blackbull/img1.jpg"
+                    data-src="/img/portfolio-single-img/logistic.png"
                     alt=""
                     loading="lazy"
                   />
@@ -438,7 +438,7 @@ export default function Portfolio() {
                     className="bringer-lazy "
                     style={{ height: "347px" }}
                     src="/img/portfolio-img/texmo/img5.png"
-                    data-src="/img/portfolio-img/texmo/img5.png"
+                    data-src="/img/portfolio-single-img/texmo.png"
                     alt=""
                     loading="lazy"
                   />
@@ -459,7 +459,7 @@ export default function Portfolio() {
                     className="bringer-lazy "
                     style={{ height: "347px" }}
                     src="/img/portfolio-img/rainbowRush/img1.webp"
-                    data-src="/img/portfolio-img/rainbowRush/img1.webp"
+                    data-src="/img/portfolio-single-img/rainbow.png"
                     alt=""
                     loading="lazy"
                   />
@@ -482,7 +482,7 @@ export default function Portfolio() {
                     className="bringer-lazy "
                     style={{ height: "347px" }}
                     src="/img/portfolio-img/funlearn/img1.webp"
-                    data-src="/img/portfolio-img/funlearn/img1.webp"
+                    data-src="/img/portfolio-single-img/learning.png"
                     alt=""
                     loading="lazy"
                   />
@@ -497,13 +497,13 @@ export default function Portfolio() {
                 <Link href="/portfolio-post/funLearnApp"></Link>
               </div>
 
-               <div className="bringer-block bringer-portfolio-card">
+              <div className="bringer-block bringer-portfolio-card">
                 <div className="bringer-portfolio-card-image">
                   <img
                     className="bringer-lazy "
                     style={{ height: "347px" }}
                     src="/img/portfolio-img/neonmaze/img5.jpg"
-                    data-src="/img/portfolio-img/neonmaze/img5.jpg"
+                    data-src="/img/portfolio-single-img/maze.png"
                     alt=""
                     loading="lazy"
                   />
@@ -517,13 +517,13 @@ export default function Portfolio() {
                 </div>
                 <Link href="/portfolio-post/neonmaze"></Link>
               </div>
-               <div className="bringer-block bringer-portfolio-card">
+              <div className="bringer-block bringer-portfolio-card">
                 <div className="bringer-portfolio-card-image">
                   <img
                     className="bringer-lazy "
                     style={{ height: "347px" }}
                     src="/img/portfolio-img/wordpuzzle/img1.jpg"
-                    data-src="/img/portfolio-img/wordpuzzle/img1.jpg"
+                    data-src="/img/portfolio-single-img/puzzle.png"
                     alt=""
                     loading="lazy"
                   />

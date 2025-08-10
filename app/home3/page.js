@@ -409,7 +409,7 @@ export default function Home() {
                 <div className="bringer-parallax-media">
                   <img
                     className="bringer-lazy"
-                    src="/img/null.png"
+                    src="/img/home/about02.webp"
                     data-src="/img/home/about02.webp"
                     alt="We are Scale Us"
                     width="960"
@@ -476,7 +476,7 @@ export default function Home() {
                 <div className="bringer-parallax-media">
                   <img
                     className="bringer-lazy"
-                    src="/img/null.png"
+                    src="/img/home/steps.webp"
                     data-src="/img/home/steps.webp"
                     alt="Brand Brilliance"
                     width="560"

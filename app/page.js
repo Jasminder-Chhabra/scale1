@@ -19,7 +19,6 @@ import Hero from "@/components/home1/Hero";
 import Header from "@/components/Header";
 import Hero2 from "@/components/home1/Hero2";
 
-
 export default function Home() {
   // Form Submission
   useEffect(() => {
@@ -29,7 +28,9 @@ export default function Home() {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
       const formData = new FormData(form);
-      const responseElement = form.querySelector(".bringer-contact-form__response");
+      const responseElement = form.querySelector(
+        ".bringer-contact-form__response"
+      );
       responseElement.textContent = "Sending...";
 
       fetch(form.action, { method: "POST", body: formData })
@@ -75,7 +76,9 @@ export default function Home() {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Scale Us Technologies - Website and Mobile App Development Company</title>
+        <title>
+          Scale Us Technologies - Website and Mobile App Development Company
+        </title>
         <meta
           name="description"
           content="Scale Us Technologies offers top-notch website and mobile app development services, crafting intuitive and high-performance digital solutions to enhance user experiences and drive business growth."
@@ -88,12 +91,18 @@ export default function Home() {
             logo: "https://www.scaleus.in/img/favicon.svg",
           })}
         </script>
-        <meta property="og:title" content="Scale Us Technologies - Website and Mobile App Development Company" />
+        <meta
+          property="og:title"
+          content="Scale Us Technologies - Website and Mobile App Development Company"
+        />
         <meta
           property="og:description"
           content="Scale Us Technologies offers top-notch website and mobile app development services, crafting intuitive and high-performance digital solutions to enhance user experiences and drive business growth."
         />
-        <meta property="og:image" content="https://www.scaleus.in/img/favicon.svg" />
+        <meta
+          property="og:image"
+          content="https://www.scaleus.in/img/favicon.svg"
+        />
         <meta property="og:image:alt" content="Scale Us Technologies Logo" />
         <meta property="og:url" content="https://www.scaleus.in" />
         <meta property="og:type" content="website" />
@@ -201,22 +210,33 @@ export default function Home() {
         `}</style>
       </Head>
 
-    <Header />
+      <Header />
 
-  {/* HeroGeometric without Glow */}
-  {/* <HeroGeometric
+      {/* HeroGeometric without Glow */}
+      {/* <HeroGeometric
     badge="Scale Us Technologies"
     title1="Your Partner in"
     title2="Digital Innovation"
   />
    */}
-   <Hero/>
-   {/* <Hero2/> */}
-      <main id="bringer-main" data-unload="fade-down">
+      <Hero />
+      {/* <Hero2/> */}
+      <main
+        id="bringer-main"
+        className="custom-proud-css"
+        data-unload="fade-down"
+      >
         <div className="stg-container">
           <section className="backlight-bottom pt-0">
-            <div className="bringer-partners partner-section" data-unload="fade-up">
-              <span className="bringer-label" data-appear="fade-up" data-unload="fade-up">
+            <div
+              className="bringer-partners partner-section"
+              data-unload="fade-up"
+            >
+              <span
+                className="bringer-label"
+                data-appear="fade-up"
+                data-unload="fade-up"
+              >
                 Proud of our work with
               </span>
               <div
@@ -227,22 +247,52 @@ export default function Home() {
                 data-delay="100"
               >
                 <div className="bringer-block bringer-center">
-                  <img src="/img/partners/Scale-Us-Client-Government-of-India.svg" alt="Partner Logo" width="200" height="100" />
+                  <img
+                    src="/img/partners/Scale-Us-Client-Government-of-India.svg"
+                    alt="Partner Logo"
+                    width="200"
+                    height="100"
+                  />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img src="/img/partners/Scale-Us-Client-Seven-Eleven.svg" alt="Partner Logo" width="200" height="100" />
+                  <img
+                    src="/img/partners/Scale-Us-Client-Seven-Eleven.svg"
+                    alt="Partner Logo"
+                    width="200"
+                    height="100"
+                  />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img src="/img/partners/Scale-Us-Client-Amazon.svg" alt="Partner Logo" width="200" height="100" />
+                  <img
+                    src="/img/partners/Scale-Us-Client-Amazon.svg"
+                    alt="Partner Logo"
+                    width="200"
+                    height="100"
+                  />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img src="/img/partners/Scale-Us-Client-Daily-Hunt.svg" alt="Partner Logo" width="200" height="100" />
+                  <img
+                    src="/img/partners/Scale-Us-Client-Daily-Hunt.svg"
+                    alt="Partner Logo"
+                    width="200"
+                    height="100"
+                  />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img src="/img/partners/Scale-Us-Client-Saliah-Foods.svg" alt="Partner Logo" width="200" height="100" />
+                  <img
+                    src="/img/partners/Scale-Us-Client-Saliah-Foods.svg"
+                    alt="Partner Logo"
+                    width="200"
+                    height="100"
+                  />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img src="/img/partners/Scale-Us-Client-OZI.svg" alt="Partner Logo" width="200" height="100" />
+                  <img
+                    src="/img/partners/Scale-Us-Client-OZI.svg"
+                    alt="Partner Logo"
+                    width="200"
+                    height="100"
+                  />
                 </div>
               </div>
             </div>
@@ -250,37 +300,61 @@ export default function Home() {
 
           <section className="backlight-top" data-unload="fade-down">
             <div className="stg-row stg-large-gap stg-m-normal-gap">
-              <div className="stg-col-6 stg-tp-bottom-gap-l stg-m-bottom-gap" data-unload="fade-left">
+              <div
+                className="stg-col-6 stg-tp-bottom-gap-l stg-m-bottom-gap"
+                data-unload="fade-left"
+              >
                 <div className="bringer-parallax-media">
+                 
                   <img
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/home/about02.webp"
-                    alt="We are Scale Us"
-                    width="960"
-                    height="960"
-                    data-appear="fade-right"
-                    data-unload="fade-left"
+                    alt=""
+                    width="600"
+                    height="600"
                   />
                 </div>
               </div>
-              <div className="stg-col-6 stg-vertical-space-between" data-unload="fade-right">
+              <div
+                className="stg-col-6 stg-vertical-space-between"
+                data-unload="fade-right"
+              >
                 <div>
-                  <h3 data-appear="fade-up" data-unload="fade-down">Welcome to Scale Us, where creativity meets expertise.</h3>
-                  <p className="bringer-large-text" data-appear="fade-up" data-unload="fade-down">Your Trusted Technology Partner</p>
-                  <p data-appear="fade-up" data-unload="fade-down">
-                    Scale Us Technologies is an Indian tech web-based company dedicated to empowering businesses through cutting-edge technology.
+                  <h3 data-appear="fade-up" data-unload="fade-down">
+                    Welcome to Scale Us, where creativity meets expertise.
+                  </h3>
+                  <p
+                    className="bringer-large-text"
+                    data-appear="fade-up"
+                    data-unload="fade-down"
+                  >
+                    Your Trusted Technology Partner
                   </p>
                   <p data-appear="fade-up" data-unload="fade-down">
-                    From web development and eCommerce solutions to mobile app development and UI/UX designing, our range of services ensures robust and visible digital presence.
+                    Scale Us Technologies is an Indian tech web-based company
+                    dedicated to empowering businesses through cutting-edge
+                    technology.
+                  </p>
+                  <p data-appear="fade-up" data-unload="fade-down">
+                    From web development and eCommerce solutions to mobile app
+                    development and UI/UX designing, our range of services
+                    ensures robust and visible digital presence.
                   </p>
                 </div>
-                <Link href="/about-us" className="bringer-icon-link" data-appear="fade-up" data-unload="fade-down">
+                <Link
+                  href="/about-us"
+                  className="bringer-icon-link"
+                  data-appear="fade-up"
+                  data-unload="fade-down"
+                >
                   <div className="bringer-icon-wrap">
                     <i className="bringer-icon bringer-icon-explore"></i>
                   </div>
                   <div className="bringer-icon-link-content">
-                    <h6>We are <br /> Passionate Team</h6>
+                    <h6>
+                      We are <br /> Passionate Team
+                    </h6>
                     <span className="bringer-label">Learn More About Us</span>
                   </div>
                 </Link>
@@ -288,15 +362,29 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="is-fullwidth is-stretched" data-padding="none" data-unload="fade-down">
+          <section
+            className="is-fullwidth is-stretched"
+            data-padding="none"
+            data-unload="fade-down"
+          >
             <div className="bringer-marquee is-init">
               <div className="bringer-marquee-inner">
                 <ul className="bringer-marquee-list">
-                  <li><h2>Mobile Application Development</h2></li>
-                  <li><h2>Website Development</h2></li>
-                  <li><h2>SEO and Email Marketing</h2></li>
-                  <li><h2>Customer Software Development</h2></li>
-                  <li><h2>UX/UI</h2></li>
+                  <li>
+                    <h2>Mobile Application Development</h2>
+                  </li>
+                  <li>
+                    <h2>Website Development</h2>
+                  </li>
+                  <li>
+                    <h2>SEO and Email Marketing</h2>
+                  </li>
+                  <li>
+                    <h2>Customer Software Development</h2>
+                  </li>
+                  <li>
+                    <h2>UX/UI</h2>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -306,41 +394,59 @@ export default function Home() {
             <div className="stg-row bringer-section-title">
               <div className="stg-col-8 stg-offset-2">
                 <div className="align-center">
-                  <h2 data-appear="fade-up" data-unload="fade-down">4 Steps to Brand Brilliance</h2>
+                  <h2 data-appear="fade-up" data-unload="fade-down">
+                    4 Steps to Brand Brilliance
+                  </h2>
                   <p
                     className="bringer-large-text is-short"
                     data-appear="fade-up"
                     data-unload="fade-down"
                     data-delay="100"
                   >
-                    We are a passionate team of developers who believe in the power of creativity.
+                    We are a passionate team of developers who believe in the
+                    power of creativity.
                   </p>
                 </div>
               </div>
             </div>
             <div className="stg-row stg-valign-middle stg-large-gap">
-              <div className="stg-col-6 stg-tp-bottom-gap-l" data-appear="fade-right" data-unload="fade-left">
+              <div
+                className="stg-col-6 stg-tp-bottom-gap-l"
+                data-appear="fade-right"
+                data-unload="fade-left"
+              >
                 <div className="bringer-parallax-media">
                   <img
                     className="bringer-lazy"
-                    src="/img/null.png"
+                    src="/img/home/steps.webp"
                     data-src="/img/home/steps.webp"
                     alt="Brand Brilliance"
                     width="560"
                     height="560"
-                    data-appear="fade-right"
-                    data-unload="fade-left"
+                  
                   />
+                 
                 </div>
               </div>
-              <div className="stg-col-6" data-unload="fade-right" data-delay="100">
-                <div className="bringer-grid-2cols stg-normal-gap" data-stagger-appear="fade-left" data-stagger-unload="fade-right">
+              <div
+                className="stg-col-6"
+                data-unload="fade-right"
+                data-delay="100"
+              >
+                <div
+                  className="bringer-grid-2cols stg-normal-gap"
+                  data-stagger-appear="fade-left"
+                  data-stagger-unload="fade-right"
+                >
                   <div className="bringer-subgrid-item stg-bottom-gap stg-m-bottom-gap-s">
                     <div className="bringer-title-with-meta">
                       <span className="bringer-label">Step 01</span>
                       <h5>Spark Ignition</h5>
                     </div>
-                    <div>Share your vision, dreams, and challenges. We listen deeply.</div>
+                    <div>
+                      Share your vision, dreams, and challenges. We listen
+                      deeply.
+                    </div>
                   </div>
                   <div className="bringer-subgrid-item stg-bottom-gap stg-m-bottom-gap-s">
                     <div className="bringer-title-with-meta">
@@ -368,18 +474,24 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="is-fullwidth is-stretched1" data-unload="fade-down">
+          <section
+            className="is-fullwidth is-stretched1"
+            data-unload="fade-down"
+          >
             <div className="stg-row bringer-section-title is-boxed">
               <div className="stg-col-8 stg-offset-2">
                 <div className="align-center">
-                  <h2 data-appear="fade-up" data-unload="fade-down">Our Work</h2>
+                  <h2 data-appear="fade-up" data-unload="fade-down">
+                    Our Work
+                  </h2>
                   <p
                     className="bringer-large-text"
                     data-appear="fade-up"
                     data-unload="fade-down"
                     data-delay="100"
                   >
-                    We are proud of our work, and we are always looking for new challenges.
+                    We are proud of our work, and we are always looking for new
+                    challenges.
                   </p>
                 </div>
               </div>
@@ -390,16 +502,27 @@ export default function Home() {
               slidesPerView={4}
               loop={false}
               modules={[Pagination]} // Updated for modern Swiper
-              pagination={{ clickable: true, el: '.swiper-pagination' }}
+              pagination={{ clickable: true, el: ".swiper-pagination" }}
               breakpoints={{
                 0: { slidesPerView: 1.5 },
                 768: { slidesPerView: 3 },
                 1024: { slidesPerView: 4 },
               }}
             >
-              <SwiperSlide className="bringer-block bringer-portfolio-card" data-appear="fade-up" data-unload="fade-down">
+              <SwiperSlide
+                className="bringer-block bringer-portfolio-card"
+                data-appear="fade-up"
+                data-unload="fade-down"
+              >
                 <div className="bringer-portfolio-card-image">
-                  <img className="bringer-lazy" src="/img/null.png" data-src="/img/portfolio/portfolio01.jpg" alt="" width="1200" height="1200" />
+                  <img
+                    className="bringer-lazy"
+                    src="/img/null.png"
+                    data-src="/img/portfolio/portfolio01.jpg"
+                    alt=""
+                    width="1200"
+                    height="1200"
+                  />
                 </div>
                 <div className="bringer-portfolio-card-footer">
                   <div className="bringer-portfolio-card-title">
@@ -408,11 +531,25 @@ export default function Home() {
                   </div>
                   <span className="bringer-icon bringer-icon-explore"></span>
                 </div>
-                <Link href="/portfolio-post01" aria-label="View details of Portfolio Post 01"></Link>
+                <Link
+                  href="/portfolio-post01"
+                  aria-label="View details of Portfolio Post 01"
+                ></Link>
               </SwiperSlide>
-              <SwiperSlide className="bringer-block bringer-portfolio-card" data-appear="fade-up" data-unload="fade-down">
+              <SwiperSlide
+                className="bringer-block bringer-portfolio-card"
+                data-appear="fade-up"
+                data-unload="fade-down"
+              >
                 <div className="bringer-portfolio-card-image">
-                  <img className="bringer-lazy" src="/img/null.png" data-src="/img/portfolio/portfolio02.jpg" alt="" width="1200" height="1200" />
+                  <img
+                    className="bringer-lazy"
+                    src="/img/null.png"
+                    data-src="/img/portfolio/portfolio02.jpg"
+                    alt=""
+                    width="1200"
+                    height="1200"
+                  />
                 </div>
                 <div className="bringer-portfolio-card-footer">
                   <div className="bringer-portfolio-card-title">
@@ -421,11 +558,25 @@ export default function Home() {
                   </div>
                   <span className="bringer-icon bringer-icon-explore"></span>
                 </div>
-                <Link href="/portfolio-post02" aria-label="View details of Portfolio Post 02"></Link>
+                <Link
+                  href="/portfolio-post02"
+                  aria-label="View details of Portfolio Post 02"
+                ></Link>
               </SwiperSlide>
-              <SwiperSlide className="bringer-block bringer-portfolio-card" data-appear="fade-up" data-unload="fade-down">
+              <SwiperSlide
+                className="bringer-block bringer-portfolio-card"
+                data-appear="fade-up"
+                data-unload="fade-down"
+              >
                 <div className="bringer-portfolio-card-image">
-                  <img className="bringer-lazy" src="/img/null.png" data-src="/img/portfolio/portfolio03.jpg" alt="" width="1200" height="1200" />
+                  <img
+                    className="bringer-lazy"
+                    src="/img/null.png"
+                    data-src="/img/portfolio/portfolio03.jpg"
+                    alt=""
+                    width="1200"
+                    height="1200"
+                  />
                 </div>
                 <div className="bringer-portfolio-card-footer">
                   <div className="bringer-portfolio-card-title">
@@ -434,11 +585,25 @@ export default function Home() {
                   </div>
                   <span className="bringer-icon bringer-icon-explore"></span>
                 </div>
-                <Link href="/portfolio-post03" aria-label="View details of Portfolio Post 03"></Link>
+                <Link
+                  href="/portfolio-post03"
+                  aria-label="View details of Portfolio Post 03"
+                ></Link>
               </SwiperSlide>
-              <SwiperSlide className="bringer-block bringer-portfolio-card" data-appear="fade-up" data-unload="fade-down">
+              <SwiperSlide
+                className="bringer-block bringer-portfolio-card"
+                data-appear="fade-up"
+                data-unload="fade-down"
+              >
                 <div className="bringer-portfolio-card-image">
-                  <img className="bringer-lazy" src="/img/null.png" data-src="/img/portfolio/portfolio04.jpg" alt="" width="1200" height="1200" />
+                  <img
+                    className="bringer-lazy"
+                    src="/img/null.png"
+                    data-src="/img/portfolio/portfolio04.jpg"
+                    alt=""
+                    width="1200"
+                    height="1200"
+                  />
                 </div>
                 <div className="bringer-portfolio-card-footer">
                   <div className="bringer-portfolio-card-title">
@@ -447,12 +612,25 @@ export default function Home() {
                   </div>
                   <span className="bringer-icon bringer-icon-explore"></span>
                 </div>
-                <Link href="/portfolio-post04" aria-label="View details of Portfolio Post 04"></Link>
+                <Link
+                  href="/portfolio-post04"
+                  aria-label="View details of Portfolio Post 04"
+                ></Link>
               </SwiperSlide>
-              <div className="swiper-pagination bringer-dots" slot="pagination"></div>
+              <div
+                className="swiper-pagination bringer-dots"
+                slot="pagination"
+              ></div>
             </Swiper>
-            <div className="align-center" data-appear="fade-up" data-unload="fade-down" data-delay="100">
-              <Link href="/portfolio-slider" className="bringer-button">Discover Full Portfolio</Link>
+            <div
+              className="align-center"
+              data-appear="fade-up"
+              data-unload="fade-down"
+              data-delay="100"
+            >
+              <Link href="/portfolio-slider" className="bringer-button">
+                Discover Full Portfolio
+              </Link>
             </div>
           </section>
 
@@ -460,14 +638,17 @@ export default function Home() {
             <div className="stg-row bringer-section-title">
               <div className="stg-col-8 stg-offset-2">
                 <div className="align-center">
-                  <h2 data-appear="fade-up" data-unload="fade-down">Our Services</h2>
+                  <h2 data-appear="fade-up" data-unload="fade-down">
+                    Our Services
+                  </h2>
                   <p
                     className="bringer-large-text"
                     data-appear="fade-up"
                     data-unload="fade-down"
                     data-delay="100"
                   >
-                    We offer a wide range of creative services to help businesses of all sizes achieve their goals.
+                    We offer a wide range of creative services to help
+                    businesses of all sizes achieve their goals.
                   </p>
                 </div>
               </div>
@@ -479,52 +660,139 @@ export default function Home() {
               data-delay="200"
             >
               <div className="bringer-lwp-roster">
-                <div className="bringer-lwp-item bringer-block" data-appear="fade-left" data-unload="fade-right">
-                  <img src="/img/home/service01.webp" alt="Mobile-App-Developer" width="584" height="907" loading="lazy" />
+                <div
+                  className="bringer-lwp-item bringer-block"
+                  data-appear="fade-left"
+                  data-unload="fade-right"
+                >
+                  <img
+                    src="/img/home/service01.webp"
+                    alt="Mobile-App-Developer"
+                    width="584"
+                    height="907"
+                    loading="lazy"
+                  />
                   <div className="bringer-lwp-item-content">
-                    <h5>Mobile Application Development<span className="bringer-accent">.</span></h5>
-                    <p>We specialize in expert mobile application development, creating powerful, user-friendly apps.</p>
+                    <h5>
+                      Mobile Application Development
+                      <span className="bringer-accent">.</span>
+                    </h5>
+                    <p>
+                      We specialize in expert mobile application development,
+                      creating powerful, user-friendly apps.
+                    </p>
                   </div>
                 </div>
-                <div className="bringer-lwp-item bringer-block" data-appear="fade-left" data-unload="fade-right">
-                  <img src="/img/home/service02.webp" alt="Website Developer" width="584" height="907" loading="lazy" />
+                <div
+                  className="bringer-lwp-item bringer-block"
+                  data-appear="fade-left"
+                  data-unload="fade-right"
+                >
+                  <img
+                    src="/img/home/service02.webp"
+                    alt="Website Developer"
+                    width="584"
+                    height="907"
+                    loading="lazy"
+                  />
                   <div className="bringer-lwp-item-content">
-                    <h5>Website Development<span className="bringer-accent">.</span></h5>
-                    <p>We create responsive and dynamic platforms that amplify your online presence.</p>
+                    <h5>
+                      Website Development
+                      <span className="bringer-accent">.</span>
+                    </h5>
+                    <p>
+                      We create responsive and dynamic platforms that amplify
+                      your online presence.
+                    </p>
                   </div>
                 </div>
-                <div className="bringer-lwp-item bringer-block" data-appear="fade-left" data-unload="fade-right">
-                  <img src="/img/home/service003.webp" alt="Web Designer" width="584" height="907" loading="lazy" />
+                <div
+                  className="bringer-lwp-item bringer-block"
+                  data-appear="fade-left"
+                  data-unload="fade-right"
+                >
+                  <img
+                    src="/img/home/service003.webp"
+                    alt="Web Designer"
+                    width="584"
+                    height="907"
+                    loading="lazy"
+                  />
                   <div className="bringer-lwp-item-content">
-                    <h5>UI/UX Design<span className="bringer-accent">.</span></h5>
-                    <p>Our UI/UX design services enhance user experience and elevate visual appeal.</p>
+                    <h5>
+                      UI/UX Design<span className="bringer-accent">.</span>
+                    </h5>
+                    <p>
+                      Our UI/UX design services enhance user experience and
+                      elevate visual appeal.
+                    </p>
                   </div>
                 </div>
-                <div className="bringer-lwp-item bringer-block" data-appear="fade-left" data-unload="fade-right">
-                  <img src="/img/home/service004.webp" alt="Software Developer" width="584" height="907" loading="lazy" />
+                <div
+                  className="bringer-lwp-item bringer-block"
+                  data-appear="fade-left"
+                  data-unload="fade-right"
+                >
+                  <img
+                    src="/img/home/service004.webp"
+                    alt="Software Developer"
+                    width="584"
+                    height="907"
+                    loading="lazy"
+                  />
                   <div className="bringer-lwp-item-content">
-                    <h5>Customer Software Development<span className="bringer-accent">.</span></h5>
-                    <p>Our custom software development services are tailored to meet your unique needs.</p>
+                    <h5>
+                      Customer Software Development
+                      <span className="bringer-accent">.</span>
+                    </h5>
+                    <p>
+                      Our custom software development services are tailored to
+                      meet your unique needs.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
             <br />
             <div className="align-right">
-              <Link href="/services" className="bringer-arrow-link" data-appear="fade-up" data-unload="fade-down">Discover all services</Link>
+              <Link
+                href="/services"
+                className="bringer-arrow-link"
+                data-appear="fade-up"
+                data-unload="fade-down"
+              >
+                Discover all services
+              </Link>
             </div>
           </section>
 
           <section data-unload="fade-down">
             <div className="stg-row stg-large-gap">
-              <div className="stg-col-6 stg-tp-bottom-gap-l" data-unload="fade-left">
+              <div
+                className="stg-col-6 stg-tp-bottom-gap-l"
+                data-unload="fade-left"
+              >
                 <div className="bringer-sticky-block">
-                  <h2 data-appear="fade-up" data-unload="fade-down">Why Choose Us</h2>
-                  <p className="bringer-large-text" data-appear="fade-up" data-unload="fade-down">
-                    We are a passionate team of developers who believe in the power of creativity.
+                  <h2 data-appear="fade-up" data-unload="fade-down">
+                    Why Choose Us
+                  </h2>
+                  <p
+                    className="bringer-large-text"
+                    data-appear="fade-up"
+                    data-unload="fade-down"
+                  >
+                    We are a passionate team of developers who believe in the
+                    power of creativity.
                   </p>
                   <div className="align-right">
-                    <Link href="/about-us" className="bringer-arrow-link" data-appear="fade-up" data-unload="fade-down">Learn More About Us</Link>
+                    <Link
+                      href="/about-us"
+                      className="bringer-arrow-link"
+                      data-appear="fade-up"
+                      data-unload="fade-down"
+                    >
+                      Learn More About Us
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -537,41 +805,88 @@ export default function Home() {
                   data-stagger-delay="150"
                 >
                   <div className="bringer-block">
-                    <h4>We don't just deliver, we <span className="bringer-accent">ignite innovation</span><span className="bringer-accent">.</span></h4>
-                    <p>At Scale Us, we infuse your brand with bold ideas and strategic brilliance.</p>
+                    <h4>
+                      We don't just deliver, we{" "}
+                      <span className="bringer-accent">ignite innovation</span>
+                      <span className="bringer-accent">.</span>
+                    </h4>
+                    <p>
+                      At Scale Us, we infuse your brand with bold ideas and
+                      strategic brilliance.
+                    </p>
                   </div>
                   <div className="bringer-block">
-                    <h4>We <span className="bringer-accent">fuel creativity</span> with data<span className="bringer-accent">.</span></h4>
-                    <p>We blend data-driven insights with passion, ensuring measurable results.</p>
+                    <h4>
+                      We <span className="bringer-accent">fuel creativity</span>{" "}
+                      with data<span className="bringer-accent">.</span>
+                    </h4>
+                    <p>
+                      We blend data-driven insights with passion, ensuring
+                      measurable results.
+                    </p>
                   </div>
                   <div className="bringer-block">
-                    <h4>We craft <span className="bringer-accent">emotional connections</span><span className="bringer-accent">.</span></h4>
-                    <p>We weave stories that resonate, visuals that linger, and content that sparks.</p>
+                    <h4>
+                      We craft{" "}
+                      <span className="bringer-accent">
+                        emotional connections
+                      </span>
+                      <span className="bringer-accent">.</span>
+                    </h4>
+                    <p>
+                      We weave stories that resonate, visuals that linger, and
+                      content that sparks.
+                    </p>
                   </div>
                   <div className="bringer-block">
-                    <h4>We become your <span className="bringer-accent">technology champions</span><span className="bringer-accent">.</span></h4>
-                    <p>We build partnerships, understanding your vision, as an extension of your team.</p>
+                    <h4>
+                      We become your{" "}
+                      <span className="bringer-accent">
+                        technology champions
+                      </span>
+                      <span className="bringer-accent">.</span>
+                    </h4>
+                    <p>
+                      We build partnerships, understanding your vision, as an
+                      extension of your team.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
           </section>
 
-         
           <section data-padding="none" className="py-6" data-unload="fade-down">
-         <Achievement/>
+            <Achievement />
           </section>
 
           <section className="hide-on-mobile-tab" data-unload="fade-down">
             <div className="stg-row stg-large-gap">
-              <div className="stg-col-6 stg-tp-bottom-gap-l" data-unload="fade-left">
+              <div
+                className="stg-col-6 stg-tp-bottom-gap-l"
+                data-unload="fade-left"
+              >
                 <div className="bringer-sticky-block">
-                  <h2 data-appear="fade-up" data-unload="fade-down">Our Portfolio</h2>
-                  <p className="bringer-large-text" data-appear="fade-up" data-unload="fade-down">
-                    We are proud of our work, and we are always looking for new challenges.
+                  <h2 data-appear="fade-up" data-unload="fade-down">
+                    Our Portfolio
+                  </h2>
+                  <p
+                    className="bringer-large-text"
+                    data-appear="fade-up"
+                    data-unload="fade-down"
+                  >
+                    We are proud of our work, and we are always looking for new
+                    challenges.
                   </p>
                   <div className="align-right">
-                    <Link href="/portfolio" className="bringer-arrow-link" data-appear="fade-up" data-unload="fade-down">Explore full Portfolio</Link>
+                    <Link
+                      href="/portfolio"
+                      className="bringer-arrow-link"
+                      data-appear="fade-up"
+                      data-unload="fade-down"
+                    >
+                      Explore full Portfolio
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -585,7 +900,14 @@ export default function Home() {
                 >
                   <div className="bringer-block bringer-portfolio-card">
                     <div className="bringer-portfolio-card-image">
-                      <img className="bringer-lazy" src="/img/null.png" data-src="/img/portfolio/portfolio01.jpg" alt="" width="1200" height="1200" />
+                      <img
+                        className="bringer-lazy"
+                        src="/img/null.png"
+                        data-src="/img/portfolio/portfolio01.jpg"
+                        alt=""
+                        width="1200"
+                        height="1200"
+                      />
                     </div>
                     <div className="bringer-portfolio-card-footer">
                       <div className="bringer-portfolio-card-title">
@@ -594,11 +916,21 @@ export default function Home() {
                       </div>
                       <span className="bringer-icon bringer-icon-explore"></span>
                     </div>
-                    <Link href="/portfolio-post01" aria-label="View details of Portfolio Post 01"></Link>
+                    <Link
+                      href="/portfolio-post01"
+                      aria-label="View details of Portfolio Post 01"
+                    ></Link>
                   </div>
                   <div className="bringer-block bringer-portfolio-card">
                     <div className="bringer-portfolio-card-image">
-                      <img className="bringer-lazy" src="/img/null.png" data-src="/img/portfolio/portfolio02.jpg" alt="" width="1200" height="1200" />
+                      <img
+                        className="bringer-lazy"
+                        src="/img/null.png"
+                        data-src="/img/portfolio/portfolio02.jpg"
+                        alt=""
+                        width="1200"
+                        height="1200"
+                      />
                     </div>
                     <div className="bringer-portfolio-card-footer">
                       <div className="bringer-portfolio-card-title">
@@ -607,53 +939,105 @@ export default function Home() {
                       </div>
                       <span className="bringer-icon bringer-icon-explore"></span>
                     </div>
-                    <Link href="/portfolio-post02" aria-label="View details of Portfolio Post 02"></Link>
+                    <Link
+                      href="/portfolio-post02"
+                      aria-label="View details of Portfolio Post 02"
+                    ></Link>
                   </div>
                 </div>
               </div>
             </div>
           </section>
 
-          <section id="testimonials-section" className="backlight-top" data-unload="fade-down">
+          <section
+            id="testimonials-section"
+            className="backlight-top"
+            data-unload="fade-down"
+          >
             <div className="bringer-expand-on-scroll">
-              <img src="/img/Group 10122154.svg" alt="Testimonials" data-appear="fade-up" data-unload="fade-down" loading="lazy" width="800" height="600" />
+              <img
+                src="/img/Group 10122154.svg"
+                alt="Testimonials"
+                data-appear="fade-up"
+                data-unload="fade-down"
+                loading="lazy"
+                width="800"
+                height="600"
+              />
             </div>
             <div className="stg-row stg-large-gap stg-top-gap-l">
-              <div className="stg-col-6 stg-tp-bottom-gap-l" data-unload="fade-left">
+              <div
+                className="stg-col-6 stg-tp-bottom-gap-l"
+                data-unload="fade-left"
+              >
                 <div className="bringer-sticky-block">
-                  <h2 data-appear="fade-up" data-unload="fade-down">What Clients Say</h2>
-                  <p className="bringer-large-text" data-appear="fade-up" data-unload="fade-down">
-                    Here are some of the most inspiring reviews from our clients.
+                  <h2 data-appear="fade-up" data-unload="fade-down">
+                    What Clients Say
+                  </h2>
+                  <p
+                    className="bringer-large-text"
+                    data-appear="fade-up"
+                    data-unload="fade-down"
+                  >
+                    Here are some of the most inspiring reviews from our
+                    clients.
                   </p>
                   <div className="align-right">
-                    <Link href="/contact-us" className="bringer-arrow-link" data-appear="fade-up" data-unload="fade-down">Get a FREE Quote</Link>
+                    <Link
+                      href="/contact-us"
+                      className="bringer-arrow-link"
+                      data-appear="fade-up"
+                      data-unload="fade-down"
+                    >
+                      Get a FREE Quote
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className="stg-col-6">
-                <div className="bringer-grid-1col stg-normal-gap" data-stagger-appear="zoom-out" data-stagger-unload="fade-right">
-                  <div className="bringer-block bringer-tetimonials-card" data-appear="zoom-out" data-unload="fade-right" data-threshold="0.75">
+                <div
+                  className="bringer-grid-1col stg-normal-gap"
+                  data-stagger-appear="zoom-out"
+                  data-stagger-unload="fade-right"
+                >
+                  <div
+                    className="bringer-block bringer-tetimonials-card"
+                    data-appear="zoom-out"
+                    data-unload="fade-right"
+                    data-threshold="0.75"
+                  >
                     <div className="bringer-tetimonials-card-descr">
-                      "Working with Scale Us has been transformative for our digital strategy."
+                      "Working with Scale Us has been transformative for our
+                      digital strategy."
                     </div>
                     <div className="bringer-tetimonials-card-footer">
                       <div className="bringer-tetimonials-card-name">
                         <h6>Ravi Sharma</h6>
-                        <span className="bringer-meta">Chief Marketing Officer, Tech Innovators India</span>
+                        <span className="bringer-meta">
+                          Chief Marketing Officer, Tech Innovators India
+                        </span>
                       </div>
                       <div className="bringer-tetimonials-card-rate">
                         <span className="bringer-tetimonials-stars5"></span>
                       </div>
                     </div>
                   </div>
-                  <div className="bringer-block bringer-tetimonials-card" data-appear="zoom-out" data-unload="fade-right" data-threshold="0.75">
+                  <div
+                    className="bringer-block bringer-tetimonials-card"
+                    data-appear="zoom-out"
+                    data-unload="fade-right"
+                    data-threshold="0.75"
+                  >
                     <div className="bringer-tetimonials-card-descr">
-                      "Scale Us exceeded our expectations with their mobile app development services."
+                      "Scale Us exceeded our expectations with their mobile app
+                      development services."
                     </div>
                     <div className="bringer-tetimonials-card-footer">
                       <div className="bringer-tetimonials-card-name">
                         <h6>Neha Patel</h6>
-                        <span className="bringer-meta">CEO, Digital Solutions India</span>
+                        <span className="bringer-meta">
+                          CEO, Digital Solutions India
+                        </span>
                       </div>
                       <div className="bringer-tetimonials-card-rate">
                         <span className="bringer-tetimonials-stars5"></span>
@@ -663,9 +1047,20 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <br /><br /><br />
-            <div className="bringer-partners partner-section" data-unload="fade-up">
-              <span className="bringer-label" data-appear="fade-up" data-unload="fade-up">Certifications</span>
+            <br />
+            <br />
+            <br />
+            <div
+              className="bringer-partners partner-section"
+              data-unload="fade-up"
+            >
+              <span
+                className="bringer-label"
+                data-appear="fade-up"
+                data-unload="fade-up"
+              >
+                Certifications
+              </span>
               <div
                 className="bringer-grid-6cols bringer-tp-grid-3cols bringer-m-grid-2cols stg-top-gap-s"
                 data-stagger-appear="fade-up"
@@ -674,22 +1069,46 @@ export default function Home() {
                 data-delay="100"
               >
                 <div className="bringer-block bringer-center">
-                  <img src="/img/partners/Scale-Us-Startup-India.svg" alt="Certification" loading="lazy" />
+                  <img
+                    src="/img/partners/Scale-Us-Startup-India.svg"
+                    alt="Certification"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img src="/img/partners/Scale-Us-Digital-India.svg" alt="Certification" loading="lazy" />
+                  <img
+                    src="/img/partners/Scale-Us-Digital-India.svg"
+                    alt="Certification"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img src="/img/partners/Scale-Us-Swacch-Bharat.svg" alt="Certification" loading="lazy" />
+                  <img
+                    src="/img/partners/Scale-Us-Swacch-Bharat.svg"
+                    alt="Certification"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img src="/img/partners/TB-Logo.svg" alt="Certification" loading="lazy" />
+                  <img
+                    src="/img/partners/TB-Logo.svg"
+                    alt="Certification"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img src="/img/partners/Make In India.svg" alt="Certification" loading="lazy" />
+                  <img
+                    src="/img/partners/Make In India.svg"
+                    alt="Certification"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img src="/img/partners/Great-Place-To-Work.svg" alt="Certification" loading="lazy" />
+                  <img
+                    src="/img/partners/Great-Place-To-Work.svg"
+                    alt="Certification"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -698,57 +1117,121 @@ export default function Home() {
           <section id="page06" data-unload="fade-down">
             <div className="bringer-hero-block bringer-hero-type06">
               <div className="bringer-bento-grid stg-bottom-gap">
-                <div className="is-large bringer-masked-block" data-appear="fade-right" data-unload="fade-left">
-                  <div className="bringer-bento-hero-media bringer-masked-media" data-bg-src="/img/box2.svg">
-                    <h1 className="bringer-page-title" data-appear="fade-up" data-unload="fade-down">Unleash your Creativity</h1>
-                    <p className="bringer-highlight" data-appear="fade-up" data-unload="fade-down">
-                      We help businesses and professionals showcase their work through innovative digital solutions.
+                <div
+                  className="is-large bringer-masked-block"
+                  data-appear="fade-right"
+                  data-unload="fade-left"
+                >
+                  <div
+                    className="bringer-bento-hero-media bringer-masked-media"
+                    data-bg-src="/img/box2.svg"
+                  >
+                    <h1
+                      className="bringer-page-title"
+                      data-appear="fade-up"
+                      data-unload="fade-down"
+                    >
+                      Unleash your Creativity
+                    </h1>
+                    <p
+                      className="bringer-highlight"
+                      data-appear="fade-up"
+                      data-unload="fade-down"
+                    >
+                      We help businesses and professionals showcase their work
+                      through innovative digital solutions.
                     </p>
                   </div>
                   <div className="bringer-masked-content at-bottom-right">
-                    <a href="#page06" className="bringer-square-button" data-appear="zoom-in" data-unload="zoom-out" data-delay="100" aria-label="Go to page 06">
+                    <a
+                      href="#page06"
+                      className="bringer-square-button"
+                      data-appear="zoom-in"
+                      data-unload="zoom-out"
+                      data-delay="100"
+                      aria-label="Go to page 06"
+                    >
                       <span className="bringer-icon bringer-icon-arrow-down"></span>
                     </a>
                   </div>
                 </div>
-                <div className="is-small" data-appear="zoom-out" data-unload="zoom-out" data-delay="100">
-                  <img className="bringer-lazy" src="/img/null.png" data-src="/img/about-scaleus1.svg" alt="Product 04" width="1200" height="1200" />
+                <div
+                  className="is-small"
+                  data-appear="zoom-out"
+                  data-unload="zoom-out"
+                  data-delay="100"
+                >
+                  <img
+                    className="bringer-lazy"
+                    src="/img/null.png"
+                    data-src="/img/about-scaleus1.svg"
+                    alt="Product 04"
+                    width="1200"
+                    height="1200"
+                  />
                 </div>
-                <div className="is-small" data-appear="zoom-out" data-unload="zoom-out" data-delay="200">
-                  <img className="bringer-lazy" src="/img/null.png" data-src="/img/about-scaleus2.svg" alt="Product 08" width="1200" height="1200" />
+                <div
+                  className="is-small"
+                  data-appear="zoom-out"
+                  data-unload="zoom-out"
+                  data-delay="200"
+                >
+                  <img
+                    className="bringer-lazy"
+                    src="/img/null.png"
+                    data-src="/img/about-scaleus2.svg"
+                    alt="Product 08"
+                    width="1200"
+                    height="1200"
+                  />
                 </div>
-                <div className="is-medium bringer-block stg-vertical-space-between" data-appear="fade-left" data-unload="fade-right" data-delay="300">
+                <div
+                  className="is-medium bringer-block stg-vertical-space-between"
+                  data-appear="fade-left"
+                  data-unload="fade-right"
+                  data-delay="300"
+                >
                   <h3>Your Partner in Digital Innovation</h3>
                   <p>
-                    We are a team of passionate and experienced tech experts at Scale Us, dedicated to helping businesses.
+                    We are a team of passionate and experienced tech experts at
+                    Scale Us, dedicated to helping businesses.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="bringer-masked-cta bringer-masked-block" data-unload="fade-down">
+            <div
+              className="bringer-masked-cta bringer-masked-block"
+              data-unload="fade-down"
+            >
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
                   const email = e.target.subscribe_email.value;
-                  import('@emailjs/browser').then((emailjs) => {
+                  import("@emailjs/browser").then((emailjs) => {
                     emailjs
                       .send(
-                        'service_2e4hyrc', // Replace with your EmailJS Service ID
-                        'template_jaeacbm', // Replace with your EmailJS Template ID
+                        "service_2e4hyrc", // Replace with your EmailJS Service ID
+                        "template_jaeacbm", // Replace with your EmailJS Template ID
                         { from_email: email },
-                        'V9VHZjA9wdyskYcS8' // Replace with your EmailJS User ID
+                        "V9VHZjA9wdyskYcS8" // Replace with your EmailJS User ID
                       )
                       .then(() => {
-                        const responseElement = e.target.querySelector('.bringer-contact-form__response');
-                        responseElement.textContent = 'Subscribed successfully!';
-                        responseElement.style.color = '#FFFFFF';
+                        const responseElement = e.target.querySelector(
+                          ".bringer-contact-form__response"
+                        );
+                        responseElement.textContent =
+                          "Subscribed successfully!";
+                        responseElement.style.color = "#FFFFFF";
                         e.target.reset();
                       })
                       .catch((error) => {
-                        const responseElement = e.target.querySelector('.bringer-contact-form__response');
-                        responseElement.textContent = 'Failed to subscribe. Try again.';
-                        responseElement.style.color = '#FF0000';
-                        console.error('EmailJS error:', error);
+                        const responseElement = e.target.querySelector(
+                          ".bringer-contact-form__response"
+                        );
+                        responseElement.textContent =
+                          "Failed to subscribe. Try again.";
+                        responseElement.style.color = "#FF0000";
+                        console.error("EmailJS error:", error);
                       });
                   });
                 }}
@@ -758,11 +1241,29 @@ export default function Home() {
                 data-unload="fade-down"
               >
                 <div className="bringer-form-content bringer-cta-form">
-                  <div className="bringer-cta-form-content" data-appear="fade-up" data-unload="fade-down" data-delay="100">
-                    <div className="bringer-cta-title">Ready to set your Brand ablaze?</div>
-                    <input type="email" id="subscribe_email" name="subscribe_email" placeholder="email@example.com" required />
+                  <div
+                    className="bringer-cta-form-content"
+                    data-appear="fade-up"
+                    data-unload="fade-down"
+                    data-delay="100"
+                  >
+                    <div className="bringer-cta-title">
+                      Ready to set your Brand ablaze?
+                    </div>
+                    <input
+                      type="email"
+                      id="subscribe_email"
+                      name="subscribe_email"
+                      placeholder="email@example.com"
+                      required
+                    />
                   </div>
-                  <div className="bringer-cta-form-button" data-appear="fade-up" data-unload="fade-down" data-delay="200">
+                  <div
+                    className="bringer-cta-form-button"
+                    data-appear="fade-up"
+                    data-unload="fade-down"
+                    data-delay="200"
+                  >
                     <button type="submit" aria-label="Submit Form">
                       <span className="bringer-icon bringer-icon-arrow-submit"></span>
                     </button>
@@ -772,45 +1273,150 @@ export default function Home() {
                 <span className="bringer-form-spinner"></span>
               </form>
               <div className="bringer-masked-cta-content bringer-masked-content at-top-right">
-                <p className="bringer-large-text" data-appear="fade-down" data-unload="fade-up">
-                  Let's craft a visual identity that ignites passion and loyalty. ✨
+                <p
+                  className="bringer-large-text"
+                  data-appear="fade-down"
+                  data-unload="fade-up"
+                >
+                  Let's craft a visual identity that ignites passion and
+                  loyalty. ✨
                 </p>
               </div>
             </div>
           </section>
-        </div> {/* Closes stg-container */}
+        </div>{" "}
+        {/* Closes stg-container */}
       </main>
 
-      <footer id="bringer-footer" className="is-fullwidth" data-appear="fade-up" data-unload="fade-down">
+      <footer
+        id="bringer-footer"
+        className="is-fullwidth"
+        data-appear="fade-up"
+        data-unload="fade-down"
+      >
         <div className="bringer-footer-widgets">
           <div className="stg-container">
-            <div className="stg-row" data-stagger-appear="fade-left" data-stagger-unload="fade-right" data-stagger-delay="100">
+            <div
+              className="stg-row"
+              data-stagger-appear="fade-left"
+              data-stagger-unload="fade-right"
+              data-stagger-delay="100"
+            >
               <div className="stg-col-5 stg-tp-col-12 stg-tp-bottom-gap-l">
                 <div className="bringer-info-widget">
                   <Link href="/" className="bringer-logo footer-logo">
-                    <img src="/img/Scale Us Logo.svg" alt="Scale-Us-Logo" width="200" height="88" />
+                    <img
+                      src="/img/Scale Us Logo.svg"
+                      alt="Scale-Us-Logo"
+                      width="200"
+                      height="88"
+                    />
                   </Link>
-                  <div className="bringer-info-description" data-appear="fade-up" data-unload="fade-down">
-                    We are a passionate team at Scale Us, dedicated to empowering individuals and businesses through creative digital solutions.
+                  <div
+                    className="bringer-info-description"
+                    data-appear="fade-up"
+                    data-unload="fade-down"
+                  >
+                    We are a passionate team at Scale Us, dedicated to
+                    empowering individuals and businesses through creative
+                    digital solutions.
                   </div>
-                  <span className="bringer-label" data-appear="fade-up" data-unload="fade-down">Follow us:</span>
-                  <ul className="bringer-socials-list" data-stagger-appear="fade-up" data-stagger-unload="fade-down" data-stagger-delay="75">
-  <li>
-    <a href="https://www.linkedin.com/company/scale-us-technologies" target="_blank" rel="noopener noreferrer" className="bringer-socials-linkedin" onClick={(e) => { e.preventDefault(); window.open('https://www.linkedin.com/company/scale-us-technologies', '_blank'); }}><i></i></a>
-  </li>
-  <li>
-    <a href="https://instagram.com/scaleus.in" target="_blank" rel="noopener noreferrer" className="bringer-socials-instagram" onClick={(e) => { e.preventDefault(); window.open('https://instagram.com/scaleus.in', '_blank'); }}><i></i></a>
-  </li>
-  <li>
-    <a href="https://x.com/scale_us_tech" target="_blank" rel="noopener noreferrer" className="bringer-socials-x" onClick={(e) => { e.preventDefault(); window.open('https://x.com/scale_us_tech', '_blank'); }}><i></i></a>
-  </li>
-  <li>
-    <a href="https://www.youtube.com/@Scale-Us-Technologies" target="_blank" rel="noopener noreferrer" className="bringer-socials-youtube" onClick={(e) => { e.preventDefault(); window.open('https://www.youtube.com/@Scale-Us-Technologies', '_blank'); }}><i></i></a>
-  </li>
-  <li>
-    <a href="https://www.facebook.com/ScaleUsTechnologies" target="_blank" rel="noopener noreferrer" className="bringer-socials-facebook" onClick={(e) => { e.preventDefault(); window.open('https://www.facebook.com/ScaleUsTechnologies', '_blank'); }}><i></i></a>
-  </li>
-</ul>
+                  <span
+                    className="bringer-label"
+                    data-appear="fade-up"
+                    data-unload="fade-down"
+                  >
+                    Follow us:
+                  </span>
+                  <ul
+                    className="bringer-socials-list"
+                    data-stagger-appear="fade-up"
+                    data-stagger-unload="fade-down"
+                    data-stagger-delay="75"
+                  >
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/company/scale-us-technologies"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bringer-socials-linkedin"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.open(
+                            "https://www.linkedin.com/company/scale-us-technologies",
+                            "_blank"
+                          );
+                        }}
+                      >
+                        <i></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://instagram.com/scaleus.in"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bringer-socials-instagram"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.open(
+                            "https://instagram.com/scaleus.in",
+                            "_blank"
+                          );
+                        }}
+                      >
+                        <i></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://x.com/scale_us_tech"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bringer-socials-x"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.open("https://x.com/scale_us_tech", "_blank");
+                        }}
+                      >
+                        <i></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.youtube.com/@Scale-Us-Technologies"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bringer-socials-youtube"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.open(
+                            "https://www.youtube.com/@Scale-Us-Technologies",
+                            "_blank"
+                          );
+                        }}
+                      >
+                        <i></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.facebook.com/ScaleUsTechnologies"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bringer-socials-facebook"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          window.open(
+                            "https://www.facebook.com/ScaleUsTechnologies",
+                            "_blank"
+                          );
+                        }}
+                      >
+                        <i></i>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
               <div className="stg-col-2 stg-offset-1 stg-tp-col-4 stg-m-col-4">
@@ -818,11 +1424,51 @@ export default function Home() {
                   <h6>Hire Developers</h6>
                   <div className="bringer-menu-widget">
                     <ul>
-                      <li><Link href="/services" data-appear="fade-up" data-unload="fade-down">App Development</Link></li>
-                      <li><Link href="/services" data-appear="fade-up" data-unload="fade-down">Web Development</Link></li>
-                      <li><Link href="/services" data-appear="fade-up" data-unload="fade-down">SEO and UI/UX</Link></li>
-                      <li><Link href="/services" data-appear="fade-up" data-unload="fade-down">Custom Development</Link></li>
-                      <li><Link href="/services" data-appear="fade-up" data-unload="fade-down">Integrations</Link></li>
+                      <li>
+                        <Link
+                          href="/services"
+                          data-appear="fade-up"
+                          data-unload="fade-down"
+                        >
+                          App Development
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services"
+                          data-appear="fade-up"
+                          data-unload="fade-down"
+                        >
+                          Web Development
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services"
+                          data-appear="fade-up"
+                          data-unload="fade-down"
+                        >
+                          SEO and UI/UX
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services"
+                          data-appear="fade-up"
+                          data-unload="fade-down"
+                        >
+                          Custom Development
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services"
+                          data-appear="fade-up"
+                          data-unload="fade-down"
+                        >
+                          Integrations
+                        </Link>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -832,11 +1478,51 @@ export default function Home() {
                   <h6>Explore</h6>
                   <div className="bringer-menu-widget">
                     <ul>
-                      <li><Link href="/" data-appear="fade-up" data-unload="fade-down">Home</Link></li>
-                      <li><Link href="/about-us" data-appear="fade-up" data-unload="fade-down">About Us</Link></li>
-                      <li><Link href="/services" data-appear="fade-up" data-unload="fade-down">Solutions</Link></li>
-                      <li><Link href="/faq" data-appear="fade-up" data-unload="fade-down">FAQs</Link></li>
-                      <li><Link href="/contact-us" data-appear="fade-up" data-unload="fade-down">Contact Us</Link></li>
+                      <li>
+                        <Link
+                          href="/"
+                          data-appear="fade-up"
+                          data-unload="fade-down"
+                        >
+                          Home
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/about-us"
+                          data-appear="fade-up"
+                          data-unload="fade-down"
+                        >
+                          About Us
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/services"
+                          data-appear="fade-up"
+                          data-unload="fade-down"
+                        >
+                          Solutions
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/faq"
+                          data-appear="fade-up"
+                          data-unload="fade-down"
+                        >
+                          FAQs
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="/contact-us"
+                          data-appear="fade-up"
+                          data-unload="fade-down"
+                        >
+                          Contact Us
+                        </Link>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -846,10 +1532,42 @@ export default function Home() {
                   <h6>Resources</h6>
                   <div className="bringer-menu-widget">
                     <ul>
-                      <li><a href="#" data-appear="fade-up" data-unload="fade-down">Terms of Use</a></li>
-                      <li><a href="#" data-appear="fade-up" data-unload="fade-down">Privacy Policy</a></li>
-                      <li><a href="#" data-appear="fade-up" data-unload="fade-down">Brochure</a></li>
-                      <li><a href="#" data-appear="fade-up" data-unload="fade-down">Become Partner</a></li>
+                      <li>
+                        <a
+                          href="#"
+                          data-appear="fade-up"
+                          data-unload="fade-down"
+                        >
+                          Terms of Use
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-appear="fade-up"
+                          data-unload="fade-down"
+                        >
+                          Privacy Policy
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-appear="fade-up"
+                          data-unload="fade-down"
+                        >
+                          Brochure
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          data-appear="fade-up"
+                          data-unload="fade-down"
+                        >
+                          Become Partner
+                        </a>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -858,7 +1576,13 @@ export default function Home() {
           </div>
         </div>
         <div className="bringer-footer-line">
-          <div className="align-center" data-appear="fade-up" data-unload="fade-down">Copyright © 2024.️ All Rights Reserved.</div>
+          <div
+            className="align-center"
+            data-appear="fade-up"
+            data-unload="fade-down"
+          >
+            Copyright © 2024.️ All Rights Reserved.
+          </div>
         </div>
       </footer>
 
@@ -890,7 +1614,10 @@ export default function Home() {
       <Script src="/js/st-core.js" strategy="afterInteractive" />
       <Script src="/js/classes.js" strategy="afterInteractive" />
       <Script src="/js/main.js" strategy="afterInteractive" />
-      <Script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" strategy="lazyOnload" />
+      <Script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js"
+        strategy="lazyOnload"
+      />
     </>
   );
 }

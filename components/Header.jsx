@@ -38,7 +38,6 @@ const Header = () => {
   return (
     <header id="bringer-header" className="is-frosted is-sticky "  data-stagger-delay="100" data-appear="fade-down" data-unload="fade-up" style={{
 background: "rgba( 0, 0, 0, 0.45 )",
-  // boxShadow: "0 8px 32px 0 rgba( 31, 38, 135, 0.37 )",
   backdropFilter: "blur( 10px )",
   WebkitBackdropFilter: "blur( 10px )"
       
@@ -81,7 +80,7 @@ background: "rgba( 0, 0, 0, 0.45 )",
               <li
               data-delay="75" data-unload="none" data-threshold="0.5"
                 onMouseEnter={() => setActiveMenu('products')}
-                className={pathname.includes('products') ? 'current-menu-parent' : ''}
+                className={pathname.includes('products') ? 'current-menu-parent' : ''}  
               >
                 <a href="https://simplytapit.in">Products <ChevronDown className='inline' size="20px"  /></a>
                 <AnimatePresence>
