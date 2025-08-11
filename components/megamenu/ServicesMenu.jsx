@@ -48,7 +48,7 @@ const ServicesMenu = () => {
             <motion.div
               key={index}
               whileHover={{ scale: 1.04 }}
-              className={`relative overflow-hidden p-4 rounded-[20px] border border-white/30 bg-white/10 backdrop-blur-[26px] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_8px_4px_rgba(255,255,255,0.4)] transition-all shadow-xl 
+              className={`relative overflow-hidden p-4 rounded-[20px] border border-white/30 hover:bg-white/5 backdrop-blur-[26px]  transition-all shadow-xl 
                 ${isLarge ? 'col-span-2 row-span-1' : 'col-span-2 row-span-1'}
                 dark:from-neutral-800 dark:to-neutral-900 border-gray-400 `}
             >

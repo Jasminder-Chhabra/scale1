@@ -103,7 +103,7 @@ export const GradientCard = ({text, para , img}) => {
           <motion.div
             className="w-full h-[400px] rounded-xl flex items-center justify-center mb-6"
             style={{
-              background: "linear-gradient(225deg, #171c2c 0%, #121624 100%)",
+          
               position: "relative",
               overflow: "hidden"
             }}
@@ -111,9 +111,7 @@ export const GradientCard = ({text, para , img}) => {
             animate={{
               filter: "blur(0px)",
               opacity: 1,
-              boxShadow: isHovered
-                ? "0 8px 16px -2px rgba(0, 0, 0, 0.3), 0 4px 8px -1px rgba(0, 0, 0, 0.2), inset 2px 2px 5px rgba(255, 255, 255, 0.15), inset -2px -2px 5px rgba(0, 0, 0, 0.7)"
-                : "0 6px 12px -2px rgba(0, 0, 0, 0.25), 0 3px 6px -1px rgba(0, 0, 0, 0.15), inset 1px 1px 3px rgba(255, 255, 255, 0.12), inset -2px -2px 4px rgba(0, 0, 0, 0.5)",
+              
               z: isHovered ? 10 : 5,
               y: isHovered ? -2 : 0,
               rotateX: isHovered ? -rotation.x * 0.5 : 0,

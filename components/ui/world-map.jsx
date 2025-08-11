@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function WorldMap({
   dots = [],
-  lineColor = "#65DA09"
+  lineColor = "#E266DE"
 }) {
   const svgRef = useRef(null);
   const map = new DottedMap({ height: 100, grid: "diagonal" });

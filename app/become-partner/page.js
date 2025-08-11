@@ -167,11 +167,11 @@ export default function partner() {
       </div>
        <div className=" w-40">
   <Image
-    src="/img/partner/will_you_do.png"
+    src="/img/partner/two.png"
     alt="img"
-    width={100}
-    height={100}
-    className="w-full h-full rounded-none"
+    width={70}
+    height={70}
+    className="w-[100px] h-full rounded-none"
   />
 </div>
        </div>
@@ -189,11 +189,11 @@ export default function partner() {
       </div>
        <div className="w-40">
   <Image
-    src="/img/partner/we_will_do.png"
+    src="/img/partner/one.png"
     alt="img"
     width={100}
     height={100}
-    className="w-[120px] rounded-none"
+    className="w-[100px] rounded-none"
   />
 </div>
        </div>

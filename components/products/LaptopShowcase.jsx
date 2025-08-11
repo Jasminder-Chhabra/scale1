@@ -62,13 +62,13 @@ const LaptopShowcase = ({ featureTabs, para, heading }) => {
                 return (
                   <div
                     key={index}
-                    className="flex-[0_0_85%] md:flex-[0_0_61%] transition-opacity duration-300 relative"
+                    className="flex-[0_0_85%] md:flex-[0_0_67%] transition-opacity duration-300 relative"
                    style={{ opacity: isActive ? 1 : 0.4 , marginLeft : index == 0 ? "20%" : undefined   }}
                   >
                     <img
                       src={tab?.image}
                       alt={tab?.title}
-                      className="md:w-[470px] w-[335px] h-[200px] z-10 md:h-[330px] object-cover rounded-xl shadow-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                      className="md:w-[550px] w-[335px] h-[200px] z-10 md:h-[250px] object-cover rounded-lg shadow-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                     />
                   </div>
                 );
@@ -103,10 +103,10 @@ const LaptopShowcase = ({ featureTabs, para, heading }) => {
         <img
           src="/img/assets/iPad Pro (landscape) (1).png"
           alt="Web Frame"
-          className="relative z-10 md:w-[498px] w-[335px]  h-[200px] md:h-[350px] top-[0px] "
+          className="relative z-10 md:w-[570px] w-[340px]  h-[220px] md:h-[275px] top-[0px] "
           style={{ zIndex: -1 }}
 
-        />
+        /> 
       </div>
     </div>
   );

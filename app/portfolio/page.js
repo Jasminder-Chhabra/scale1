@@ -326,7 +326,7 @@ export default function Portfolio() {
                     src="/img/null.png"
                     data-src="/img/portfolio-single-img/berryclick.png"
                     alt=""
-                    style={{ height: "300px" }}
+                   style={{ height: "347px" }}
                     width="1200"
                     height="1200"
                     loading="lazy"

@@ -173,7 +173,7 @@ className="absolute top-full mt-1 z-50 max-w-[1100px] overflow-hidden p-4 rounde
                <Link href={app.link}>
              <motion.div
   key={index}
-  className="relative overflow-hidden p-4 rounded-[20px] border border-white/30 bg-white/10 backdrop-blur-[26px] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_8px_4px_rgba(255,255,255,0.4)] transition-all shadow-xl h-32"
+  className="relative overflow-hidden p-4 rounded-[20px] border border-white/30 hover:bg-white/5 hover:backdrop-blur-[26px]  transition-all shadow-xl h-32"
   initial={{ opacity: 0, y: 10 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: index * 0.05 }}
