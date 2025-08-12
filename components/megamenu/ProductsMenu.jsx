@@ -43,7 +43,7 @@ const leftMenuItems = [
 
 const rightContent = {
   Ecommerce: [
-    { icon: <BrainCircuit className="h-10 w-10"/>, title: "bharat AI", desc: "AI App" , link : "/bharataipragati" },
+    { icon: <BrainCircuit className="h-10 w-10"/>, title: "LMS Portal", desc: "AI App" , link : "/LMS-portal" },
     {
       icon: <Sparkles  className="h-10 w-10" />,
       title: "Pixel Profile",

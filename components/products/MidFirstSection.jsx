@@ -36,14 +36,7 @@ const MidFirstSection = ({data}) => {
       <div className="mt-2 max-w-5xl w-full z-10 mx-auto"  data-stagger-appear="fade-up"
                 data-stagger-unload="fade-up"
                 >
-<video className='max-w-4xl mx-auto rounded-none' height="400"  autoPlay
-  muted
-  loop
-  playsInline>
-  <source src={data.img} type="video/mp4"/>
-  <source src="/img/pixel-profile-images/video3.mp4" type="video/ogg"/>
-  Your browser does not support the video tag.
-</video>
+<img src={data?.img} alt="" />
       </div>
     </section>
     </div>
