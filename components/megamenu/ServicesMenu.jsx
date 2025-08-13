@@ -16,7 +16,7 @@ const ServicesMenu = () => {
   return (
     <div
   className={`absolute top-full mt-1 z-50 w-[95vw]  max-w-[900px]
-    p-4 left-[-200px] border  rounded-2xl glass-card `}
+    p-4 left-[-200px] border  rounded-2xl glass-card  border-gray-600`}
     
 >
    <motion.div
@@ -31,7 +31,7 @@ const ServicesMenu = () => {
         {categories.map(cat => (
           <div
             key={cat.title}
-            className={`flex items-center gap-3 cursor-pointer hover:border hover:border-white/30 transition-all duration-200  hover:opacity-100 opacity-60 font-semibold' hover:bg-white/5 p-3 rounded-lg `}
+            className={`flex items-center gap-3 cursor-pointer hover:border hover:border-white/30 transition-all duration-200  hover:opacity-100 opacity-70 font-semibold' hover:bg-white/5 p-3 rounded-lg `}
             onMouseEnter={() => setActive(cat.title)}
           >
             {cat.icon}
@@ -45,8 +45,9 @@ const ServicesMenu = () => {
         {activeData?.services.map((service, index) => {
           const isLarge = index % 5 === 0 || index % 7 === 0;
           return (
-            <motion.div
+            <motion.a
               key={index}
+              href='/services'
               whileHover={{ scale: 1.04 }}
               className={`relative overflow-hidden p-4 rounded-[20px] border border-white/30 hover:bg-white/5 backdrop-blur-[26px]  transition-all shadow-xl 
                 ${isLarge ? 'col-span-2 row-span-1' : 'col-span-2 row-span-1'}
@@ -56,7 +57,7 @@ const ServicesMenu = () => {
               <p className="text-xs text-gray-300 dark:text-gray-400  leading-snug text-wrap">
                 Explore how we craft {service.toLowerCase()} solutions tailored for startups.
               </p>
-            </motion.div>
+            </motion.a>
           );
         })}
       </div>

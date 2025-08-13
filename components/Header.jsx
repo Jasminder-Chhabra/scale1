@@ -52,8 +52,8 @@ background: "rgba( 0, 0, 0, 0.45 )",
 
         <div className="bringer-header-mp">
           <nav className="bringer-nav">
-            {/* onMouseLeave={() => setActiveMenu(null)} */}
-            <ul className="main-menu flex gap-8" data-stagger-delay="75" data-stagger-appear="fade-down"  onMouseLeave={() => setActiveMenu(null)}  >
+           
+            <ul className="main-menu flex gap-8" data-stagger-delay="75" data-stagger-appear="fade-down"  onMouseLeave={() => setActiveMenu(null)} >
               <li className={pathname === '/' ? 'current-menu-parent' : ''} data-delay="75" data-unload="none" data-threshold="0.5">
                 <Link href="/">Home</Link>
               </li>

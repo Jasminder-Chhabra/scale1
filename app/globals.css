@@ -175,9 +175,10 @@ footer#bringer-footer {
 .glass-card {
 background: rgb(18, 19, 22 , 0.9);
 border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+/* border-color: #2b2f3577; */
+/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); */
 backdrop-filter: blur(13px);
 -webkit-backdrop-filter: blur(13px);
-border: 1px solid rgba(22, 22, 22, 0.7);
+/* border: 0.2px solid ; */
 }
 

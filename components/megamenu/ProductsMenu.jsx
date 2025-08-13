@@ -129,7 +129,7 @@ const ProductsMenu = () => {
 
   return (
  <div
-className="absolute top-full mt-1 z-50 max-w-[1100px] overflow-hidden p-4 rounded-[20px] border glass-card "
+className="absolute top-full mt-1 z-50 max-w-[1100px] overflow-hidden p-4 rounded-[20px] border glass-card border-gray-600"
 
   onMouseLeave={() => setHoveredItem(null)}
 >
@@ -149,7 +149,7 @@ className="absolute top-full mt-1 z-50 max-w-[1100px] overflow-hidden p-4 rounde
                 className=" px-3 py-2 rounded-lg hover:bg-white/5 transition-colors  duration-200"
                 style={{ padding: "10px 0px" }}
               >
-                <div className="px-3 flex items-start gap-3 opacity-60 hover:opacity-100">
+                <div className="px-3 flex items-start gap-3 opacity-70 hover:opacity-100">
                   <span className="text-lg">{item.icon}</span>
                 <span>{item.title}</span>
                 </div>

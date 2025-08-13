@@ -911,13 +911,13 @@ export default function Home() {
                     </div>
                     <div className="bringer-portfolio-card-footer">
                       <div className="bringer-portfolio-card-title">
-                        <span className="bringer-meta">CRM SaaS Dashboard</span>
-                        <h6>OZI Fleet</h6>
+                        <span className="bringer-meta">Consulting Website</span>
+                        <h6>OZI CORP</h6>
                       </div>
                       <span className="bringer-icon bringer-icon-explore"></span>
                     </div>
                     <Link
-                      href="/portfolio-post01"
+                      href="/portfolio-post/ozicorp"
                       aria-label="View details of Portfolio Post 01"
                     ></Link>
                   </div>
@@ -926,7 +926,7 @@ export default function Home() {
                       <img
                         className="bringer-lazy"
                         src="/img/null.png"
-                        data-src="/img/portfolio/portfolio02.jpg"
+                        data-src="/img/portfolio-img/7eleven/img1.jpg"
                         alt=""
                         width="1200"
                         height="1200"
@@ -940,7 +940,55 @@ export default function Home() {
                       <span className="bringer-icon bringer-icon-explore"></span>
                     </div>
                     <Link
-                      href="/portfolio-post02"
+                      href="/portfolio-post/7eleven"
+                      aria-label="View details of Portfolio Post 02"
+                    ></Link>
+                  </div>
+
+                     <div className="bringer-block bringer-portfolio-card">
+                    <div className="bringer-portfolio-card-image">
+                      <img
+                        className="bringer-lazy"
+                        src="/img/null.png"
+                        data-src="/img/portfolio-single-img/simpletap.png"
+                        alt=""
+                        width="1200"
+                        height="1200"
+                      />
+                    </div>
+                    <div className="bringer-portfolio-card-footer">
+                      <div className="bringer-portfolio-card-title">
+                        <span className="bringer-meta">SAAS Product</span>
+                        <h6>Simply Tap It</h6>
+                      </div>
+                      <span className="bringer-icon bringer-icon-explore"></span>
+                    </div>
+                    <Link
+                      href="/portfolio-post/simplyTap"
+                      aria-label="View details of Portfolio Post 02"
+                    ></Link>
+                  </div>
+
+                     <div className="bringer-block bringer-portfolio-card">
+                    <div className="bringer-portfolio-card-image">
+                      <img
+                        className="bringer-lazy"
+                        src="/img/null.png"
+                        data-src="/img/portfolio-single-img/natrax.png"
+                        alt=""
+                        width="1200"
+                        height="1200"
+                      />
+                    </div>
+                    <div className="bringer-portfolio-card-footer">
+                      <div className="bringer-portfolio-card-title">
+                        <span className="bringer-meta">Ticket Management Portal</span>
+                        <h6>Natrax</h6>
+                      </div>
+                      <span className="bringer-icon bringer-icon-explore"></span>
+                    </div>
+                    <Link
+                      href="/portfolio-post/natrax"
                       aria-label="View details of Portfolio Post 02"
                     ></Link>
                   </div>
@@ -956,7 +1004,7 @@ export default function Home() {
           >
             <div className="bringer-expand-on-scroll">
               <img
-                src="/img/Group 10122154.svg"
+                src="/img/pixel-profile-images/movebg.svg"
                 alt="Testimonials"
                 data-appear="fade-up"
                 data-unload="fade-down"
