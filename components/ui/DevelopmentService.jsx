@@ -91,7 +91,7 @@ const AnimatedSection = () => {
   return (
     <div className="h-[260vh] relative flex flex-row-reverse max-w-7xl m-auto">
       <div className="sticky h-[600px] w-[80%] flex items-center top-10 justify-center z-10">
-        <div className="box bg-[#262930] w-full border-[3px] border-gray-500 h-[450px] flex items-center text-center flex-col text-white px-8 py-6">
+        <div className="box glass-card border-gray-600 w-full border-[3px] h-[450px] flex items-center text-center flex-col text-white px-8 py-6">
           <div className="text-3xl font-bold mt-4 mb-4">{activeService.para}</div>
           <div className="text-md lg:text-lg max-w-2xl mb-4">{activeService.description}</div>
           <div className="flex space-x-4">
@@ -123,7 +123,7 @@ const AnimatedSection = () => {
                 {feature.para}
               </div>
             </div>
-            <div className="bg-[#7A15DE] z-10 group-hover:bg-purple-800 border-[3px] border-black rounded-lg absolute w-full h-full -bottom-3 -left-3 md:-bottom-4 md:-left-4 transition-colors ease" />
+            <div className="bg-gray-600 z-10 group-hover:bg-gray-800 border-[3px] border-black rounded-lg absolute w-full h-full -bottom-3 -left-3 md:-bottom-4 md:-left-4 transition-colors ease" />
           </div>
         ))}
       </div>
