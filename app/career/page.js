@@ -256,7 +256,7 @@ export default function Career() {
             >
               <a href="https://www.linkedin.com/company/scale-us-technologies/jobs/" target="_blank" rel="noopener noreferrer">
                 <div className="bringer-icon-box bringer-block">
-                  <h4>ROR Developer<span className="bringer-accent">.</span></h4>
+                  <h4>PHP / Laravel Developer<span className="bringer-accent">.</span></h4>
                   <p className="bringer-large-text">
                     Experience: 2 to 8 Years <br />
                     Location: Remote / Work From Home / Hybrid <br />
@@ -286,7 +286,28 @@ export default function Career() {
               </a>
               <a href="https://www.linkedin.com/company/scale-us-technologies/jobs/" target="_blank" rel="noopener noreferrer">
                 <div className="bringer-icon-box bringer-block">
-                  <h4>Angular<span className="bringer-accent">.</span></h4>
+                  <h4>Social Media Marketing<span className="bringer-accent">.</span></h4>
+                  <p className="bringer-large-text">
+                    Experience: 1 to 4+ Years <br />
+                    Location: Remote / Work From Home / Hybrid <br />
+                    Salary: As per industry standard / Negotiable
+                  </p>
+                </div>
+              </a>
+
+               <a href="https://www.linkedin.com/company/scale-us-technologies/jobs/" target="_blank" rel="noopener noreferrer">
+                <div className="bringer-icon-box bringer-block">
+                  <h4>IT Sales<span className="bringer-accent">.</span></h4>
+                  <p className="bringer-large-text">
+                    Experience: 1 to 4+ Years <br />
+                    Location: Remote / Work From Home / Hybrid <br />
+                    Salary: As per industry standard / Negotiable
+                  </p>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/company/scale-us-technologies/jobs/" target="_blank" rel="noopener noreferrer">
+                <div className="bringer-icon-box bringer-block">
+                  <h4>Flutter Developer<span className="bringer-accent">.</span></h4>
                   <p className="bringer-large-text">
                     Experience: 1 to 4+ Years <br />
                     Location: Remote / Work From Home / Hybrid <br />

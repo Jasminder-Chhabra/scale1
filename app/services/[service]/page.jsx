@@ -44,7 +44,7 @@ export default function Services() {
 
   const slug = useParams();
    const data =  ServiceData[slug.service];
-   const {title , description , whyChoose , steps , services } = data;
+   const {title , description , whyChoose , steps , services , img } = data;
     console.log(data)
 
   return (
@@ -178,14 +178,13 @@ export default function Services() {
         <div className="stg-container">
           <section className="backlight-bottom">
             <div className="stg-row">
-              <div className="stg-col-6 stg-offset-3 align-center stg-tp-col-10 stg-tp-offset-1">
+              <div className="align-center">
                 <h1 className="bringer-page-title text-5xl" data-appear="fade-up" data-unload="fade-up">
                   {title}
                 </h1>
                 <p
-                  className="bringer-large-text text-lg"
-                  data-split-appear="fade-up"
-                  data-split-unload="fade-up"
+                  className="bringer-large-text text-lg px-10"
+                  data-appear="fade-up" data-unload="fade-up"
                 >
  {description}
                 </p>
@@ -253,7 +252,7 @@ export default function Services() {
                   <img
                     className="bringer-lazy"
                     src="/img/null.png"
-                    data-src="/img/home/about02.webp"
+                    data-src={img}
                     alt=""
                     width="600"
                     height="600"
@@ -478,15 +477,15 @@ export default function Services() {
               data-delay="100"
               data-unload="fade-up"
             >
-                {services.points.map(() => {
+                {services.points.map(({title , description}) => {
 
-              <div className="bringer-block">
+           return   <div className="bringer-block">
                 <h4>
-                  We don't just design, we <span className="bringer-accent">unleash creative</span> firestorms
+                 {title}
                   <span className="bringer-accent">.</span>
                 </h4>
                 <p>
-                  At Scale US, we unleash creative firestorms. Our approach goes beyond conventional boundaries to push the limits of innovation. We're passionate about crafting dynamic and transformative solutions that inspire, captivate, and drive measurable success for our clients. From conceptualization to execution, we ignite creativity to deliver impactful outcomes that redefine possibilities in digital solutions.
+                 {description}
                 </p>
               </div>
             

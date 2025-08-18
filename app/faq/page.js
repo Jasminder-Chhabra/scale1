@@ -65,7 +65,7 @@ export default function FAQ() {
               <img
                 className="bringer-lazy"
                 src="/img/null.png"
-                data-src="/img/inner-pages/faq-hero.jpg"
+                data-src="/img/inner-pages/old img/faq-hero.jpg"
                 alt="Questions and Answers"
                 width="1920"
                 height="960"
@@ -85,7 +85,7 @@ export default function FAQ() {
               <div className="bringer-toggles-item bringer-block" data-appear="fade-up" data-unload="fade-up">
                 <div className="bringer-toggles-item--title">
                   <span className="bringer-label">Web Development</span>
-                  <h4><sup>01.</sup> What types of websites can you develop?</h4>
+                  <h4><span className='text-md'>01.</span> What types of websites can you develop?</h4>
                 </div>
                 <div className="bringer-toggles-item--content">
                   <p>We develop a wide range of websites, including eCommerce platforms, corporate websites, content management systems (CMS), and custom web applications tailored to your specific business needs.</p>
@@ -94,7 +94,7 @@ export default function FAQ() {
               <div className="bringer-toggles-item bringer-block" data-appear="fade-up" data-unload="fade-up">
                 <div className="bringer-toggles-item--title">
                   <span className="bringer-label">Mobile App Development</span>
-                  <h4><sup>02.</sup> Do you develop mobile apps for both iOS and Android?</h4>
+                  <h4><span className='text-md'>02.</span>  Do you develop mobile apps for both iOS and Android?</h4>
                 </div>
                 <div className="bringer-toggles-item--content">
                   <p>Yes, we develop mobile applications for both iOS and Android platforms, ensuring a seamless user experience across all devices.</p>
@@ -103,7 +103,7 @@ export default function FAQ() {
               <div className="bringer-toggles-item bringer-block" data-appear="fade-up" data-unload="fade-up">
                 <div className="bringer-toggles-item--title">
                   <span className="bringer-label">Mobile App Development</span>
-                  <h4><sup>03.</sup> Can you help with app store submission and approval?</h4>
+                  <h4><span>03.</span> Can you help with app store submission and approval?</h4>
                 </div>
                 <div className="bringer-toggles-item--content">
                   <p>Absolutely. We assist with the entire app store submission process and work to ensure your app meets all guidelines for approval on both the Apple App Store and Google Play Store.</p>
@@ -112,7 +112,7 @@ export default function FAQ() {
               <div className="bringer-toggles-item bringer-block" data-appear="fade-up" data-unload="fade-up">
                 <div className="bringer-toggles-item--title">
                   <span className="bringer-label">eCommerce Solutions</span>
-                  <h4><sup>04.</sup> What eCommerce platforms do you work with?</h4>
+                  <h4><span>04.</span> What eCommerce platforms do you work with?</h4>
                 </div>
                 <div className="bringer-toggles-item--content">
                   <p>We work with various eCommerce platforms, including Shopify, WooCommerce, Magento, and custom-built solutions to meet your specific needs.</p>
@@ -122,7 +122,7 @@ export default function FAQ() {
               <div className="bringer-toggles-item bringer-block" data-appear="fade-up" data-unload="fade-up">
                 <div className="bringer-toggles-item--title">
                   <span className="bringer-label">UI/UX Designing</span>
-                  <h4><sup>05.</sup> What is the importance of UI/UX design in a project?</h4>
+                  <h4><span>05.</span> What is the importance of UI/UX design in a project?</h4>
                 </div>
                 <div className="bringer-toggles-item--content">
                   <p>UI/UX design is crucial as it enhances user satisfaction by improving the usability, accessibility, and pleasure provided in the interaction with the product, leading to higher user engagement and retention.</p>
@@ -131,7 +131,7 @@ export default function FAQ() {
               <div className="bringer-toggles-item bringer-block" data-appear="fade-up" data-unload="fade-up">
                 <div className="bringer-toggles-item--title">
                   <span className="bringer-label">Software Testing</span>
-                  <h4><sup>06.</sup> What types of testing services do you offer?</h4>
+                  <h4><span>06.</span> What types of testing services do you offer?</h4>
                 </div>
                 <div className="bringer-toggles-item--content">
                   <p>We offer comprehensive software testing services, including functional testing, performance testing, security testing, and usability testing to ensure your software is robust and reliable.</p>
@@ -140,7 +140,7 @@ export default function FAQ() {
               <div className="bringer-toggles-item bringer-block" data-appear="fade-up" data-unload="fade-up">
                 <div className="bringer-toggles-item--title">
                   <span className="bringer-label">Search Engine Optimization (SEO)</span>
-                  <h4><sup>07.</sup> What SEO services do you provide?</h4>
+                  <h4><span>07.</span> What SEO services do you provide?</h4>
                 </div>
                 <div className="bringer-toggles-item--content">
                   <p>Our SEO services include keyword research, on-page optimization, link building, content creation, and technical SEO to improve your website’s search engine rankings and visibility.</p>
@@ -149,7 +149,7 @@ export default function FAQ() {
               <div className="bringer-toggles-item bringer-block" data-appear="fade-up" data-unload="fade-up">
                 <div className="bringer-toggles-item--title">
                   <span className="bringer-label">Custom Software Development</span>
-                  <h4><sup>08.</sup> What types of custom software can you develop?</h4>
+                  <h4><span>08.</span> What types of custom software can you develop?</h4>
                 </div>
                 <div className="bringer-toggles-item--content">
                   <p>We develop various types of custom software, including CRM systems, ERP solutions, mobile apps, web applications, and more, tailored to meet your unique business requirements.</p>
@@ -158,7 +158,7 @@ export default function FAQ() {
               <div className="bringer-toggles-item bringer-block" data-appear="fade-up" data-unload="fade-up">
                 <div className="bringer-toggles-item--title">
                   <span className="bringer-label">Custom Software Development</span>
-                  <h4><sup>09.</sup> How do you ensure the security of custom software?</h4>
+                  <h4><span>09.</span> How do you ensure the security of custom software?</h4>
                 </div>
                 <div className="bringer-toggles-item--content">
                   <p>We follow best practices in software security, including data encryption, secure coding practices, regular security audits, and compliance with relevant regulations to ensure the safety of your software.</p>
@@ -167,7 +167,7 @@ export default function FAQ() {
               <div className="bringer-toggles-item bringer-block" data-appear="fade-up" data-unload="fade-up">
                 <div className="bringer-toggles-item--title">
                   <span className="bringer-label">Software Testing</span>
-                  <h4><sup>10.</sup> How do you ensure the quality of the software?</h4>
+                  <h4><span>10.</span> How do you ensure the quality of the software?</h4>
                 </div>
                 <div className="bringer-toggles-item--content">
                   <p>We follow industry-standard testing methodologies and best practices, using automated and manual testing techniques to identify and resolve any issues before the final release.</p>

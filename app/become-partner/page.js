@@ -147,7 +147,7 @@ export default function partner() {
               <div className="stg-col-6 stg-offset-3 align-center stg-tp-col-10 stg-tp-offset-1">
                 <h1 className="bringer-page-title" data-appear="fade-up" data-unload="fade-up">Partner With Us
 </h1>
-                <p className="bringer-large-text" data-split-appear="fade-up" data-split-unload="fade-up" data-delay="100">
+                <p className="bringer-large-text" data-appear="fade-up" data-unload="fade-up" data-delay="100">
                 We know your customers look to you to help them keep their businesses up and running and design the right solution for the right application. So we've created a program that provides the elements you need, with the support you want and the rewards you deserve.
 
 

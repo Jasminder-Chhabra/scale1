@@ -102,7 +102,11 @@ background: "rgba( 0, 0, 0, 0.45 )",
         </div>
          
       </div>
-{pathname.includes("blog") && (
+{(
+  pathname.includes("blog") ||
+  pathname.includes("terms-of-use") ||
+  pathname.includes("privacy-policy")
+) && (
   <div
     className="h-1 w-full bg-[length:300%_100%] bg-no-repeat"
     style={{
