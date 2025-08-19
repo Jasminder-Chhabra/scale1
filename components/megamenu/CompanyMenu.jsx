@@ -34,14 +34,14 @@ const CompanyMenu = () => {
           <h3 className="font-semibold text-lg mb-4 pl-5">COMPANY</h3>
           <div className=" flex gap-2 flex-col">
             <div className="flex items-start gap-3 px-3 py-2 rounded-lg hover:bg-white/5 transition-colors  duration-200">
-              <Info className="w-5 h-5 mt-1" />
+              <Info className="w-5 h-5 mt-1" strokeWidth={1}   />
               <Link href='/about-us'>
                 <p className="font-medium mb-0">About Scale Us</p>
                 <p className="text-[13px] text-gray-400">Who we are</p>
               </Link>
             </div>
             <div className="flex items-start gap-3 px-3 py-2 rounded-lg hover:bg-white/5 transition-colors  duration-200">
-              <Briefcase className="w-5 h-5 mt-1" />
+              <Briefcase className="w-5 h-5 mt-1" strokeWidth={1}   />
                <Link href="/career">
               <div>
                 <p className="font-medium mb-0" >Careers</p>
@@ -51,7 +51,7 @@ const CompanyMenu = () => {
             </div>
    <Link href="/blog">
             <div className="flex items-start gap-3 px-3 py-2 rounded-lg hover:bg-white/5 transition-colors  duration-200">
-              <BookOpen className="w-5 h-5 mt-1" />
+              <BookOpen className="w-5 h-5 mt-1" strokeWidth={1}   />
               <div>
                 <p className="font-medium mb-0">Blog</p>
                 <p className="text-[13px] text-gray-400">Industry insights</p>
@@ -77,7 +77,7 @@ const CompanyMenu = () => {
           <div className=" flex gap-2 flex-col">
        
             <div className="flex items-start gap-3 px-3 py-2 rounded-lg hover:bg-white/5 transition-colors  duration-200">
-              <HelpCircle className="w-5 h-5 mt-1" />
+              <HelpCircle className="w-5 h-5 mt-1" strokeWidth={1}   />
               <div>
                 <p className="font-medium mb-0">Brochure</p>
                 <p className="text-[13px] text-gray-400">Find answers quickly</p>
@@ -86,7 +86,7 @@ const CompanyMenu = () => {
          
          <Link href="/terms-of-use">
             <div className="flex items-start gap-3 px-3 py-2 rounded-lg hover:bg-white/5 transition-colors  duration-200">
-              <ShieldCheck className="w-5 h-5 mt-1" />
+              <ShieldCheck className="w-5 h-5 mt-1" strokeWidth={1}   />
               <div>
                 <p className="font-medium mb-0">Terms of Use</p>
                 <p className="text-[13px] text-gray-400">Terms and Policies</p>
@@ -95,7 +95,7 @@ const CompanyMenu = () => {
          </Link>
           <Link href="/privacy-policy">
             <div className="flex items-start gap-3 px-3 py-2 rounded-lg hover:bg-white/5 transition-colors  duration-200">
-              <Lock className="w-5 h-5 mt-1" />
+              <Lock className="w-5 h-5 mt-1" strokeWidth={1}   />
               <div>
                 <p className="font-medium mb-0">Privacy</p>
                 <p className="text-[13px] text-gray-400">Your data belongs to you</p>

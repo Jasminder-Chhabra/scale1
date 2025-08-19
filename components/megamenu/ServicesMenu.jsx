@@ -5,7 +5,8 @@ import { Smartphone, Globe, Layers, Settings } from 'lucide-react';
 const categories = [
   { 
     title: 'Mobile', 
-    icon: <Smartphone />, 
+    icon: <Smartphone strokeWidth={1}  
+ />, 
     description: 'We build high-performance mobile apps tailored for iOS, Android, and cross-platform solutions.',
     services: [
       { name: 'Android Development', href: '/services/android' },
@@ -16,7 +17,7 @@ const categories = [
   },
   { 
     title: 'Web', 
-    icon: <Globe />, 
+    icon: <Globe strokeWidth={1} />, 
     description: 'From sleek frontends to powerful backends, we deliver complete web solutions.',
     services: [
       { name: 'Frontend Dev', href: '/services/frontend' },
@@ -27,7 +28,7 @@ const categories = [
   },
   { 
     title: 'AI & ML', 
-    icon: <Layers />, 
+    icon: <Layers strokeWidth={1} />, 
     description: 'Harness AI, ML, AR/VR, and blockchain to innovate your business.',
     services: [
       { name: 'AI/ML Solutions', href: '/services/solutions' },
@@ -37,7 +38,7 @@ const categories = [
   },
   { 
     title: 'Support', 
-    icon: <Settings />, 
+    icon: <Settings strokeWidth={1} />, 
     description: 'Keep your apps running at peak performance with our expert support and QA.',
     services: [
       { name: 'App Maintenance', href: '/services/maintenance' },
@@ -47,7 +48,7 @@ const categories = [
   },
   { 
     title: 'Others', 
-    icon: <Layers />, 
+    icon: <Layers strokeWidth={1} />, 
     description: 'Custom solutions for your unique needs, from SaaS to workflow automation.',
     services: [
       { name: 'Testing & Assurance', href: '/services/testing' },

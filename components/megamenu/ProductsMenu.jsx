@@ -24,40 +24,40 @@ const leftMenuItems = [
   {
     id: "Ecommerce",
     title: "Ecommerce , grocery App, ",
-    icon: <ShoppingCart />,
+    icon: <ShoppingCart strokeWidth={1}   />,
   },
-  { id: "Ecommerce1", title: "Food Ordering Apps", icon: <FolderOpenDot /> },
-  { id: "Ecommerce2", title: "Laundary Service Apps", icon: <ClipboardPaste /> },
+  { id: "Ecommerce1", title: "Food Ordering Apps", icon: <FolderOpenDot strokeWidth={1}   /> },
+  { id: "Ecommerce2", title: "Laundary Service Apps", icon: <ClipboardPaste strokeWidth={1}  /> },
   {
     id: "Ecommerce6",
     title: "Cab Booking & Ride Sharing App",
-    icon: <ShoppingCart />,
+    icon: <ShoppingCart strokeWidth={1}   />,
   },
-  { id: "Ecommerce3", title: "School App", icon: <School /> },
-  { id: "Ecommerce4", title: "Doctor & Pharmacy App", icon: <DockIcon /> },
-  { id: "Ecommerce5", title: "Service Provider App", icon: <ShoppingCart /> },
-  { id: "AI", title: "Ultimate AI", icon: <Brain /> },
-  { id: "SimplyTap", title: "Simply Tap It", icon: <IdCard /> },
-  { id: "PeopleHub", title: "People Hub", icon: <Users /> },
+  { id: "Ecommerce3", title: "School App", icon: <School strokeWidth={1}   /> },
+  { id: "Ecommerce4", title: "Doctor & Pharmacy App", icon: <DockIcon strokeWidth={1}   /> },
+  { id: "Ecommerce5", title: "Service Provider App", icon: <ShoppingCart strokeWidth={1}   /> },
+  { id: "AI", title: "Ultimate AI", icon: <Brain strokeWidth={1}  /> },
+  { id: "SimplyTap", title: "Simply Tap It", icon: <IdCard  strokeWidth={1}   /> },
+  { id: "PeopleHub", title: "People Hub", icon: <Users strokeWidth={1}   /> },
 ];
 
 const rightContent = {
   Ecommerce: [
-    { icon: <BrainCircuit className="h-10 w-10"/>, title: "LMS Portal", desc: "AI App" , link : "/LMS-portal" },
+    { icon: <BrainCircuit strokeWidth={1}   className="h-10 w-10"/>, title: "LMS Portal", desc: "AI App" , link : "/LMS-portal" },
     {
-      icon: <Sparkles  className="h-10 w-10" />,
+      icon: <Sparkles  className="h-10 w-10" strokeWidth={1}   />,
       title: "Pixel Profile",
       desc: "Website in 10 Minutes",
       link : "/pixel-profile"
     },
-     { icon: <Handshake className="h-10 w-10" />, title: "GrowthHunt", desc: "Content Generation Website" , link : "/growthhunt" },
-     { icon: <HandPlatter className="h-10 w-10" />, title: "Restaurant POS", desc: "Food Management App" , link : "/restaurant-POS" },
+     { icon: <Handshake strokeWidth={1}   className="h-10 w-10" />, title: "GrowthHunt", desc: "Content Generation Website" , link : "/growthhunt" },
+     { icon: <HandPlatter strokeWidth={1}   className="h-10 w-10" />, title: "Restaurant POS", desc: "Food Management App" , link : "/restaurant-POS" },
   
   ],
   Ecommerce1: [
-      { icon: <ShoppingBagIcon className="h-10 w-10" />, title: "Shop App", desc: "Shopping App" , link : "/shopping" },
-     { icon: <Airplay className="h-10 w-10" />, title: "Analytics App", desc: "All-in-one web analytics" , link : "/analytics" },
-     { icon: <IdCardIcon className="h-10 w-10" />, title: "Simplytap App", desc: "Do everything with one platform." , link : "/Simplytap" },
+      { icon: <ShoppingBagIcon className="h-10 w-10" strokeWidth={1}   />, title: "Shop App", desc: "Shopping App" , link : "/shopping" },
+     { icon: <Airplay className="h-10 w-10" strokeWidth={1}   />, title: "Analytics App", desc: "All-in-one web analytics" , link : "/analytics" },
+     { icon: <IdCardIcon className="h-10 w-10" strokeWidth={1}   />, title: "Simplytap App", desc: "Do everything with one platform." , link : "/Simplytap" },
   ],
   Ecommerce2: [
     { icon: "🟢", title: "Delivoo", desc: "All in 1 Delivery App (7 Apps)" , link : "/product-1" },
