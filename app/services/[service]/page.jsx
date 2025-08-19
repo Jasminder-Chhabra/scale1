@@ -427,10 +427,11 @@ export default function Services() {
             >
               <div className="bringer-parallax-media">
                 <img
-                  className="bringer-lazy"
+                  className="bringer-lazy md:h-[150px]"
                   src="/img/null.png"
                   data-src={item.img}
                   alt={item.title}
+                  
                   width="960"
                   height="960"
                   loading="lazy"

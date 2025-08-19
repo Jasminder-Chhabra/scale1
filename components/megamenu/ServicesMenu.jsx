@@ -53,7 +53,7 @@ const categories = [
       { name: 'Testing & Assurance', href: '/services/testing' },
       { name: 'Design Service', href: '/services/design' },
       { name: 'SaaS Development', href: '/services/saas' },
-      { name: 'WorkFlow Development', href: '/services/workflow' },
+     
     ] 
   },
 ];
