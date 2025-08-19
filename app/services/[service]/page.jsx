@@ -299,6 +299,101 @@ export default function Services() {
             </div>
           </section>
 
+     <section className="backlight-both" data-unload="fade-down">
+      <div className="align-center stg-bottom-gap-l">
+        <h2
+          data-split-appear="fade-up"
+          data-unload="fade-up"
+          dangerouslySetInnerHTML={{ __html: steps.heading }}
+        />
+      </div>
+
+      {steps.step.map((item, index) => {
+        const isEven = index % 2 === 1;
+
+        return (
+          <div
+            key={index}
+            className={`stg-row stg-bottom-gap stg-valign-middle stg-m-bottom-gap-l ${
+              isEven ? "stg-tp-row-reverse" : ""
+            }`}
+            data-unload={isEven ? "fade-right" : "fade-left"}
+          >
+            <div
+              className={`stg-col-3 stg-tp-col-6 ${
+                !isEven ? "stg-offset-3" : "stg-m-bottom-gap"
+              }`}
+              data-appear={isEven ? "fade-left" : "fade-right"}
+            >
+              <div className="bringer-parallax-media">
+                <img
+                  className="bringer-lazy md:h-[150px]"
+                  src="/img/null.png"
+                  data-src={item.img}
+                  alt={item.title}
+                  
+                  width="960"
+                  height="960"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <div
+              className="stg-col-6 stg-tp-col-6"
+              data-appear={isEven ? "fade-left" : "fade-right"}
+              data-delay="100"
+            >
+              <span className="bringer-label">{item.step}</span>
+              <h4>{item.title}</h4>
+              <p>{item.description}</p>
+            </div>
+
+            {isEven && <div className="stg-col-3"></div>}
+          </div>
+        );
+      })}
+    </section>
+
+          <section className="backlight-bottom" data-unload="fade-down">
+            <div className="stg-row bringer-section-title">
+              <div className="stg-col-8 stg-offset-2">
+                <div className="align-center">
+                  <h2 data-appear="fade-up" data-unload="fade-up">{services.heading}</h2>
+                  <p
+                    className="bringer-large-text"
+                    data-appear="fade-up"
+                    data-delay="100"
+                    data-unload="fade-up"
+                  >
+                    {services.para}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              className="bringer-grid-2cols bringer-tp-grid-1col"
+              data-stagger-appear="zoom-in"
+              data-stagger-delay="100"
+              data-delay="100"
+              data-unload="fade-up"
+            >
+                {services.points.map(({title , description}) => {
+
+           return   <div className="bringer-block">
+                <h4>
+                 {title}
+                  <span className="bringer-accent">.</span>
+                </h4>
+                <p>
+                 {description}
+                </p>
+              </div>
+            
+                })}
+            </div>
+          </section>
+          
           <section className="backlight-bottom">
        
         <div className="align-center max-w-3xl mx-auto">
@@ -399,100 +494,7 @@ export default function Services() {
             </div>
           </section> */}
 
-     <section className="backlight-both" data-unload="fade-down">
-      <div className="align-center stg-bottom-gap-l">
-        <h2
-          data-split-appear="fade-up"
-          data-unload="fade-up"
-          dangerouslySetInnerHTML={{ __html: steps.heading }}
-        />
-      </div>
 
-      {steps.step.map((item, index) => {
-        const isEven = index % 2 === 1;
-
-        return (
-          <div
-            key={index}
-            className={`stg-row stg-bottom-gap stg-valign-middle stg-m-bottom-gap-l ${
-              isEven ? "stg-tp-row-reverse" : ""
-            }`}
-            data-unload={isEven ? "fade-right" : "fade-left"}
-          >
-            <div
-              className={`stg-col-3 stg-tp-col-6 ${
-                !isEven ? "stg-offset-3" : "stg-m-bottom-gap"
-              }`}
-              data-appear={isEven ? "fade-left" : "fade-right"}
-            >
-              <div className="bringer-parallax-media">
-                <img
-                  className="bringer-lazy md:h-[150px]"
-                  src="/img/null.png"
-                  data-src={item.img}
-                  alt={item.title}
-                  
-                  width="960"
-                  height="960"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-
-            <div
-              className="stg-col-6 stg-tp-col-6"
-              data-appear={isEven ? "fade-left" : "fade-right"}
-              data-delay="100"
-            >
-              <span className="bringer-label">{item.step}</span>
-              <h4>{item.title}</h4>
-              <p>{item.description}</p>
-            </div>
-
-            {isEven && <div className="stg-col-3"></div>}
-          </div>
-        );
-      })}
-    </section>
-
-          <section className="backlight-bottom" data-unload="fade-down">
-            <div className="stg-row bringer-section-title">
-              <div className="stg-col-8 stg-offset-2">
-                <div className="align-center">
-                  <h2 data-appear="fade-up" data-unload="fade-up">{services.heading}</h2>
-                  <p
-                    className="bringer-large-text"
-                    data-appear="fade-up"
-                    data-delay="100"
-                    data-unload="fade-up"
-                  >
-                    {services.para}
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="bringer-grid-2cols bringer-tp-grid-1col"
-              data-stagger-appear="zoom-in"
-              data-stagger-delay="100"
-              data-delay="100"
-              data-unload="fade-up"
-            >
-                {services.points.map(({title , description}) => {
-
-           return   <div className="bringer-block">
-                <h4>
-                 {title}
-                  <span className="bringer-accent">.</span>
-                </h4>
-                <p>
-                 {description}
-                </p>
-              </div>
-            
-                })}
-            </div>
-          </section>
 <div>
   <Preview/>
 </div>

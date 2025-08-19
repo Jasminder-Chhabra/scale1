@@ -18,7 +18,9 @@ import Achievement from "@/components/ui/Achivement";
 import Hero from "@/components/home1/Hero";
 import Header from "@/components/Header";
 import { AuroraBackground } from "@/components/ui/aurora-background";
-import { AuroraBackgroundDemo } from "@/components/home1/Hero3";
+import { DemoVariant1 } from "@/components/home1/Hero4";
+import { DemoOne } from "@/components/home1/Hero5";
+import { AuroraHero } from "@/components/futurastic-hero-section";
 
 export default function Home() {
   // Form Submission
@@ -212,10 +214,8 @@ export default function Home() {
       </Head>
 
       <Header />
-
+<AuroraHero/>
    
-      {/* <Hero /> */}
-     <AuroraBackgroundDemo/>
       <main
         id="bringer-main"
         className="custom-proud-css"

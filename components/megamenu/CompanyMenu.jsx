@@ -24,11 +24,11 @@ const CompanyMenu = () => {
     >
                     <div
   className={`absolute top-full mt-1 z-50 
-    p-4  glass-card 
-     shadow-2xl max-w-7xl w-[32vw] rounded-2xl border border-gray-600`}
+    p-3  glass-card 
+     shadow-2xl max-w-7xl w-[31vw] mx-auto rounded-2xl border border-gray-600`}
 >
 
-   <div className="max-w-7xl  flex flex-row gap-6 mt-4 mx-4 cursor-pointer">
+   <div className="max-w-7xl  flex flex-row gap-6 mt-4 mx-2 cursor-pointer">
         {/* COMPANY */}
         <div className=''>
           <h3 className="font-semibold text-lg mb-4 pl-5">COMPANY</h3>

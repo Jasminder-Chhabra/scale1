@@ -552,7 +552,7 @@ export default function Portfolio() {
                   data-bg-src="/img/box.svg"
                 >
                   <div className="bringer-grid-cta-heading">
-                    Need to amplify your voice?
+                    Need to amplify your Project?
                   </div>
                 </div>
                 <div className="bringer-masked-content at-bottom-right">
@@ -561,7 +561,7 @@ export default function Portfolio() {
                     data-appear="fade-right"
                     data-delay="100"
                   >
-                    Let's chat about your goals →
+                    Let's Connect →
                   </p>
                 </div>
               </div>

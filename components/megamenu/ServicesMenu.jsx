@@ -65,7 +65,7 @@ const ServicesMenu = () => {
 
   return (
     <div
-      className="absolute top-full mt-1 z-50 w-[95vw] max-w-[900px] p-4 left-[-200px] border rounded-2xl glass-card border-gray-600"
+      className="absolute top-full mt-1 z-50 w-[90vw] max-w-[800px] p-4 left-[-200px] border rounded-2xl glass-card border-gray-600"
     >
       <motion.div
         className="rounded-xl flex overflow-hidden z-50"
@@ -74,7 +74,7 @@ const ServicesMenu = () => {
         transition={{ duration: 0.25 }}
       >
         {/* Left Sidebar */}
-        <div className="w-1/3 text-white p-5 space-y-4">
+        <div className="w-[220px] text-white p-5 space-y-4">
           {categories.map(cat => (
             <div
               key={cat.title}
@@ -88,7 +88,7 @@ const ServicesMenu = () => {
         </div>
 
         {/* Right Content */}
-        <div className="w-2/3 p-5 space-y-4">
+        <div className=" p-5 space-y-4">
           {/* Dynamic Paragraph */}
           <p className="text-sm text-gray-100 leading-snug">{activeData?.description}</p>
 
