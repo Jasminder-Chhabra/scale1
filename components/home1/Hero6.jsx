@@ -1,4 +1,4 @@
-// import { Scene } from "@/components/ui/hero-section";
+import { Scene } from "@/components/hero-section";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { LucideIcon, Cpu, ShieldCheck, Layers, Zap, Eye } from "lucide-react";
@@ -29,13 +29,14 @@ const features = [
 
 const Herooo = () => {
   return (
-    <div className="min-h-svh w-screen bg-linear-to-br from-[#000] to-[#1A2428] text-white flex flex-col items-center justify-center p-8">
+    <div className="min-h-svh w-screen relative bg-linear-to-br from-[#000] to-[#1A2428] text-white flex flex-col items-center justify-center p-8">
       <div className="w-full max-w-6xl space-y-12 relative z-10">
         <div className="flex flex-col items-center text-center space-y-8">
           <Badge variant="secondary" className="backdrop-blur-sm bg-white/10 border border-white/20 text-white hover:bg-white/20 px-4 py-2 rounded-full">
             ✨ Next Generation Tools
           </Badge>
-          
+        
+
           <div className="space-y-6 flex items-center justify-center flex-col ">
             <h1 className=" text-3xl md:text-6xl font-semibold tracking-tight max-w-3xl">
               Discover minimalism and power in one place
@@ -67,10 +68,12 @@ const Herooo = () => {
           ))}
         </div>
       </div>
-      <div className='absolute inset-0'>
-        {/* <Scene /> */}
-      </div>
+  <div className="absolute inset-0 w-full h-full ">
+
+                  <Scene />
+          </div>
     </div>
+    
   );
 };
 
