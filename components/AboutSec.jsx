@@ -75,8 +75,8 @@ const sampleCategories = [
 
 const CategoryListDemo = () => {
   return (
-    <section>
-    <div className="w-full min-h-screen bg-background ">
+    <section className='pb-0 pt-18'>
+    <div className="w-full  ">
       <CategoryList
         title="OUR OFFERING"
         // subtitle="Core Features"

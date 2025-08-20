@@ -481,8 +481,143 @@ export default function AboutUs() {
             </div>
           </section>
 
+          <section className="backlight-bottom divider-top">
+            <div className=" stg-large-gap stg-bottom-gap-l text-center w-full">
+              <h2 className="text-5xl ">OUR VALUES</h2>
+              <p className="text-lg font-bold text-white">
+                L.I.G.H.T. – Guiding Our Way Forward
+              </p>
+            </div>
+            <div
+              className="bringer-detailed-list-wrap"
+              data-appear="fade-up"
+              data-unload="fade-up"
+            >
+              <ul className="bringer-detailed-list">
+                <li>
+                  <p>L</p>
+                  <div className="w-full text-center uppercase">
+                    <h4 className="text-xl md:text-4xl">
+                    Leadership & Ownership
+                      <span className="bringer-accent">.</span>
+                    </h4>
+                  </div>
+                </li>
+               <li>
+                  <p>I</p>
+                  <div className="w-full text-center uppercase">
+                    <h4 className="text-xl md:text-4xl">
+                    Integrity
+                      <span className="bringer-accent">.</span>
+                    </h4>
+                  </div>
+                </li>
+                  <li>
+                  <p>G</p>
+                  <div className="w-full text-center uppercase">
+                    <h4 className="text-xl md:text-4xl">
+                    Growth & Innovation
+                      <span className="bringer-accent">.</span>
+                    </h4>
+                  </div>
+                </li>
+                  <li>
+                  <p>H</p>
+                  <div className="w-full text-center uppercase">
+                    <h4 className="text-xl md:text-4xl">
+                    Humility
+                      <span className="bringer-accent">.</span>
+                    </h4>
+                  </div>
+                </li>
+                  <li>
+                  <p>T</p>
+                  <div className="w-full text-center uppercase">
+                    <h4 className="text-xl md:text-4xl">
+                    TeamWork & Transparency
+                      <span className="bringer-accent">.</span>
+                    </h4>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          
+          </section>
+          <CategoryListDemo/>
+             {/* Our Passion Section */}
+          <section>
+            <div className="align-center stg-bottom-gap-l">
+              <h2 data-split-appear="fade-up" data-unload="fade-up">
+                The fire that fuels our passion.
+              </h2>
+              <p
+                className="bringer-large-text"
+                data-appear="fade-up"
+                data-delay="100"
+                data-unload="fade-up"
+              >
+                At Scale Us, we believe in the power of:
+              </p>
+            </div>
+            <div
+              className="bringer-grid-2cols"
+              data-stagger-appear="zoom-in"
+              data-delay="150"
+              data-unload="fade-up"
+            >
+              <div className="bringer-icon-box bringer-block">
+                <h4>
+                  Creativity<span className="bringer-accent">.</span>
+                </h4>
+                <p className="bringer-large-text">
+                  We dare to dream big and push boundaries, never settling for
+                  the ordinary.
+                </p>
+                <div className="bringer-box-icon">
+                  <i className="bringer-icon bringer-icon-creativity"></i>
+                </div>
+              </div>
+              <div className="bringer-icon-box bringer-block">
+                <h4>
+                  Collaboration<span className="bringer-accent">.</span>
+                </h4>
+                <p className="bringer-large-text">
+                  We thrive on diverse perspectives and believe in the magic of
+                  working together.
+                </p>
+                <div className="bringer-box-icon">
+                  <i className="bringer-icon bringer-icon-collab"></i>
+                </div>
+              </div>
+              <div className="bringer-icon-box bringer-block">
+                <h4>
+                  Impact<span className="bringer-accent">.</span>
+                </h4>
+                <p className="bringer-large-text">
+                  We're driven by a desire to make a difference, to create
+                  brands that move mountains.
+                </p>
+                <div className="bringer-box-icon">
+                  <i className="bringer-icon bringer-icon-impact"></i>
+                </div>
+              </div>
+              <div className="bringer-icon-box bringer-block">
+                <h4>
+                  Innovation<span className="bringer-accent">.</span>
+                </h4>
+                <p className="bringer-large-text">
+                  We stay ahead of the curve, embracing new technologies &
+                  trends to keep your brand on top.
+                </p>
+                <div className="bringer-box-icon">
+                  <i className="bringer-icon bringer-icon-innovation"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Team Section */}
-          <section id="section9">
+          <section id="section9" className="py-16">
             <div className="stg-row bringer-section-title">
               <div className="stg-col-8 stg-offset-2 stg-tp-col-10 stg-tp-offset-1">
                 <div className="align-center">
@@ -714,222 +849,6 @@ export default function AboutUs() {
             </Swiper>
           </section>
 
-          <section className="backlight-bottom divider-top">
-            <div className=" stg-large-gap stg-bottom-gap-l text-center w-full">
-              <h2 className="text-5xl ">OUR VALUES</h2>
-              <p className="text-lg font-bold text-white">
-                L.I.G.H.T. – Guiding Our Way Forward
-              </p>
-            </div>
-            <div
-              className="bringer-detailed-list-wrap"
-              data-appear="fade-up"
-              data-unload="fade-up"
-            >
-              <ul className="bringer-detailed-list">
-                <li>
-                  <p>L</p>
-                  <div className="w-full text-center uppercase">
-                    <h4 className="text-4xl">
-                    Leadership & Ownership
-                      <span className="bringer-accent">.</span>
-                    </h4>
-                  </div>
-                </li>
-               <li>
-                  <p>I</p>
-                  <div className="w-full text-center uppercase">
-                    <h4 className="text-4xl">
-                    Integrity
-                      <span className="bringer-accent">.</span>
-                    </h4>
-                  </div>
-                </li>
-                  <li>
-                  <p>G</p>
-                  <div className="w-full text-center uppercase">
-                    <h4 className="text-4xl">
-                    Growth & Innovation
-                      <span className="bringer-accent">.</span>
-                    </h4>
-                  </div>
-                </li>
-                  <li>
-                  <p>H</p>
-                  <div className="w-full text-center uppercase">
-                    <h4 className="text-4xl">
-                    Humility
-                      <span className="bringer-accent">.</span>
-                    </h4>
-                  </div>
-                </li>
-                  <li>
-                  <p>T</p>
-                  <div className="w-full text-center uppercase">
-                    <h4 className="text-4xl">
-                    TeamWork & Transparency
-                      <span className="bringer-accent">.</span>
-                    </h4>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          
-          </section>
-
-          {/* Services Section */}
-          {/* <section className="backlight-bottom divider-top">
-            <div className="stg-row stg-large-gap stg-bottom-gap-l">
-              <div className="stg-col-6 stg-tp-col-8 stg-tp-bottom-gap-l" data-unload="fade-left">
-                <h2 data-split-appear="fade-up">Unleashing the full spectrum of magic</h2>
-              </div>
-              <div className="stg-col-6 stg-tp-col-9 stg-tp-offset-3" data-unload="fade-right">
-                <p className="bringer-large-text" data-split-appear="fade-up" data-delay="100">We offer a diverse range of tailored services to empower businesses of all sizes to achieve their goals effectively.</p>
-                <p data-appear="fade-up" data-delay="200">
-                  We believe in a holistic approach to branding at Scale Us. From brand identity and website design to marketing campaigns and content creation, we craft strategies that enhance every aspect of your brand's digital presence.
-                </p>
-              </div>
-            </div>
-            <div className="bringer-detailed-list-wrap" data-appear="fade-up" data-unload="fade-up">
-              <ul className="bringer-detailed-list">
-                <li>
-                  <div className="bringer-detailed-list-title">
-                    <h4>Mobile Application Development<span className="bringer-accent">.</span></h4>
-                  </div>
-                  <div className="bringer-detailed-list-description">
-                    <p>At Scale Us, we specialize in crafting intuitive and high-performance mobile applications that cater to your specific business needs. From concept to deployment, our expert team ensures seamless user experiences across platforms, leveraging the latest technologies to enhance functionality and user engagement.</p>
-                  </div>
-                  <div className="bringer-detailed-list-button">
-                    <span className="bringer-icon bringer-icon-explore"></span>
-                  </div>
-                  <Link href="/services" aria-label="Mobile Application Development Service"></Link>
-                </li>
-                <li>
-                  <div className="bringer-detailed-list-title">
-                    <h4>Website Development<span className="bringer-accent">.</span></h4>
-                  </div>
-                  <div className="bringer-detailed-list-description">
-                    <p>Our website development services focus on creating responsive, dynamic, and visually appealing platforms that strengthen your online presence. Whether you need a corporate website, e-commerce site, or a custom web application, we deliver scalable solutions that align with your brand identity and business goals, ensuring optimal performance and user experience.</p>
-                  </div>
-                  <div className="bringer-detailed-list-button">
-                    <span className="bringer-icon bringer-icon-explore"></span>
-                  </div>
-                  <Link href="/services" aria-label="Website Development Service"></Link>
-                </li>
-                <li>
-                  <div className="bringer-detailed-list-title">
-                    <h4>SEO and Email Marketing<span className="bringer-accent">.</span></h4>
-                  </div>
-                  <div className="bringer-detailed-list-description">
-                    <p>Scale Us excels in enhancing digital visibility through strategic SEO techniques and effective email marketing campaigns. We analyze market trends, optimize content, and implement proven strategies to improve search engine rankings and drive organic traffic. Our personalized email marketing solutions help nurture leads, build customer relationships, and maximize conversions, ensuring measurable results and sustained growth for your business.</p>
-                  </div>
-                  <div className="bringer-detailed-list-button">
-                    <span className="bringer-icon bringer-icon-explore"></span>
-                  </div>
-                  <Link href="/services" aria-label="SEO and Email Marketing Service"></Link>
-                </li>
-                <li>
-                  <div className="bringer-detailed-list-title">
-                    <h4>Custom Software Development<span className="bringer-accent">.</span></h4>
-                  </div>
-                  <div className="bringer-detailed-list-description">
-                    <p>We specialize in developing bespoke software solutions tailored to streamline operations and drive innovation. Whether you require enterprise software, CRM systems, or specialized applications, our team combines technical expertise with industry insights to deliver scalable, secure, and efficient solutions that meet your unique business requirements.</p>
-                  </div>
-                  <div className="bringer-detailed-list-button">
-                    <span className="bringer-icon bringer-icon-explore"></span>
-                  </div>
-                  <Link href="/services" aria-label="Custom Software Development Service"></Link>
-                </li>
-                <li>
-                  <div className="bringer-detailed-list-title">
-                    <h4>Custom API and Integration<span className="bringer-accent">.</span></h4>
-                  </div>
-                  <div className="bringer-detailed-list-description">
-                    <p>Scale Us provides comprehensive API development and integration services to enhance connectivity and streamline business processes. We develop custom APIs that facilitate seamless data exchange between applications and systems, optimizing workflow efficiency and enhancing overall operational performance. Our integration solutions ensure interoperability, scalability, and flexibility, empowering your business with enhanced functionality and productivity</p>
-                  </div>
-                  <div className="bringer-detailed-list-button">
-                    <span className="bringer-icon bringer-icon-explore"></span>
-                  </div>
-                  <Link href="/services" aria-label="Custom API and Integration Service"></Link>
-                </li>
-              </ul>
-            </div>
-            <div className="align-center stg-top-gap-l" data-appear="fade-up" data-unload="fade-up">
-              <Link href="/services" className="bringer-button">Explore All Services</Link>
-            </div>
-          </section> */}
-
-          {/* Our Passion Section */}
-          <section>
-            <div className="align-center stg-bottom-gap-l">
-              <h2 data-split-appear="fade-up" data-unload="fade-up">
-                The fire that fuels our passion.
-              </h2>
-              <p
-                className="bringer-large-text"
-                data-appear="fade-up"
-                data-delay="100"
-                data-unload="fade-up"
-              >
-                At Scale Us, we believe in the power of:
-              </p>
-            </div>
-            <div
-              className="bringer-grid-2cols"
-              data-stagger-appear="zoom-in"
-              data-delay="150"
-              data-unload="fade-up"
-            >
-              <div className="bringer-icon-box bringer-block">
-                <h4>
-                  Creativity<span className="bringer-accent">.</span>
-                </h4>
-                <p className="bringer-large-text">
-                  We dare to dream big and push boundaries, never settling for
-                  the ordinary.
-                </p>
-                <div className="bringer-box-icon">
-                  <i className="bringer-icon bringer-icon-creativity"></i>
-                </div>
-              </div>
-              <div className="bringer-icon-box bringer-block">
-                <h4>
-                  Collaboration<span className="bringer-accent">.</span>
-                </h4>
-                <p className="bringer-large-text">
-                  We thrive on diverse perspectives and believe in the magic of
-                  working together.
-                </p>
-                <div className="bringer-box-icon">
-                  <i className="bringer-icon bringer-icon-collab"></i>
-                </div>
-              </div>
-              <div className="bringer-icon-box bringer-block">
-                <h4>
-                  Impact<span className="bringer-accent">.</span>
-                </h4>
-                <p className="bringer-large-text">
-                  We're driven by a desire to make a difference, to create
-                  brands that move mountains.
-                </p>
-                <div className="bringer-box-icon">
-                  <i className="bringer-icon bringer-icon-impact"></i>
-                </div>
-              </div>
-              <div className="bringer-icon-box bringer-block">
-                <h4>
-                  Innovation<span className="bringer-accent">.</span>
-                </h4>
-                <p className="bringer-large-text">
-                  We stay ahead of the curve, embracing new technologies &
-                  trends to keep your brand on top.
-                </p>
-                <div className="bringer-box-icon">
-                  <i className="bringer-icon bringer-icon-innovation"></i>
-                </div>
-              </div>
-            </div>
-          </section>
 
           {/* What Makes Us Best Section */}
           <section className="backlight-bottom">
@@ -1073,7 +992,7 @@ export default function AboutUs() {
             </div>
           </section>
 
-<CategoryListDemo/>
+
           {/* Grid CTA Section */}
           <section className="backlight-top">
             <div className="bringer-bento-grid bringer-grid-cta">

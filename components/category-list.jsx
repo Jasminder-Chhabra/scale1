@@ -12,7 +12,7 @@ export const CategoryList = ({
   const [hoveredItem, setHoveredItem] = useState(null);
 
   return (
-    <div className={cn("w-full bg-background text-foreground p-8", className)}>
+    <div className={cn("w-full  text-foreground p-8", className)}>
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12 md:mb-16 ">
@@ -60,7 +60,7 @@ export const CategoryList = ({
                 )}
 
                 {/* Content */}
-                <div className="flex items-center justify-between h-full px-6 md:px-8">
+                <div className="flex items-center justify-between bg-[#22262C] h-full px-6 md:px-8">
                   <div className="flex-1">
                     <h3
                       className={cn(
