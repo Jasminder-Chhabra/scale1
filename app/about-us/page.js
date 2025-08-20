@@ -1,43 +1,44 @@
 // app/about-us/page.js
 "use client";
 
-import { useEffect , useState } from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
-import Script from 'next/script';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Pagination } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import { useEffect, useState } from "react";
+import Head from "next/head";
+import Link from "next/link";
+import Script from "next/script";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
 
 SwiperCore.use([Pagination]);
 
 // Import CSS files (ensure these are in /public/css/)
 import ".././globals.css";
-import '../../public/css/config.css';
-import '../../public/css/libs.css';
-import '../../public/css/style.css';
-import '../../public/css/responsive.css';
-import Header from '@/components/Header';
-import AnimatedSection from '@/components/ui/DevelopmentService';
-import MobileServicesSection from '@/components/ui/DevelopmentWebsiteMobile';
-import Footer from '@/components/Footer';
+import "../../public/css/config.css";
+import "../../public/css/libs.css";
+import "../../public/css/style.css";
+import "../../public/css/responsive.css";
+import Header from "@/components/Header";
+import AnimatedSection from "@/components/ui/DevelopmentService";
+import MobileServicesSection from "@/components/ui/DevelopmentWebsiteMobile";
+import Footer from "@/components/Footer";
+import CategoryListDemo from "@/components/AboutSec";
 
 export default function AboutUs() {
   // Spotlight Fallback
   useEffect(() => {
-    const backlight = document.querySelector('.bringer-backlight');
+    const backlight = document.querySelector(".bringer-backlight");
     if (!backlight) return;
 
     const moveBacklight = (e) => {
-      backlight.style.setProperty('--mouse-x', `${e.clientX}px`);
-      backlight.style.setProperty('--mouse-y', `${e.clientY}px`);
+      backlight.style.setProperty("--mouse-x", `${e.clientX}px`);
+      backlight.style.setProperty("--mouse-y", `${e.clientY}px`);
     };
 
-    document.addEventListener('mousemove', moveBacklight);
+    document.addEventListener("mousemove", moveBacklight);
 
     return () => {
-      document.removeEventListener('mousemove', moveBacklight);
+      document.removeEventListener("mousemove", moveBacklight);
     };
   }, []);
 
@@ -47,21 +48,20 @@ export default function AboutUs() {
 
     const handleContextMenu = (e) => {
       e.preventDefault();
-      const rcpWrap = document.querySelector('.bringer-rcp-wrap');
+      const rcpWrap = document.querySelector(".bringer-rcp-wrap");
       if (rcpWrap) {
-        document.body.classList.add('rcp-show');
+        document.body.classList.add("rcp-show");
         clearTimeout(timeoutId);
         timeoutId = setTimeout(() => {
-          document.body.classList.remove('rcp-show');
+          document.body.classList.remove("rcp-show");
         }, 2000);
       }
     };
 
-
-    document.addEventListener('contextmenu', handleContextMenu);
+    document.addEventListener("contextmenu", handleContextMenu);
 
     return () => {
-      document.removeEventListener('contextmenu', handleContextMenu);
+      document.removeEventListener("contextmenu", handleContextMenu);
       clearTimeout(timeoutId);
     };
   }, []);
@@ -71,19 +71,30 @@ export default function AboutUs() {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Learn about Scale Us Technologies, a dynamic IT software development and mobile app, website development startup. Discover our mission, vision, and the dedicated team behind our innovative solutions." />
+        <meta
+          name="description"
+          content="Learn about Scale Us Technologies, a dynamic IT software development and mobile app, website development startup. Discover our mission, vision, and the dedicated team behind our innovative solutions."
+        />
         <title>About Us - Scale Us</title>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+          rel="stylesheet"
+        />
         <link rel="icon" href="/img/favicon.svg" sizes="32x32" />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PPS5N5K987"></script>
-        <script dangerouslySetInnerHTML={{
-          __html: `
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-PPS5N5K987"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-PPS5N5K987');
-          `
-        }} />
+          `,
+          }}
+        />
         <style>{`
   :root {
     --stea-move: var(--stg-gap);
@@ -225,7 +236,7 @@ export default function AboutUs() {
       </Head>
 
       {/* Header */}
-<Header/>
+      <Header />
 
       {/* Main Content */}
       <main id="bringer-main">
@@ -234,9 +245,22 @@ export default function AboutUs() {
           <section className="backlight-bottom">
             <div className="stg-row">
               <div className="stg-col-6 stg-offset-3 align-center stg-tp-col-10 stg-tp-offset-1">
-                <h1 className="bringer-page-title" data-appear="fade-up" data-unload="fade-up">About Us</h1>
-                <p className="bringer-large-text" data-split-appear="fade-up" data-split-unload="fade-up" data-delay="100">
-                  We are a passionate team at Scale US, dedicated to harnessing the power ✨ of creativity through innovative technology solutions.
+                <h1
+                  className="bringer-page-title"
+                  data-appear="fade-up"
+                  data-unload="fade-up"
+                >
+                  About Us
+                </h1>
+                <p
+                  className="bringer-large-text"
+                  data-split-appear="fade-up"
+                  data-split-unload="fade-up"
+                  data-delay="100"
+                >
+                  We are a passionate team at Scale US, dedicated to harnessing
+                  the power ✨ of creativity through innovative technology
+                  solutions.
                 </p>
               </div>
             </div>
@@ -247,61 +271,158 @@ export default function AboutUs() {
             <div className="bringer-hero-block bringer-hero-type01">
               <div className="stg-row stg-bottom-gap-l stg-m-bottom-gap-l">
                 <div className="stg-col-9 stg-tp-col-8 stg-m-col-12">
-                  <h1 className="bringer-page-title" data-split-appear="fade-up" data-split-unload="fade-up">Unleash Your Creativity And Bring IT to Reality</h1>
+                  <h1
+                    className="bringer-page-title"
+                    data-split-appear="fade-up"
+                    data-split-unload="fade-up"
+                  >
+                    Unleash Your Creativity And Bring IT to Reality
+                  </h1>
                 </div>
                 <div className="stg-col-3 stg-tp-col-4 stg-m-col-12">
                   <div className="bringer-hero-social-proof">
-                    <div data-stagger-appear="fade-up" data-stagger-delay="100" data-stagger-unload="fade-up">
-                      <img src="/img/home/social-proof01.webp" alt="Client 01" />
-                      <img src="/img/home/social-proof02.webp" alt="Client 02" />
-                      <img src="/img/home/social-proof03.webp" alt="Client 03" />
+                    <div
+                      data-stagger-appear="fade-up"
+                      data-stagger-delay="100"
+                      data-stagger-unload="fade-up"
+                    >
+                      <img
+                        src="/img/home/social-proof01.webp"
+                        alt="Client 01"
+                      />
+                      <img
+                        src="/img/home/social-proof02.webp"
+                        alt="Client 02"
+                      />
+                      <img
+                        src="/img/home/social-proof03.webp"
+                        alt="Client 03"
+                      />
                       <Link href="/#testimonials-section">150+</Link>
                     </div>
-                    <p data-appear="fade-up" data-unload="fade-up" data-delay="200">Trusted by 150+ clients</p>
+                    <p
+                      data-appear="fade-up"
+                      data-unload="fade-up"
+                      data-delay="200"
+                    >
+                      Trusted by 150+ clients
+                    </p>
                   </div>
                 </div>
               </div>
-              <div className="bringer-hero-media-wrap bringer-masked-bottom-right bringer-masked-block stg-bottom-gap-l" data-appear="zoom-out" data-unload="zoom-out">
+              <div
+                className="bringer-hero-media-wrap bringer-masked-bottom-right bringer-masked-block stg-bottom-gap-l"
+                data-appear="zoom-out"
+                data-unload="zoom-out"
+              >
                 <div className="bringer-masked-media bringer-parallax-media">
-                  <img src="/img/01-hero-scaleUS.svg" alt="Unleash Your Creativity" />
+                  <img
+                    src="/img/01-hero-scaleUS.svg"
+                    alt="Unleash Your Creativity"
+                  />
                 </div>
                 <div className="bringer-masked-content at-bottom-right">
-                  <a href="#section9" className="bringer-square-button" data-appear="fade-left">
-                    <div className="is-small" data-appear="zoom-out" data-delay="200" data-unload="zoom-out">
-                      <img src="/img/about-scaleus1.svg" alt="Let's Chat" width="960" height="960" />
+                  <a
+                    href="#section9"
+                    className="bringer-square-button"
+                    data-appear="fade-left"
+                  >
+                    <div
+                      className="is-small"
+                      data-appear="zoom-out"
+                      data-delay="200"
+                      data-unload="zoom-out"
+                    >
+                      <img
+                        src="/img/about-scaleus1.svg"
+                        alt="Let's Chat"
+                        width="960"
+                        height="960"
+                      />
                     </div>
                   </a>
                 </div>
               </div>
               <div className="stg-row stg-valign-bottom">
-                <div className="stg-col-3 stg-tp-col-3 stg-m-col-6" data-appear="fade-up" data-delay="200" data-unload="fade-up">
-                  <div className="bringer-counter bringer-small-counter" data-delay="3000">
-                    <div className="bringer-counter-number" data-suffix="+">150</div>
-                    <div className="bringer-counter-label">Completed Projects</div>
+                <div
+                  className="stg-col-3 stg-tp-col-3 stg-m-col-6"
+                  data-appear="fade-up"
+                  data-delay="200"
+                  data-unload="fade-up"
+                >
+                  <div
+                    className="bringer-counter bringer-small-counter"
+                    data-delay="3000"
+                  >
+                    <div className="bringer-counter-number" data-suffix="+">
+                      150
+                    </div>
+                    <div className="bringer-counter-label">
+                      Completed Projects
+                    </div>
                   </div>
                 </div>
-                <div className="stg-col-3 stg-tp-col-3 stg-m-col-6" data-appear="fade-up" data-delay="300" data-unload="fade-up">
-                  <div className="bringer-counter bringer-small-counter" data-delay="3000">
-                    <div className="bringer-counter-number" data-suffix="+">10</div>
-                    <div className="bringer-counter-label">Years of Experience</div>
+                <div
+                  className="stg-col-3 stg-tp-col-3 stg-m-col-6"
+                  data-appear="fade-up"
+                  data-delay="300"
+                  data-unload="fade-up"
+                >
+                  <div
+                    className="bringer-counter bringer-small-counter"
+                    data-delay="3000"
+                  >
+                    <div className="bringer-counter-number" data-suffix="+">
+                      10
+                    </div>
+                    <div className="bringer-counter-label">
+                      Years of Experience
+                    </div>
                   </div>
                 </div>
-                <div className="stg-col-6 stg-tp-col-6 stg-m-col-12 stg-m-top-gap mobile-tablet-only" data-appear="fade-up" data-delay="400" data-unload="fade-up">
-                  <p className="bringer-large-text">We help businesses and professionals showcase their work and connect with clients through innovative digital solutions.</p>
+                <div
+                  className="stg-col-6 stg-tp-col-6 stg-m-col-12 stg-m-top-gap mobile-tablet-only"
+                  data-appear="fade-up"
+                  data-delay="400"
+                  data-unload="fade-up"
+                >
+                  <p className="bringer-large-text">
+                    We help businesses and professionals showcase their work and
+                    connect with clients through innovative digital solutions.
+                  </p>
                 </div>
-                <div className="stg-col-6 stg-tp-col-6 stg-m-col-12 stg-m-top-gap desktop-only" data-appear="fade-up" data-delay="400" data-unload="fade-up" style={{ marginLeft: '45px' }}>
-                  <p className="bringer-large-text">We help businesses and professionals showcase their work and connect with clients through innovative digital solutions.</p>
+                <div
+                  className="stg-col-6 stg-tp-col-6 stg-m-col-12 stg-m-top-gap desktop-only"
+                  data-appear="fade-up"
+                  data-delay="400"
+                  data-unload="fade-up"
+                  style={{ marginLeft: "45px" }}
+                >
+                  <p className="bringer-large-text">
+                    We help businesses and professionals showcase their work and
+                    connect with clients through innovative digital solutions.
+                  </p>
                 </div>
               </div>
             </div>
-            <br /><br />
+            <br />
+            <br />
             <div className="stg-row stg-large-gap stg-tp-normal-gap">
-              <div className="stg-col-6 stg-vertical-space-between stg-tp-bottom-gap-l desktop-only" data-unload="fade-left">
-                <h2 data-split-appear="fade-up">Igniting brands that spark movements.</h2>
+              <div
+                className="stg-col-6 stg-vertical-space-between stg-tp-bottom-gap-l desktop-only"
+                data-unload="fade-left"
+              >
+                <h2 data-split-appear="fade-up">
+                  Igniting brands that spark movements.
+                </h2>
                 <div className="align-right" data-appear="fade-right">
                   <Link href="/portfolio" className="bringer-icon-link">
                     <div className="bringer-icon-link-content">
-                      <h6>Unleash your<br />Brand's potential</h6>
+                      <h6>
+                        Unleash your
+                        <br />
+                        Brand's potential
+                      </h6>
                       <span className="bringer-label">Explore our work</span>
                     </div>
                     <div className="bringer-icon-wrap">
@@ -310,17 +431,45 @@ export default function AboutUs() {
                   </Link>
                 </div>
               </div>
-              <div className="stg-col-6" data-appear="fade-left" data-unload="fade-right" data-delay="100">
-                <p>At Scale US, we are more than creatives; we are brand strategists and digital architects. We take your vision, infuse it with strategic insight, and create compelling experiences that captivate audiences and drive engagement. We build not just brands, but impactful digital solutions that propel businesses forward.</p>
-                <p>We are a team of passionate and experienced professionals at Scale US, dedicated to helping businesses achieve their goals through creativity and innovation. We believe in unleashing our clients' full potential, crafting solutions that drive success and growth.</p>
-                <p>We empower businesses to build compelling online presences that showcase their work and tell their unique stories.</p>
+              <div
+                className="stg-col-6"
+                data-appear="fade-left"
+                data-unload="fade-right"
+                data-delay="100"
+              >
+                <p>
+                  At Scale US, we are more than creatives; we are brand
+                  strategists and digital architects. We take your vision,
+                  infuse it with strategic insight, and create compelling
+                  experiences that captivate audiences and drive engagement. We
+                  build not just brands, but impactful digital solutions that
+                  propel businesses forward.
+                </p>
+                <p>
+                  We are a team of passionate and experienced professionals at
+                  Scale US, dedicated to helping businesses achieve their goals
+                  through creativity and innovation. We believe in unleashing
+                  our clients' full potential, crafting solutions that drive
+                  success and growth.
+                </p>
+                <p>
+                  We empower businesses to build compelling online presences
+                  that showcase their work and tell their unique stories.
+                </p>
               </div>
-              <div className="stg-col-6 stg-vertical-space-between stg-tp-bottom-gap-l mobile-tablet-only" data-unload="fade-left">
+              <div
+                className="stg-col-6 stg-vertical-space-between stg-tp-bottom-gap-l mobile-tablet-only"
+                data-unload="fade-left"
+              >
                 <br />
                 <div className="align-right" data-appear="fade-right">
                   <Link href="/portfolio" className="bringer-icon-link">
                     <div className="bringer-icon-link-content">
-                      <h6>Unleash your<br />Brand's potential</h6>
+                      <h6>
+                        Unleash your
+                        <br />
+                        Brand's potential
+                      </h6>
                       <span className="bringer-label">Explore our work</span>
                     </div>
                     <div className="bringer-icon-wrap">
@@ -337,9 +486,18 @@ export default function AboutUs() {
             <div className="stg-row bringer-section-title">
               <div className="stg-col-8 stg-offset-2 stg-tp-col-10 stg-tp-offset-1">
                 <div className="align-center">
-                  <h2 data-appear="fade-up" data-unload="fade-up">Meet the Team</h2>
-                  <p className="bringer-large-text" data-split-appear="fade-up" data-split-unload="fade-up" data-delay="100">
-                    We are a team of passionate and experienced professionals at Scale US, dedicated to helping businesses achieve their goals through innovative solutions and expert guidance.
+                  <h2 data-appear="fade-up" data-unload="fade-up">
+                    Meet the Team
+                  </h2>
+                  <p
+                    className="bringer-large-text"
+                    data-split-appear="fade-up"
+                    data-split-unload="fade-up"
+                    data-delay="100"
+                  >
+                    We are a team of passionate and experienced professionals at
+                    Scale US, dedicated to helping businesses achieve their
+                    goals through innovative solutions and expert guidance.
                   </p>
                 </div>
               </div>
@@ -349,7 +507,7 @@ export default function AboutUs() {
               spaceBetween={30}
               slidesPerView={4}
               loop={false}
-              pagination={{ clickable: true, el: '.swiper-pagination' }}
+              pagination={{ clickable: true, el: ".swiper-pagination" }}
               data-appear="fade-up"
               data-delay="200"
               data-tp-centered="0"
@@ -362,94 +520,265 @@ export default function AboutUs() {
             >
               <SwiperSlide className="bringer-block bringer-carousel-card">
                 <div className="bringer-carousel-card-image">
-                  <img className="bringer-lazy" src="/img/null.png" data-src="/img/team/team04.webp" alt="Vidhi Chhabra" width="600" height="350" />
+                  <img
+                    className="bringer-lazy"
+                    src="/img/null.png"
+                    data-src="/img/team/team04.webp"
+                    alt="Vidhi Chhabra"
+                    width="600"
+                    height="350"
+                  />
                 </div>
                 <div className="bringer-carousel-card-footer">
                   <div className="bringer-carousel-card-title">
                     <span className="bringer-meta">VP, Human Resources</span>
                     <h6>Vidhi Chhabra</h6>
                   </div>
-                  <span className="bringer-icon bringer-icon-explore" onClick={() => window.open('https://www.linkedin.com/company/scale-us-technologies/', '_blank')}></span>
+                  <span
+                    className="bringer-icon bringer-icon-explore"
+                    onClick={() =>
+                      window.open(
+                        "https://www.linkedin.com/company/scale-us-technologies/",
+                        "_blank"
+                      )
+                    }
+                  ></span>
                 </div>
               </SwiperSlide>
               <SwiperSlide className="bringer-block bringer-carousel-card">
                 <div className="bringer-carousel-card-image">
-                  <img className="bringer-lazy" src="/img/null.png" data-src="/img/team/team02.webp" alt="Jaspal Singh" width="600" height="350" />
+                  <img
+                    className="bringer-lazy"
+                    src="/img/null.png"
+                    data-src="/img/team/team02.webp"
+                    alt="Jaspal Singh"
+                    width="600"
+                    height="350"
+                  />
                 </div>
                 <div className="bringer-carousel-card-footer">
                   <div className="bringer-carousel-card-title">
                     <span className="bringer-meta">Chairman & Director</span>
                     <h6>Jaspal Singh</h6>
                   </div>
-                  <span className="bringer-icon bringer-icon-explore" onClick={() => window.open('https://www.linkedin.com/company/scale-us-technologies/', '_blank')}></span>
+                  <span
+                    className="bringer-icon bringer-icon-explore"
+                    onClick={() =>
+                      window.open(
+                        "https://www.linkedin.com/company/scale-us-technologies/",
+                        "_blank"
+                      )
+                    }
+                  ></span>
                 </div>
               </SwiperSlide>
               <SwiperSlide className="bringer-block bringer-carousel-card">
                 <div className="bringer-carousel-card-image">
-                  <img className="bringer-lazy" src="/img/null.png" data-src="/img/team/team01.webp" alt="Jasminder Singh" width="600" height="350" />
+                  <img
+                    className="bringer-lazy"
+                    src="/img/null.png"
+                    data-src="/img/team/team01.webp"
+                    alt="Jasminder Singh"
+                    width="600"
+                    height="350"
+                  />
                 </div>
                 <div className="bringer-carousel-card-footer">
                   <div className="bringer-carousel-card-title">
                     <span className="bringer-meta">Founder & CEO</span>
                     <h6>Jasminder Singh</h6>
                   </div>
-                  <span className="bringer-icon bringer-icon-explore" onClick={() => window.open('https://www.linkedin.com/in/jasminder-singh-chhabra/', '_blank')}></span>
+                  <span
+                    className="bringer-icon bringer-icon-explore"
+                    onClick={() =>
+                      window.open(
+                        "https://www.linkedin.com/in/jasminder-singh-chhabra/",
+                        "_blank"
+                      )
+                    }
+                  ></span>
                 </div>
               </SwiperSlide>
               <SwiperSlide className="bringer-block bringer-carousel-card">
                 <div className="bringer-carousel-card-image">
-                  <img className="bringer-lazy" src="/img/null.png" data-src="/img/team/team02.webp" alt="Jaspal Singh" width="600" height="350" />
+                  <img
+                    className="bringer-lazy"
+                    src="/img/null.png"
+                    data-src="/img/team/team02.webp"
+                    alt="Jaspal Singh"
+                    width="600"
+                    height="350"
+                  />
                 </div>
                 <div className="bringer-carousel-card-footer">
                   <div className="bringer-carousel-card-title">
                     <span className="bringer-meta">Chairman & Director</span>
                     <h6>Jaspal Singh</h6>
                   </div>
-                  <span className="bringer-icon bringer-icon-explore" onClick={() => window.open('https://www.linkedin.com/company/scale-us-technologies/', '_blank')}></span>
+                  <span
+                    className="bringer-icon bringer-icon-explore"
+                    onClick={() =>
+                      window.open(
+                        "https://www.linkedin.com/company/scale-us-technologies/",
+                        "_blank"
+                      )
+                    }
+                  ></span>
                 </div>
               </SwiperSlide>
               <SwiperSlide className="bringer-block bringer-carousel-card">
                 <div className="bringer-carousel-card-image">
-                  <img className="bringer-lazy" src="/img/null.png" data-src="/img/team/team03.webp" alt="Harjeet Kaur" width="600" height="350" />
+                  <img
+                    className="bringer-lazy"
+                    src="/img/null.png"
+                    data-src="/img/team/team03.webp"
+                    alt="Harjeet Kaur"
+                    width="600"
+                    height="350"
+                  />
                 </div>
                 <div className="bringer-carousel-card-footer">
                   <div className="bringer-carousel-card-title">
                     <span className="bringer-meta">Director</span>
                     <h6>Harjeet Kaur</h6>
                   </div>
-                  <span className="bringer-icon bringer-icon-explore" onClick={() => window.open('https://www.linkedin.com/company/scale-us-technologies/', '_blank')}></span>
+                  <span
+                    className="bringer-icon bringer-icon-explore"
+                    onClick={() =>
+                      window.open(
+                        "https://www.linkedin.com/company/scale-us-technologies/",
+                        "_blank"
+                      )
+                    }
+                  ></span>
                 </div>
               </SwiperSlide>
               <SwiperSlide className="bringer-block bringer-carousel-card">
                 <div className="bringer-carousel-card-image">
-                  <img className="bringer-lazy" src="/img/null.png" data-src="/img/team/team04.webp" alt="Vidhi Chhabra" width="600" height="350" />
+                  <img
+                    className="bringer-lazy"
+                    src="/img/null.png"
+                    data-src="/img/team/team04.webp"
+                    alt="Vidhi Chhabra"
+                    width="600"
+                    height="350"
+                  />
                 </div>
                 <div className="bringer-carousel-card-footer">
                   <div className="bringer-carousel-card-title">
                     <span className="bringer-meta">VP, Human Resources</span>
                     <h6>Vidhi Chhabra</h6>
                   </div>
-                  <span className="bringer-icon bringer-icon-explore" onClick={() => window.open('https://www.linkedin.com/company/scale-us-technologies/', '_blank')}></span>
+                  <span
+                    className="bringer-icon bringer-icon-explore"
+                    onClick={() =>
+                      window.open(
+                        "https://www.linkedin.com/company/scale-us-technologies/",
+                        "_blank"
+                      )
+                    }
+                  ></span>
                 </div>
               </SwiperSlide>
               <SwiperSlide className="bringer-block bringer-carousel-card">
                 <div className="bringer-carousel-card-image">
-                  <img className="bringer-lazy" src="/img/null.png" data-src="/img/team/team01.webp" alt="Jasminder Singh" width="600" height="350" />
+                  <img
+                    className="bringer-lazy"
+                    src="/img/null.png"
+                    data-src="/img/team/team01.webp"
+                    alt="Jasminder Singh"
+                    width="600"
+                    height="350"
+                  />
                 </div>
                 <div className="bringer-carousel-card-footer">
                   <div className="bringer-carousel-card-title">
                     <span className="bringer-meta">Founder & CEO</span>
                     <h6>Jasminder Singh</h6>
                   </div>
-                  <span className="bringer-icon bringer-icon-explore" onClick={() => window.open('https://www.linkedin.com/in/jasminder-singh-chhabra/', '_blank')}></span>
+                  <span
+                    className="bringer-icon bringer-icon-explore"
+                    onClick={() =>
+                      window.open(
+                        "https://www.linkedin.com/in/jasminder-singh-chhabra/",
+                        "_blank"
+                      )
+                    }
+                  ></span>
                 </div>
               </SwiperSlide>
-              <div className="swiper-pagination bringer-dots" slot="pagination"></div>
+              <div
+                className="swiper-pagination bringer-dots"
+                slot="pagination"
+              ></div>
             </Swiper>
           </section>
 
-          {/* Services Section */}
           <section className="backlight-bottom divider-top">
+            <div className=" stg-large-gap stg-bottom-gap-l text-center w-full">
+              <h2 className="text-5xl ">OUR VALUES</h2>
+              <p className="text-lg font-bold text-white">
+                L.I.G.H.T. – Guiding Our Way Forward
+              </p>
+            </div>
+            <div
+              className="bringer-detailed-list-wrap"
+              data-appear="fade-up"
+              data-unload="fade-up"
+            >
+              <ul className="bringer-detailed-list">
+                <li>
+                  <p>L</p>
+                  <div className="w-full text-center uppercase">
+                    <h4 className="text-4xl">
+                    Leadership & Ownership
+                      <span className="bringer-accent">.</span>
+                    </h4>
+                  </div>
+                </li>
+               <li>
+                  <p>I</p>
+                  <div className="w-full text-center uppercase">
+                    <h4 className="text-4xl">
+                    Integrity
+                      <span className="bringer-accent">.</span>
+                    </h4>
+                  </div>
+                </li>
+                  <li>
+                  <p>G</p>
+                  <div className="w-full text-center uppercase">
+                    <h4 className="text-4xl">
+                    Growth & Innovation
+                      <span className="bringer-accent">.</span>
+                    </h4>
+                  </div>
+                </li>
+                  <li>
+                  <p>H</p>
+                  <div className="w-full text-center uppercase">
+                    <h4 className="text-4xl">
+                    Humility
+                      <span className="bringer-accent">.</span>
+                    </h4>
+                  </div>
+                </li>
+                  <li>
+                  <p>T</p>
+                  <div className="w-full text-center uppercase">
+                    <h4 className="text-4xl">
+                    TeamWork & Transparency
+                      <span className="bringer-accent">.</span>
+                    </h4>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          
+          </section>
+
+          {/* Services Section */}
+          {/* <section className="backlight-bottom divider-top">
             <div className="stg-row stg-large-gap stg-bottom-gap-l">
               <div className="stg-col-6 stg-tp-col-8 stg-tp-bottom-gap-l" data-unload="fade-left">
                 <h2 data-split-appear="fade-up">Unleashing the full spectrum of magic</h2>
@@ -528,39 +857,73 @@ export default function AboutUs() {
             <div className="align-center stg-top-gap-l" data-appear="fade-up" data-unload="fade-up">
               <Link href="/services" className="bringer-button">Explore All Services</Link>
             </div>
-          </section>
-     
+          </section> */}
+
           {/* Our Passion Section */}
           <section>
             <div className="align-center stg-bottom-gap-l">
-              <h2 data-split-appear="fade-up" data-unload="fade-up">The fire that fuels our passion.</h2>
-              <p className="bringer-large-text" data-appear="fade-up" data-delay="100" data-unload="fade-up">At Scale Us, we believe in the power of:</p>
+              <h2 data-split-appear="fade-up" data-unload="fade-up">
+                The fire that fuels our passion.
+              </h2>
+              <p
+                className="bringer-large-text"
+                data-appear="fade-up"
+                data-delay="100"
+                data-unload="fade-up"
+              >
+                At Scale Us, we believe in the power of:
+              </p>
             </div>
-            <div className="bringer-grid-2cols" data-stagger-appear="zoom-in" data-delay="150" data-unload="fade-up">
+            <div
+              className="bringer-grid-2cols"
+              data-stagger-appear="zoom-in"
+              data-delay="150"
+              data-unload="fade-up"
+            >
               <div className="bringer-icon-box bringer-block">
-                <h4>Creativity<span className="bringer-accent">.</span></h4>
-                <p className="bringer-large-text">We dare to dream big and push boundaries, never settling for the ordinary.</p>
+                <h4>
+                  Creativity<span className="bringer-accent">.</span>
+                </h4>
+                <p className="bringer-large-text">
+                  We dare to dream big and push boundaries, never settling for
+                  the ordinary.
+                </p>
                 <div className="bringer-box-icon">
                   <i className="bringer-icon bringer-icon-creativity"></i>
                 </div>
               </div>
               <div className="bringer-icon-box bringer-block">
-                <h4>Collaboration<span className="bringer-accent">.</span></h4>
-                <p className="bringer-large-text">We thrive on diverse perspectives and believe in the magic of working together.</p>
+                <h4>
+                  Collaboration<span className="bringer-accent">.</span>
+                </h4>
+                <p className="bringer-large-text">
+                  We thrive on diverse perspectives and believe in the magic of
+                  working together.
+                </p>
                 <div className="bringer-box-icon">
                   <i className="bringer-icon bringer-icon-collab"></i>
                 </div>
               </div>
               <div className="bringer-icon-box bringer-block">
-                <h4>Impact<span className="bringer-accent">.</span></h4>
-                <p className="bringer-large-text">We're driven by a desire to make a difference, to create brands that move mountains.</p>
+                <h4>
+                  Impact<span className="bringer-accent">.</span>
+                </h4>
+                <p className="bringer-large-text">
+                  We're driven by a desire to make a difference, to create
+                  brands that move mountains.
+                </p>
                 <div className="bringer-box-icon">
                   <i className="bringer-icon bringer-icon-impact"></i>
                 </div>
               </div>
               <div className="bringer-icon-box bringer-block">
-                <h4>Innovation<span className="bringer-accent">.</span></h4>
-                <p className="bringer-large-text">We stay ahead of the curve, embracing new technologies & trends to keep your brand on top.</p>
+                <h4>
+                  Innovation<span className="bringer-accent">.</span>
+                </h4>
+                <p className="bringer-large-text">
+                  We stay ahead of the curve, embracing new technologies &
+                  trends to keep your brand on top.
+                </p>
                 <div className="bringer-box-icon">
                   <i className="bringer-icon bringer-icon-innovation"></i>
                 </div>
@@ -573,84 +936,210 @@ export default function AboutUs() {
             <div className="stg-row bringer-section-title">
               <div className="stg-col-8 stg-offset-2">
                 <div className="align-center">
-                  <h2 data-appear="fade-up" data-unload="fade-up">What Makes Us Best</h2>
-                  <p className="bringer-large-text" data-appear="fade-up" data-delay="100" data-unload="fade-up">
-                    We are a passionate team at Scale Us who believes in the power of creativity. We empower businesses to establish a compelling online presence that showcases their achievements and narratives effectively.
+                  <h2 data-appear="fade-up" data-unload="fade-up">
+                    What Makes Us Best
+                  </h2>
+                  <p
+                    className="bringer-large-text"
+                    data-appear="fade-up"
+                    data-delay="100"
+                    data-unload="fade-up"
+                  >
+                    We are a passionate team at Scale Us who believes in the
+                    power of creativity. We empower businesses to establish a
+                    compelling online presence that showcases their achievements
+                    and narratives effectively.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="bringer-grid-2cols bringer-tp-grid-1col" data-stagger-appear="zoom-in" data-stagger-delay="100" data-delay="100" data-unload="fade-up">
+            <div
+              className="bringer-grid-2cols bringer-tp-grid-1col"
+              data-stagger-appear="zoom-in"
+              data-stagger-delay="100"
+              data-delay="100"
+              data-unload="fade-up"
+            >
               <div className="bringer-block">
-                <h4>We don't just design, we <span className="bringer-accent">unleash creative</span> firestorms<span className="bringer-accent">.</span></h4>
-                <p>At Scale Us, we unleash creative firestorms. Our approach goes beyond conventional boundaries to push the limits of innovation. We're passionate about crafting dynamic and transformative solutions that inspire, captivate, and drive measurable success for our clients. From conceptualization to execution, we ignite creativity to deliver impactful outcomes that redefine possibilities in digital solutions</p>
+                <h4>
+                  We don't just design, we{" "}
+                  <span className="bringer-accent">unleash creative</span>{" "}
+                  firestorms<span className="bringer-accent">.</span>
+                </h4>
+                <p>
+                  At Scale Us, we unleash creative firestorms. Our approach goes
+                  beyond conventional boundaries to push the limits of
+                  innovation. We're passionate about crafting dynamic and
+                  transformative solutions that inspire, captivate, and drive
+                  measurable success for our clients. From conceptualization to
+                  execution, we ignite creativity to deliver impactful outcomes
+                  that redefine possibilities in digital solutions
+                </p>
               </div>
               <div className="bringer-block">
-                <h4>We <span className="bringer-accent">fuel creativity</span> with data, guide passion with precision<span className="bringer-accent">.</span></h4>
-                <p>At Scale Us, we integrate advanced analytics with strategic expertise to ensure our tech solutions are both innovative and meticulously executed. This approach guarantees that our solutions not only meet but exceed expectations, delivering impactful results for your business.</p>
+                <h4>
+                  We <span className="bringer-accent">fuel creativity</span>{" "}
+                  with data, guide passion with precision
+                  <span className="bringer-accent">.</span>
+                </h4>
+                <p>
+                  At Scale Us, we integrate advanced analytics with strategic
+                  expertise to ensure our tech solutions are both innovative and
+                  meticulously executed. This approach guarantees that our
+                  solutions not only meet but exceed expectations, delivering
+                  impactful results for your business.
+                </p>
               </div>
               <div className="bringer-block">
-                <h4>We craft <span className="bringer-accent">emotional connections</span>, not just visuals and copy<span className="bringer-accent">.</span></h4>
-                <p>At Scale Us, we create immersive digital experiences that resonate deeply with your audience, leveraging innovative solutions to drive engagement and foster lasting connections.</p>
+                <h4>
+                  We craft{" "}
+                  <span className="bringer-accent">emotional connections</span>,
+                  not just visuals and copy
+                  <span className="bringer-accent">.</span>
+                </h4>
+                <p>
+                  At Scale Us, we create immersive digital experiences that
+                  resonate deeply with your audience, leveraging innovative
+                  solutions to drive engagement and foster lasting connections.
+                </p>
               </div>
               <div className="bringer-block">
-                <h4>We don't just work with you, we become your <span className="bringer-accent">tech champions.</span></h4>
-                <p>At Scale Us, we become your tech champions. Our dedicated team goes beyond partnership to champion your technological goals, offering expertise, innovation, and unwavering support. Together, we navigate challenges, seize opportunities, and achieve success, ensuring your business thrives in the digital landscape.</p>
+                <h4>
+                  We don't just work with you, we become your{" "}
+                  <span className="bringer-accent">tech champions.</span>
+                </h4>
+                <p>
+                  At Scale Us, we become your tech champions. Our dedicated team
+                  goes beyond partnership to champion your technological goals,
+                  offering expertise, innovation, and unwavering support.
+                  Together, we navigate challenges, seize opportunities, and
+                  achieve success, ensuring your business thrives in the digital
+                  landscape.
+                </p>
               </div>
             </div>
             <div className="bringer-partners partner-section">
-              <span className="bringer-label" data-appear="fade-up" data-unload="fade-up">Proud to be associated with</span>
-              <div className="bringer-grid-6cols bringer-tp-grid-3cols bringer-m-grid-2cols stg-top-gap-s" data-stagger-appear="fade-up" data-stagger-unload="fade-up" data-stagger-delay="100" data-delay="100">
+              <span
+                className="bringer-label"
+                data-appear="fade-up"
+                data-unload="fade-up"
+              >
+                Proud to be associated with
+              </span>
+              <div
+                className="bringer-grid-6cols bringer-tp-grid-3cols bringer-m-grid-2cols stg-top-gap-s"
+                data-stagger-appear="fade-up"
+                data-stagger-unload="fade-up"
+                data-stagger-delay="100"
+                data-delay="100"
+              >
                 <div className="bringer-block bringer-center">
-                  <img src="/img/partners/Scale-Us-Client-Government-of-India.svg" alt="Partner Logo" />
+                  <img
+                    src="/img/partners/Scale-Us-Client-Government-of-India.svg"
+                    alt="Partner Logo"
+                  />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img src="/img/partners/Scale-Us-Client-Seven-Eleven.svg" alt="Partner Logo" />
+                  <img
+                    src="/img/partners/Scale-Us-Client-Seven-Eleven.svg"
+                    alt="Partner Logo"
+                  />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img src="/img/partners/Scale-Us-Client-Amazon.svg" alt="Partner Logo" />
+                  <img
+                    src="/img/partners/Scale-Us-Client-Amazon.svg"
+                    alt="Partner Logo"
+                  />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img src="/img/partners/Scale-Us-Client-Daily-Hunt.svg" alt="Partner Logo" />
+                  <img
+                    src="/img/partners/Scale-Us-Client-Daily-Hunt.svg"
+                    alt="Partner Logo"
+                  />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img src="/img/partners/Scale-Us-Client-Saliah-Foods.svg" alt="Partner Logo" />
+                  <img
+                    src="/img/partners/Scale-Us-Client-Saliah-Foods.svg"
+                    alt="Partner Logo"
+                  />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img src="/img/partners/Scale-Us-Client-OZI.svg" alt="Partner Logo" />
+                  <img
+                    src="/img/partners/Scale-Us-Client-OZI.svg"
+                    alt="Partner Logo"
+                  />
                 </div>
               </div>
             </div>
           </section>
 
+<CategoryListDemo/>
           {/* Grid CTA Section */}
           <section className="backlight-top">
             <div className="bringer-bento-grid bringer-grid-cta">
-              <div className="is-large bringer-masked-block" data-appear="fade-right" data-unload="fade-left">
-                <div className="bringer-grid-cta-media bringer-masked-media" data-bg-src="/img/box.svg">
-                  <div className="bringer-grid-cta-heading">Need to amplify your voice?</div>
+              <div
+                className="is-large bringer-masked-block"
+                data-appear="fade-right"
+                data-unload="fade-left"
+              >
+                <div
+                  className="bringer-grid-cta-media bringer-masked-media"
+                  data-bg-src="/img/box.svg"
+                >
+                  <div className="bringer-grid-cta-heading">
+                    Need to amplify your voice?
+                  </div>
                 </div>
                 <div className="bringer-masked-content at-bottom-right">
-                  <p className="bringer-large-text" data-appear="fade-right" data-delay="100">Let's chat about your goals →</p>
+                  <p
+                    className="bringer-large-text"
+                    data-appear="fade-right"
+                    data-delay="100"
+                  >
+                    Let's chat about your goals →
+                  </p>
                 </div>
               </div>
-              <div className="is-medium bringer-block" data-appear="fade-down" data-unload="fade-right">
+              <div
+                className="is-medium bringer-block"
+                data-appear="fade-down"
+                data-unload="fade-right"
+              >
                 <h3>We will design campaigns that make the world listen</h3>
               </div>
-              <div className="is-small" data-appear="zoom-out" data-delay="100" data-unload="zoom-out">
-                <Link href="/contact-us" className="bringer-square-button" aria-label="Contact Scale Us">
+              <div
+                className="is-small"
+                data-appear="zoom-out"
+                data-delay="100"
+                data-unload="zoom-out"
+              >
+                <Link
+                  href="/contact-us"
+                  className="bringer-square-button"
+                  aria-label="Contact Scale Us"
+                >
                   <span className="bringer-icon bringer-icon-explore"></span>
                 </Link>
               </div>
-              <div className="is-small" data-appear="zoom-out" data-delay="200" data-unload="zoom-out">
-                <img src="/img/about-scaleus1.svg" alt="Let's Chat" width="960" height="960" />
+              <div
+                className="is-small"
+                data-appear="zoom-out"
+                data-delay="200"
+                data-unload="zoom-out"
+              >
+                <img
+                  src="/img/about-scaleus1.svg"
+                  alt="Let's Chat"
+                  width="960"
+                  height="960"
+                />
               </div>
             </div>
           </section>
         </div>
 
         {/* Footer */}
-<Footer/>
+        <Footer />
 
         {/* Right Click Protection */}
         <div className="bringer-rcp-wrap">
@@ -683,10 +1172,25 @@ export default function AboutUs() {
         <Script src="/js/classes.js" strategy="afterInteractive" />
         <Script src="/js/main.js" strategy="afterInteractive" />
         {/* <Script src="https://analytics.scaleus.in/pixel/hgnkSqeXvUBFyYGj" strategy="lazyOnload" /> */}
-        <Script src="/_vercel/insights/script.js" strategy="lazyOnload" dangerouslySetInnerHTML={{ __html: `window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };` }} />
-        <Script src="/_vercel/speed-insights/script.js" strategy="lazyOnload" dangerouslySetInnerHTML={{ __html: `window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };` }} />
-        <Script id="gtm-delayed" strategy="afterInteractive" dangerouslySetInnerHTML={{
-          __html: `
+        <Script
+          src="/_vercel/insights/script.js"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };`,
+          }}
+        />
+        <Script
+          src="/_vercel/speed-insights/script.js"
+          strategy="lazyOnload"
+          dangerouslySetInnerHTML={{
+            __html: `window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };`,
+          }}
+        />
+        <Script
+          id="gtm-delayed"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
             window.addEventListener('load', function() {
               setTimeout(function() {
                 (function(w,d,s,l,i){
@@ -701,8 +1205,9 @@ export default function AboutUs() {
                 })(window,document,'script','dataLayer','G-PPS5N5K987');
               }, 3000);
             });
-          `
-        }} />
+          `,
+          }}
+        />
       </main>
     </>
   );

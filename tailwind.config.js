@@ -10,12 +10,12 @@ module.exports = {
     extend: {
       keyframes: {
         aurora: {
-          "0%": { backgroundPosition: "50% 50%, 50% 50%" },
-          "100%": { backgroundPosition: "350% 50%, 350% 50%" },
+          "0%": { backgroundPosition: "0% 50%" },
+          "100%": { backgroundPosition: "200% 50%" },
         },
       },
       animation: {
-        aurora: "aurora 60s linear infinite",
+        aurora: "aurora 30s linear infinite",
       },
     },
   },
