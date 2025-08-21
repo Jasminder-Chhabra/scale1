@@ -39,7 +39,7 @@ export const CategoryList = ({
               onClick={category.onClick}>
               <div
                 className={cn(
-                  "relative overflow-hidden border bg-card transition-all duration-300 ease-in-out cursor-pointer",
+                  "relative overflow-hidden border bg-card transition-all duration-300 ease-in-out cursor-pointer rounded-2xl",
                   // Hover state styles
                   hoveredItem === category.id
                     ? 'h-32 border-primary shadow-lg shadow-primary/20 bg-primary/5'
@@ -60,7 +60,7 @@ export const CategoryList = ({
                 )}
 
                 {/* Content */}
-                <div className="flex items-center justify-between bg-[#22262C] h-full px-6 md:px-8">
+                <div className="flex items-center justify-between bg-[#22262C] h-full px-6 rounded-2xl md:px-8">
                   <div className="flex-1">
                     <h3
                       className={cn(
