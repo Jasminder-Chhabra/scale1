@@ -135,7 +135,9 @@ const Footer = () => {
                     <ul>
                       <li><a href="#" data-appear="fade-up" data-unload="fade-down">Terms of Use</a></li>
                       <li><a href="#" data-appear="fade-up" data-unload="fade-down">Privacy Policy</a></li>
-                      <li><a href="#" data-appear="fade-up" data-unload="fade-down">Brochure</a></li>
+                      <li><a href="#" data-appear="fade-up" data-unload="fade-down"   onClick={() => {
+    window.open("/img/assets/scaleus.pdf", "_blank", "noopener,noreferrer");
+  }} >Brochure</a></li>
                       <li><a href="#" data-appear="fade-up" data-unload="fade-down">Become Partner</a></li>
                     </ul>
                   </div>

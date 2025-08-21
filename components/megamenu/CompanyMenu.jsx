@@ -76,13 +76,19 @@ const CompanyMenu = () => {
           <h3 className="font-semibold text-lg mb-4 pl-5">RESOURCES</h3>
           <div className=" flex gap-2 flex-col">
        
-            <div className="flex items-start gap-3 px-3 py-2 rounded-lg hover:bg-white/5 transition-colors  duration-200">
-              <HelpCircle className="w-5 h-5 mt-1" strokeWidth={1}   />
-              <div>
-                <p className="font-medium mb-0">Brochure</p>
-                <p className="text-[13px] text-gray-400">Find answers quickly</p>
-              </div>
-            </div>
+  <div
+  onClick={() => {
+    window.open("/img/assets/scaleus.pdf", "_blank", "noopener,noreferrer");
+  }}
+  className="flex items-start gap-3 px-3 py-2 rounded-lg hover:bg-white/5 transition-colors duration-200 cursor-pointer"
+>
+  <HelpCircle className="w-5 h-5 mt-1" strokeWidth={1} />
+  <div>
+    <p className="font-medium mb-0">Brochure</p>
+    <p className="text-[13px] text-gray-400">Find answers quickly</p>
+  </div>
+</div>
+
          
          <Link href="/terms-of-use">
             <div className="flex items-start gap-3 px-3 py-2 rounded-lg hover:bg-white/5 transition-colors  duration-200">
