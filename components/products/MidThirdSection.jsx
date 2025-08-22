@@ -23,7 +23,7 @@ const AppDemoSection = ({ data }) => {
             <p className="text-sm md:text-base text-gray-100 md:text-gray-600 md:mb-6">
               Here we'll show you how the application works. It will help you to understand the application process to perform a specific action while using the app which is needed to access a product's core features.
             </p>
-            <ProjectVideo src="/assets/video.mp4">
+            <ProjectVideo src={data.videoUrl}>
               <div className="hidden md:flex items-center gap-2 mx-auto md:mx-0 bg-transparent text-purple-600 font-semibold hover:text-purple-800 transition">
                 ▶ Play The Video
               </div>
