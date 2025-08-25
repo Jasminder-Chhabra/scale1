@@ -11,6 +11,7 @@ const categories = [
       { name: 'AI Automation', href: '/services/solutions' },
       { name: 'AR/VR Apps', href: '/services/ar-vr' },
       { name: 'Blockchain Dev', href: '/services/blockchain' },
+      { name: 'Custom AI Projects', href: '/services/custom-ai' },
     ] 
   },
   { 
