@@ -105,11 +105,11 @@ const Footer = () => {
                   <h6>Hire Developers</h6>
                   <div className="bringer-menu-widget">
                     <ul>
-                      <li><Link href="/services" data-appear="fade-up" data-unload="fade-down">App Development</Link></li>
-                      <li><Link href="/services" data-appear="fade-up" data-unload="fade-down">Web Development</Link></li>
-                      <li><Link href="/services" data-appear="fade-up" data-unload="fade-down">SEO and UI/UX</Link></li>
-                      <li><Link href="/services" data-appear="fade-up" data-unload="fade-down">Custom Development</Link></li>
-                      <li><Link href="/services" data-appear="fade-up" data-unload="fade-down">Integrations</Link></li>
+                      <li><Link href="/services/andriod" data-appear="fade-up" data-unload="fade-down">App Development</Link></li>
+                      <li><Link href="/services/frontend" data-appear="fade-up" data-unload="fade-down">Web Development</Link></li>
+                      <li><Link href="/services/design" data-appear="fade-up" data-unload="fade-down">SEO and UI/UX</Link></li>
+                      <li><Link href="/services/saas" data-appear="fade-up" data-unload="fade-down">Custom Development</Link></li>
+                      <li><Link href="/services" data-appear="fade-up" data-unload="fade-down">Services</Link></li>
                     </ul>
                   </div>
                 </div>
@@ -133,12 +133,13 @@ const Footer = () => {
                   <h6>Resources</h6>
                   <div className="bringer-menu-widget">
                     <ul>
-                      <li><a href="#" data-appear="fade-up" data-unload="fade-down">Terms of Use</a></li>
-                      <li><a href="#" data-appear="fade-up" data-unload="fade-down">Privacy Policy</a></li>
-                      <li><a href="#" data-appear="fade-up" data-unload="fade-down"   onClick={() => {
+                      <li><a href="/terms-of-use" data-appear="fade-up" data-unload="fade-down">Terms of Use</a></li>
+                      <li><a href="/privacy-policy" data-appear="fade-up" data-unload="fade-down">Privacy Policy</a></li>
+                      <li><a data-appear="fade-up" data-unload="fade-down"   onClick={() => {
     window.open("/img/assets/scaleus.pdf", "_blank", "noopener,noreferrer");
   }} >Brochure</a></li>
-                      <li><a href="#" data-appear="fade-up" data-unload="fade-down">Become Partner</a></li>
+  
+                      <li><a href="/become-partner" data-appear="fade-up" data-unload="fade-down">Become Partner</a></li>
                     </ul>
                   </div>
                 </div>

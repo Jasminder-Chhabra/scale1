@@ -300,7 +300,7 @@ export default function ContactUs() {
                   <a href="https://maps.app.goo.gl/WbTG6EKuF9dE1Xuy8" className="bringer-grid-item-link"></a>
                   <div>
                     <h5>Address<span className="bringer-accent">.</span></h5>
-                    <h6>4th Floor, Karyathal, near Shyam Tata, above Puma Outlet, Aditya Nagar, Vishnu Puri Colony, Indore, Madhya Pradesh 452014</h6>
+                    <h6>204, Atulya IT Park, near Bhawarkua Main Road, Indrapuri Colony, Bhanwar Kuwa, Indore, Madhya Pradesh 452010. </h6>
                   </div>
                   <p>Drop by our vibrant office. We'd love to welcome you and share our creative vibe. Let's fuel your vision!</p>
                 </div>

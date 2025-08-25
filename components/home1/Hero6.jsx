@@ -2,6 +2,7 @@ import { Scene } from "@/components/hero-section";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { LucideIcon, Cpu, ShieldCheck, Layers, Zap, Eye } from "lucide-react";
+import Link from "next/link";
 
 const features = [
   {
@@ -32,25 +33,23 @@ const Herooo = () => {
     <div className="min-h-svh w-screen relative bg-linear-to-br from-[#000] to-[#1A2428] text-white flex flex-col items-center justify-center p-8">
       <div className="w-full max-w-6xl space-y-12 relative z-10">
         <div className="flex flex-col items-center text-center space-y-8">
-          <Badge variant="secondary" className="backdrop-blur-sm bg-white/10 border border-white/20 text-white hover:bg-white/20 px-4 py-2 rounded-full">
-            ✨ Next Generation Tools
-          </Badge>
         
 
-          <div className="space-y-6 flex items-center justify-center flex-col ">
+          <div className="space-y-6 flex items-center justify-center flex-col  mt-20 ">
             <h1 className=" text-3xl md:text-6xl font-semibold tracking-tight max-w-3xl">
-              Discover minimalism and power in one place
+                           Scaling Ideas into Impactful  Digital Solutions.
+
             </h1>
             <p className="text-lg text-neutral-300 max-w-2xl">
-              Designed with aesthetics and performance in mind. Experience ultra-fast processing, advanced security, and intuitive design.
+             At Scaleus, we help businesses turn ideas into scalable digital solutions. From design to deployment, our team delivers smart, reliable, and future-ready tech that grows with you. Whether you're launching a startup or expanding an enterprise, we’re here to build what’s next.  
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-center">
-              <Button className="text-sm px-8 py-3 rounded-xl bg-white text-black border border-white/10 shadow-none hover:bg-white/90 transition-none">
+          <Link href="/contact">
+              <Button  className="text-sm px-8 py-3 rounded-xl bg-white text-black border border-white/10 shadow-none hover:bg-white/90 transition-none">
                 Get Started
               </Button>
-              <Button className="text-sm px-8 py-3 rounded-xl bg-transparent text-white border border-white/20 shadow-none hover:bg-white/10 transition-none">
-                Learn More
-              </Button>
+              
+          </Link>
             </div>
           </div>
         </div>

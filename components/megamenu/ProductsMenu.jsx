@@ -1,126 +1,91 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  ShoppingCart,
-  Brain,
-  IdCard,
-  Users,
-  School,
-  FolderOpenDot,
-  ClipboardPaste,
-  DockIcon,
-  BrainCircuit,
-  Handshake,
-  Sparkles,
-  HandPlatter,
-  ShoppingBag,
-  ShoppingBagIcon,
-  Airplay,
-  IdCardIcon,
+import { 
+  Brain, BrainCircuit, BrainCog, BotMessageSquare, 
+  FolderOpenDot, ShoppingBag, Sparkles, IdCard,
+  Book, Database, HandPlatter, Eclipse, Airplay,
+  School, Users, Package, Hospital, Building2,
+  Smartphone, Wrench, Bus, Activity,
+  Utensils, Truck, Car, ClipboardList,
+  HeartPulse, GraduationCap, BarChart3, CreditCard
 } from "lucide-react";
 import Link from "next/link";
 
 const leftMenuItems = [
-  {
-    id: "Ecommerce",
-    title: "Ecommerce , grocery App, ",
-    icon: <ShoppingCart strokeWidth={1}   />,
-  },
-  { id: "Ecommerce1", title: "Food Ordering Apps", icon: <FolderOpenDot strokeWidth={1}   /> },
-  { id: "Ecommerce2", title: "Laundary Service Apps", icon: <ClipboardPaste strokeWidth={1}  /> },
-  {
-    id: "Ecommerce6",
-    title: "Cab Booking & Ride Sharing App",
-    icon: <ShoppingCart strokeWidth={1}   />,
-  },
-  { id: "Ecommerce3", title: "School App", icon: <School strokeWidth={1}   /> },
-  { id: "Ecommerce4", title: "Doctor & Pharmacy App", icon: <DockIcon strokeWidth={1}   /> },
-  { id: "Ecommerce5", title: "Service Provider App", icon: <ShoppingCart strokeWidth={1}   /> },
-  { id: "AI", title: "Ultimate AI", icon: <Brain strokeWidth={1}  /> },
-  { id: "SimplyTap", title: "Simply Tap It", icon: <IdCard  strokeWidth={1}   /> },
-  { id: "PeopleHub", title: "People Hub", icon: <Users strokeWidth={1}   /> },
+  { id: "AI", title: "AI", icon: <Brain strokeWidth={1} /> },
+  { id: "No-code", title: "No-code Website", icon: <FolderOpenDot strokeWidth={1} /> },
+  { id: "Ecommerce3", title: "Learning Management System", icon: <Book strokeWidth={1} /> },
+  { id: "POS", title: "POS", icon: <Database strokeWidth={1} /> },
+  { id: "Ecommerce4", title: "CRM & ERP", icon: <School strokeWidth={1} /> },
+  { id: "Mobile", title: "Mobile Apps", icon: <Smartphone strokeWidth={1} /> },
+  { id: "Food", title: "Food", icon: <Utensils strokeWidth={1} /> },
+  { id: "Logistics", title: "Logistics", icon: <Truck strokeWidth={1} /> },
+  { id: "Health", title: "HealthCare", icon: <HeartPulse strokeWidth={1} /> },
+  { id: "Education", title: "Education", icon: <GraduationCap strokeWidth={1} /> },
 ];
 
 const rightContent = {
-  Ecommerce: [
-    { icon: <BrainCircuit strokeWidth={1}   className="h-10 w-10"/>, title: "LMS Portal", desc: "AI App" , link : "/LMS-portal" },
-    {
-      icon: <Sparkles  className="h-10 w-10" strokeWidth={1}   />,
-      title: "Pixel Profile",
-      desc: "Website in 10 Minutes",
-      link : "/pixel-profile"
-    },
-     { icon: <Handshake strokeWidth={1}   className="h-10 w-10" />, title: "GrowthHunt", desc: "Content Generation Website" , link : "/growthhunt" },
-     { icon: <HandPlatter strokeWidth={1}   className="h-10 w-10" />, title: "Restaurant POS", desc: "Food Management App" , link : "/restaurant-POS" },
-  
-  ],
-  Ecommerce1: [
-      { icon: <ShoppingBagIcon className="h-10 w-10" strokeWidth={1}   />, title: "Shop App", desc: "Shopping App" , link : "/shopping" },
-     { icon: <Airplay className="h-10 w-10" strokeWidth={1}   />, title: "Analytics App", desc: "All-in-one web analytics" , link : "/analytics" },
-     { icon: <IdCardIcon className="h-10 w-10" strokeWidth={1}   />, title: "Simplytap App", desc: "Do everything with one platform." , link : "/Simplytap" },
-  ],
-  Ecommerce2: [
-    { icon: "🟢", title: "Delivoo", desc: "All in 1 Delivery App (7 Apps)" , link : "/product-1" },
-    {
-      icon: "📦",
-      title: "CourierOne",
-      desc: "Peer to peer delivery App (5 Apps)",
-      link : "/product-1"
-    },
-  ],
-  Ecommerce3: [
-    { icon: "🟢", title: "Delivoo", desc: "All in 1 Delivery App (7 Apps)", link : "/product-1" },
-    {
-      icon: "📦",
-      title: "CourierOne",
-      desc: "Peer to peer delivery App (5 Apps)",
-      link : "/product-1"
-    },
-  ],
-  Ecommerce4: [
-    { icon: "🟢", title: "Delivoo", desc: "All in 1 Delivery App (7 Apps)" ,link : "/product-1" },
-    {
-      icon: "📦",
-      title: "CourierOne",
-      desc: "Peer to peer delivery App (5 Apps)",
-      link : "/product-1"
-    },
-     { icon: "🟢", title: "Delivoo", desc: "All in 1 Delivery App (7 Apps)" , link : "/product-1" },
-  ],
-  Ecommerce5: [
-    { icon: "🟢", title: "Delivoo", desc: "All in 1 Delivery App (7 Apps)" , link : "/product-1" },
-    {
-      icon: "📦",
-      title: "CourierOne",
-      desc: "Peer to peer delivery App (5 Apps)",
-      link : "/product-1"
-    },
-  ],
-  Ecommerce6: [
-    { icon: "🟢", title: "Delivoo", desc: "All in 1 Delivery App (7 Apps)" , link : "/product-1" },
-    {
-      icon: "📦",
-      title: "CourierOne",
-      desc: "Peer to peer delivery App (5 Apps)",
-      link : "/product-1"
-    },
-  ],
   AI: [
-    { icon: "🛍️", title: "ShopHour", desc: "Custom eCommerce App (7 Apps)" , link : "/product-1" },
-    {
-      icon: "🥦",
-      title: "Groshop",
-      desc: "Custom Grocery Ordering App (7 Apps)",
-      link : "/product-1"
-    },
+    { icon: <BrainCircuit className="h-10 w-10" strokeWidth={1} />, title: "AI Chatbot", desc: "Conversational AI assistant", link: "/product-1" },
+    { icon: <BotMessageSquare className="h-10 w-10" strokeWidth={1} />, title: "All in one AI tool", desc: "Complete AI solution suite", link: "/product-1" },
+    { icon: <BrainCog className="h-10 w-10" strokeWidth={1} />, title: "AI Automation", desc: "Automate workflows with AI", link: "/product-1" },
   ],
-  SimplyTap: [
-    { icon: "🧼", title: "QuickWash", desc: "Laundry App with Pickup Service" , link : "/product-1" },
-    { icon: "👕", title: "DressFresh", desc: "Dry Clean Booking App" ,link : "/product-1" },
+
+  "No-code": [
+    { icon: <ShoppingBag className="h-10 w-10" strokeWidth={1} />, title: "E-Commerce Store", desc: "Online store builder", link: "/shopping" },
+    { icon: <Sparkles className="h-10 w-10" strokeWidth={1} />, title: "Pixel Profile", desc: "Website in minutes", link: "/pixel-profile" },
+    { icon: <IdCard className="h-10 w-10" strokeWidth={1} />, title: "Simplytap App", desc: "All-in-one platform", link: "/Simplytap" },
   ],
-  PeopleHub: [
-    { icon: "🧼", title: "QuickWash", desc: "Laundry App with Pickup Service" , link : "/product-1" },
-    { icon: "👕", title: "DressFresh", desc: "Dry Clean Booking App" , link : "/product-1" },
+
+  Ecommerce3: [
+    { icon: <Book className="h-10 w-10" strokeWidth={1} />, title: "LMS Portal", desc: "Learning management app", link: "/LMS-portal" },
+  ],
+
+  POS: [
+    { icon: <HandPlatter className="h-10 w-10" strokeWidth={1} />, title: "Restaurant POS", desc: "Restaurant billing system", link: "/restaurant-POS" },
+    { icon: <ClipboardList className="h-10 w-10"strokeWidth={1} />, title: "Asset Management", desc: "Track business assets", link: "/product-1" },
+    { icon: <Eclipse className="h-10 w-10" strokeWidth={1} />, title: "eCommerce POS", desc: "POS for online store", link: "/product-1" },
+    { icon: <Airplay className="h-10 w-10" strokeWidth={1} />, title: "Analytics App", desc: "Web analytics dashboard", link: "/analytics" },
+  ],
+
+  Ecommerce4: [
+    { icon: <Users className="h-10 w-10" strokeWidth={1} />, title: "People Hub", desc: "HR & people management", link: "/product-1" },
+    { icon: <School className="h-10 w-10" strokeWidth={1} />, title: "School Management System", desc: "Manage school digitally", link: "/product-1" },
+    { icon: <Hospital className="h-10 w-10" strokeWidth={1} />, title: "Hospital Management", desc: "Hospital workflow system", link: "/product-1" },
+    { icon: <Building2 className="h-10 w-10" strokeWidth={1} />, title: "Clinic Management", desc: "Clinic operations app", link: "/product-1" },
+  ],
+
+  Mobile: [
+    { icon: <Users className="h-10 w-10" strokeWidth={1} />, title: "HRMS", desc: "Mobile HR app", link: "/product-1" },
+    { icon: <Building2 className="h-10 w-10" strokeWidth={1} />, title: "Clinic Management", desc: "Mobile clinic app", link: "/product-1" },
+    { icon: <Wrench className="h-10 w-10" strokeWidth={1} />, title: "Service Delivery", desc: "On-demand service app", link: "/product-1" },
+    { icon: <Bus className="h-10 w-10" strokeWidth={1} />, title: "School Bus Tracking", desc: "Real-time bus tracking", link: "/product-1" },
+    { icon: <Smartphone className="h-10 w-10" strokeWidth={1} />, title: "Service Provider Apps", desc: "Apps for providers", link: "/product-1" },
+  ],
+
+  Food: [
+    { icon: <HandPlatter className="h-10 w-10" strokeWidth={1} />, title: "Restaurant POS", desc: "POS for restaurants", link: "/restaurant-POS" },
+    { icon: <Utensils className="h-10 w-10" strokeWidth={1} />, title: "Restaurant Delivery App", desc: "Food delivery app", link: "/product-1" },
+  ],
+
+  Logistics: [
+    { icon: <Truck className="h-10 w-10" strokeWidth={1} />, title: "Truck Bidding System", desc: "Freight bidding system", link: "/product-1" },
+    { icon: <Package className="h-10 w-10" strokeWidth={1} />, title: "Parcel Delivery App", desc: "Parcel tracking app", link: "/product-1" },
+    { icon: <Bus className="h-10 w-10" strokeWidth={1} />, title: "School Bus Tracking", desc: "Student safety tracking", link: "/product-1" },
+    { icon: <Car className="h-10 w-10" strokeWidth={1} />, title: "Cab Booking", desc: "Ride booking app", link: "/product-1" },
+    { icon: <Smartphone className="h-10 w-10" strokeWidth={1} />, title: "Service Provider Apps", desc: "On-demand logistics apps", link: "/product-1" },
+  ],
+
+  Health: [
+    { icon: <Building2 className="h-10 w-10" strokeWidth={1} />, title: "Clinic Management", desc: "Clinic management app", link: "/product-1" },
+    { icon: <Hospital className="h-10 w-10" strokeWidth={1} />, title: "Hospital Management", desc: "Hospital system app", link: "/product-1" },
+  ],
+
+  Education: [
+    { icon: <School className="h-10 w-10" strokeWidth={1} />, title: "School Management System", desc: "Digital school system", link: "/product-1" },
+    { icon: <ClipboardList className="h-10 w-10" strokeWidth={1} />, title: "Asset Management", desc: "Track school assets", link: "/product-1" },
+    { icon: <CreditCard className="h-10 w-10" strokeWidth={1} />, title: "Fees Management", desc: "School fee system", link: "/product-1" },
+    { icon: <Bus className="h-10 w-10" strokeWidth={1} />, title: "School Bus Tracking", desc: "Bus tracking system", link: "/product-1" },
   ],
 };
 

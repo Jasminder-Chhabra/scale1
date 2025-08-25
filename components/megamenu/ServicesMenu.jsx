@@ -4,6 +4,16 @@ import { Smartphone, Globe, Layers, Settings } from 'lucide-react';
 
 const categories = [
   { 
+    title: 'AI & ML', 
+    icon: <Layers strokeWidth={1} />, 
+    description: 'Harness AI, ML, AR/VR, and blockchain to innovate your business.',
+    services: [
+      { name: 'AI Automation', href: '/services/solutions' },
+      { name: 'AR/VR Apps', href: '/services/ar-vr' },
+      { name: 'Blockchain Dev', href: '/services/blockchain' },
+    ] 
+  },
+  { 
     title: 'Mobile', 
     icon: <Smartphone strokeWidth={1}  
  />, 
@@ -20,30 +30,22 @@ const categories = [
     icon: <Globe strokeWidth={1} />, 
     description: 'From sleek frontends to powerful backends, we deliver complete web solutions.',
     services: [
-      { name: 'Frontend Dev', href: '/services/frontend' },
-      { name: 'Backend Dev', href: '/services/backend' },
+      { name: 'Shopify Website Development', href: '/services/shopify' },
+      { name: 'WordPress Website Development', href: '/services/wordpress' },
       { name: 'Full Stack', href: '/services/fullstack' },
       { name: 'Next.js', href: '/services/nextjs' },
     ] 
   },
-  { 
-    title: 'AI & ML', 
-    icon: <Layers strokeWidth={1} />, 
-    description: 'Harness AI, ML, AR/VR, and blockchain to innovate your business.',
-    services: [
-      { name: 'AI/ML Solutions', href: '/services/solutions' },
-      { name: 'AR/VR Apps', href: '/services/ar-vr' },
-      { name: 'Blockchain Dev', href: '/services/blockchain' },
-    ] 
-  },
+  
   { 
     title: 'Support', 
     icon: <Settings strokeWidth={1} />, 
     description: 'Keep your apps running at peak performance with our expert support and QA.',
     services: [
-      { name: 'App Maintenance', href: '/services/maintenance' },
+      { name: 'Software & App Maintenance', href: '/services/maintenance' },
       { name: 'QA Testing', href: '/services/qa-testing' },
       { name: 'Performance Optimization', href: '/services/performance' },
+      { name: 'Customer Suppot', href: '/services/Support' },
     ] 
   },
   { 
@@ -51,10 +53,14 @@ const categories = [
     icon: <Layers strokeWidth={1} />, 
     description: 'Custom solutions for your unique needs, from SaaS to workflow automation.',
     services: [
-      { name: 'Testing & Assurance', href: '/services/testing' },
-      { name: 'Design Service', href: '/services/design' },
+      
+
+      { name: 'UI UX Design ', href: '/services/design' },
       { name: 'SaaS Development', href: '/services/saas' },
+      { name: 'Ready to Use Products', href: '/services/ready-to-use' },
      
+      { name: 'AI Videos', href: '/services/ai-videos' },
+    
     ] 
   },
 ];
