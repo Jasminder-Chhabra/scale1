@@ -30,18 +30,20 @@ const features = [
 
 const Herooo = () => {
   return (
-    <div className="min-h-svh w-screen relative bg-linear-to-br from-[#000] to-[#1A2428] text-white flex flex-col items-center justify-center p-8">
+    <div className="min-h-svh w-screen relative bg-linear-to-br from-[#000] to-[#1A2428] text-white flex flex-col items-center justify-center p-8" data-appear="fade-up" data-delay="100" data-unload="fade-up">
       <div className="w-full max-w-6xl space-y-12 relative z-10">
         <div className="flex flex-col items-center text-center space-y-8">
         
 
           <div className="space-y-6 flex items-center justify-center flex-col  mt-20 ">
-            <h1 className=" text-3xl md:text-6xl font-semibold tracking-tight max-w-3xl">
+            <h1 className=" text-3xl md:text-6xl font-semibold tracking-tight max-w-3xl" >
                            Scaling Ideas into Impactful  Digital Solutions.
 
             </h1>
             <p className="text-lg text-neutral-300 max-w-2xl">
-             At Scaleus, we help businesses turn ideas into scalable digital solutions. From design to deployment, our team delivers smart, reliable, and future-ready tech that grows with you. Whether you're launching a startup or expanding an enterprise, we’re here to build what’s next.  
+             At Scaleus, we help businesses turn ideas into scalable digital solutions. From design to deployment, our team delivers smart, reliable, and future-ready tech that grows with you. <span className="md:inline hidden">
+               Whether you're launching a startup or expanding an enterprise, we’re here to build what’s next.  
+             </span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-center">
           <Link href="/contact">
@@ -61,7 +63,7 @@ const Herooo = () => {
               className="backdrop-blur-sm bg-white/5 border border-white/10 rounded-xl p-4 md:p-6 h-40 md:h-48 flex flex-col justify-start items-start space-y-2 md:space-y-3"
             >
               <feature.icon size={18} className="text-white/80 md:w-5 md:h-5" />
-              <h3 className="text-sm md:text-base font-medium">{feature.title}</h3>
+              <h1 className="text-sm md:text-xl font-medium">{feature.title}</h1>
               <p className="text-xs md:text-sm text-neutral-400">{feature.description}</p>
             </div>
           ))}

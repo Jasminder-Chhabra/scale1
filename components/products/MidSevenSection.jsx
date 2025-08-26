@@ -4,12 +4,15 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import './parallax.css';
 
 const slideData = [
-  { title: 'Project One', technology: 'React, Tailwind', image: '/img/assets/salonza.png' },
-  { title: 'Project Two', technology: 'Vue, Vuetify', image: '/img/assets/servo.png' },
-  { title: 'Project Three', technology: 'Angular, SCSS', image: '/img/assets/car-rental.png' },
-  { title: 'Project Four', technology: 'Svelte, CSS Modules', image: '/img/assets/carwash.png' },
-  { title: 'Project Five', technology: 'Next.js, Tailwind', image: '/img/assets/gate-app.png' },
-  { title: 'Project Six', technology: 'Gatsby, GraphQL', image: '/img/assets/Salon.png' },
+  { title: 'OZI Corp App', technology: 'Flutter', image: 'img/portfolio/portfolio01.jpg' },
+  { title: '7Eleven', technology: 'Andiod', image: '/img/portfolio-img/7eleven/img1.jpg' },
+  { title: ' Bello Ricco Website', technology: 'Shopify', image: '/img/portfolio-single-img/bella.png' },
+  { title: 'Kids Learning App', technology: 'Andriod', image: '/img/portfolio-single-img/learning.png' },
+  { title: 'Texmo Pipes Website', technology: 'Wordpress', image: '/img/portfolio-single-img/texmo.png' },
+  { title: 'Berry Click Website', technology: 'Wordpress', image: '/img/portfolio-single-img/berryclick.png' },
+  { title: 'Natrax', technology: 'Laravel', image: '/img/portfolio-single-img/natrax.png' },
+  { title: 'RainBow App', technology: 'Andriod', image: '/img/portfolio-single-img/rainbow.png' },
+  { title: 'Maze App', technology: 'React Native', image: '/img/portfolio-single-img/maze.png' },
 ];
 
 
@@ -33,13 +36,13 @@ export default function MidSevenSection() {
               data-appear="fade-up"
               data-delay={index * 100} // stagger effect
             >
-              <div className="relative bg-purple-600 rounded ">
+              <div className="relative  rounded-xl ">
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-full h-[400px] object-contain rounded mb-4 px-5"
+                  className="w-full h-[400px] object-contain  mb-4 px-5 rounded-xl"
                 />
-                <div className="absolute bottom-4 left-4 shadow shadow-purple-400 p-2 px-3 bg-black rounded-2xl">
+                <div className="absolute bottom-6 left-8 shadow shadow-purple-400  p-2 px-3 bg-black rounded-2xl">
                   <div className="text-xl font-bold text-purple-300">{item.title}</div>
                   <div className="text-sm text-gray-400">{item.technology}</div>
                 </div>

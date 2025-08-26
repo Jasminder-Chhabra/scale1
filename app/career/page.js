@@ -1,7 +1,7 @@
 // app/career/page.js
 "use client";
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import Script from 'next/script';
@@ -14,48 +14,47 @@ import ".././globals.css";
 import Footer from '@/components/Footer';
 export default function Career() {
   // Form Submission
-  useEffect(() => {
-    const form = document.querySelector('.bringer-contact-form');
-    if (!form) return;
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    techStack: "",
+    message: "",
+    resume: null,
+  });
 
-    const handleSubmit = (e) => {
+   const handleChange = (e) => {
+    const { name, value, files } = e.target;
+    setFormData({
+      ...formData,
+      [name]: files ? files[0] : value,
+    });
+  };
+
+
+    const handleSubmit = async(e) => {
+      console.log("submit")
       e.preventDefault();
-      e.stopPropagation();
-      const formData = new FormData(form);
-      const responseElement = form.querySelector('.bringer-contact-form__response');
 
-      responseElement.textContent = 'Sending...';
+    const data = new FormData();
+    Object.keys(formData).forEach((key) => {
+      data.append(key, formData[key]);
+    });
 
-      fetch(form.action, {
-        method: 'POST',
-        body: formData,
-      })
-        .then((response) => response.text())
-        .then((text) => {
-          let data;
-          try {
-            data = JSON.parse(text);
-          } catch (e) {
-            console.error('Error parsing JSON:', text);
-            throw new Error('Invalid response from server');
-          }
-          responseElement.textContent = data.message;
-          responseElement.style.color = data.success ? '#FFFFFF' : '#FF0000';
-        })
-        .catch((error) => {
-          console.error('Error:', error);
-          responseElement.textContent = 'An error occurred. Please try again.';
-          responseElement.style.color = '#FF0000';
-        });
+    try {
+      console.log("try")
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        body: data,
+      });
+      console.log(res)
+      const result = await res.json();
+      alert(result.message);
+    } catch (err) {
+      console.error(err);
+    }
     };
 
-    form.addEventListener('submit', handleSubmit);
-
-    return () => {
-      form.removeEventListener('submit', handleSubmit);
-    };
-  }, []);
-
+console.log(formData)
   // Right-Click Protection
   useEffect(() => {
     let timeoutId = null;
@@ -327,24 +326,47 @@ export default function Career() {
                   data-appear="fade-up"
                   data-threshold="0.25"
                 ></div>
-                <form
-                  action="/mail/PHPMailer-master/phpmailer.php"
-                  method="post"
-                  className="bringer-contact-form bringer-block"
-                  data-fill-error="Please, fill out the contact form."
-                >
-                  <div className="bringer-form-content">
-                    <label htmlFor="name">Your name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required />
-                    <label htmlFor="email">Your email:</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required />
-                    <label htmlFor="message">Your message:</label>
-                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit" value="Send Message">Send Message</button>
-                    <div className="bringer-contact-form__response"></div>
-                  </div>
-                  <span className="bringer-form-spinner"></span>
-                </form>
+              <form
+onSubmit={handleSubmit} 
+  className="bringer-contact-form bringer-block"
+  data-fill-error="Please, fill out the contact form."
+>
+  <div className="bringer-form-content">
+    <label htmlFor="name">Your name</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" onChange={handleChange} required />
+
+    <label htmlFor="email">Your email:</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" onChange={handleChange} required />
+
+    <label htmlFor="techstack" className="block mb-2 text-md">Select Tech Stack</label>
+    <select id="techstack"         name="techStack"
+        value={formData.techStack}
+        onChange={handleChange}
+ className="my-3 border border-gray-300 rounded-lg block w-full p-2.5">
+      <option value="php-laravel">PHP / Laravel</option>
+      <option value="react-native">React Native</option>
+      <option value="ui-ux">UI/UX</option>
+      <option value="sales">IT Sales</option>
+      <option value="flutter">Flutter</option>
+      <option value="marketing">Social Media Marketing</option>
+    </select>
+
+    <label htmlFor="resume">Upload Resume:</label>
+    <input className="text-sm border rounded-lg cursor-pointer" id="resume"   type="file"
+        name="resume"
+        accept=".pdf,.doc,.docx"
+        onChange={handleChange}
+        
+        required />
+    <p className="text-[12px] mt-[-14px] text-gray-500">PDF File Only (MAX 5MB).</p>
+
+    <label htmlFor="message">Your message:</label>
+    <textarea id="message" name="message" onChange={handleChange} placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </div>
+</form>
+
               </div>
               <div className="stg-col-6 stg-offset-1" data-unload="fade-right">
                 <div className="bringer-cta-form-content">

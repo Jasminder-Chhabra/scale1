@@ -26,9 +26,9 @@ const leftMenuItems = [
 
 const rightContent = {
   AI: [
-    { icon: <BrainCircuit className="h-10 w-10" strokeWidth={1} />, title: "AI Chatbot", desc: "Conversational AI assistant", link: "/product-1" },
-    { icon: <BotMessageSquare className="h-10 w-10" strokeWidth={1} />, title: "All in one AI tool", desc: "Complete AI solution suite", link: "/product-1" },
-    { icon: <BrainCog className="h-10 w-10" strokeWidth={1} />, title: "AI Automation", desc: "Automate workflows with AI", link: "/product-1" },
+    { icon: <BrainCircuit className="h-10 w-10" strokeWidth={1} />, title: "AI Chatbot", desc: "Conversational AI assistant", link: "/" },
+    { icon: <BotMessageSquare className="h-10 w-10" strokeWidth={1} />, title: "All in one AI tool", desc: "Complete AI solution suite", link: "/" },
+    { icon: <BrainCog className="h-10 w-10" strokeWidth={1} />, title: "AI Automation", desc: "Automate workflows with AI", link: "/" },
   ],
 
   "No-code": [
@@ -43,49 +43,49 @@ const rightContent = {
 
   POS: [
     { icon: <HandPlatter className="h-10 w-10" strokeWidth={1} />, title: "Restaurant POS", desc: "Restaurant billing system", link: "/restaurant-POS" },
-    { icon: <ClipboardList className="h-10 w-10"strokeWidth={1} />, title: "Asset Management", desc: "Track business assets", link: "/product-1" },
-    { icon: <Eclipse className="h-10 w-10" strokeWidth={1} />, title: "eCommerce POS", desc: "POS for online store", link: "/product-1" },
+    { icon: <ClipboardList className="h-10 w-10"strokeWidth={1} />, title: "Asset Management", desc: "Track business assets", link: "/" },
+    { icon: <Eclipse className="h-10 w-10" strokeWidth={1} />, title: "eCommerce POS", desc: "POS for online store", link: "/" },
     { icon: <Airplay className="h-10 w-10" strokeWidth={1} />, title: "Analytics App", desc: "Web analytics dashboard", link: "/analytics" },
   ],
 
   Ecommerce4: [
-    { icon: <Users className="h-10 w-10" strokeWidth={1} />, title: "People Hub", desc: "HR & people management", link: "/product-1" },
-    { icon: <School className="h-10 w-10" strokeWidth={1} />, title: "School Management System", desc: "Manage school digitally", link: "/product-1" },
-    { icon: <Hospital className="h-10 w-10" strokeWidth={1} />, title: "Hospital Management", desc: "Hospital workflow system", link: "/product-1" },
-    { icon: <Building2 className="h-10 w-10" strokeWidth={1} />, title: "Clinic Management", desc: "Clinic operations app", link: "/product-1" },
+    { icon: <Users className="h-10 w-10" strokeWidth={1} />, title: "People Hub", desc: "HR & people management", link: "/" },
+    { icon: <School className="h-10 w-10" strokeWidth={1} />, title: "School Management System", desc: "Manage school digitally", link: "/" },
+    { icon: <Hospital className="h-10 w-10" strokeWidth={1} />, title: "Hospital Management", desc: "Hospital workflow system", link: "/" },
+    { icon: <Building2 className="h-10 w-10" strokeWidth={1} />, title: "Clinic Management", desc: "Clinic operations app", link: "/" },
   ],
 
   Mobile: [
-    { icon: <Users className="h-10 w-10" strokeWidth={1} />, title: "HRMS", desc: "Mobile HR app", link: "/product-1" },
-    { icon: <Building2 className="h-10 w-10" strokeWidth={1} />, title: "Clinic Management", desc: "Mobile clinic app", link: "/product-1" },
-    { icon: <Wrench className="h-10 w-10" strokeWidth={1} />, title: "Service Delivery", desc: "On-demand service app", link: "/product-1" },
-    { icon: <Bus className="h-10 w-10" strokeWidth={1} />, title: "School Bus Tracking", desc: "Real-time bus tracking", link: "/product-1" },
-    { icon: <Smartphone className="h-10 w-10" strokeWidth={1} />, title: "Service Provider Apps", desc: "Apps for providers", link: "/product-1" },
+    { icon: <Users className="h-10 w-10" strokeWidth={1} />, title: "HRMS", desc: "Mobile HR app", link: "/" },
+    { icon: <Building2 className="h-10 w-10" strokeWidth={1} />, title: "Clinic Management", desc: "Mobile clinic app", link: "/" },
+    { icon: <Wrench className="h-10 w-10" strokeWidth={1} />, title: "Service Delivery", desc: "On-demand service app", link: "/" },
+    { icon: <Bus className="h-10 w-10" strokeWidth={1} />, title: "School Bus Tracking", desc: "Real-time bus tracking", link: "/" },
+    { icon: <Smartphone className="h-10 w-10" strokeWidth={1} />, title: "Service Provider Apps", desc: "Apps for providers", link: "/" },
   ],
 
   Food: [
     { icon: <HandPlatter className="h-10 w-10" strokeWidth={1} />, title: "Restaurant POS", desc: "POS for restaurants", link: "/restaurant-POS" },
-    { icon: <Utensils className="h-10 w-10" strokeWidth={1} />, title: "Restaurant Delivery App", desc: "Food delivery app", link: "/product-1" },
+    { icon: <Utensils className="h-10 w-10" strokeWidth={1} />, title: "Restaurant Delivery App", desc: "Food delivery app", link: "/" },
   ],
 
   Logistics: [
-    { icon: <Truck className="h-10 w-10" strokeWidth={1} />, title: "Truck Bidding System", desc: "Freight bidding system", link: "/product-1" },
-    { icon: <Package className="h-10 w-10" strokeWidth={1} />, title: "Parcel Delivery App", desc: "Parcel tracking app", link: "/product-1" },
-    { icon: <Bus className="h-10 w-10" strokeWidth={1} />, title: "School Bus Tracking", desc: "Student safety tracking", link: "/product-1" },
-    { icon: <Car className="h-10 w-10" strokeWidth={1} />, title: "Cab Booking", desc: "Ride booking app", link: "/product-1" },
-    { icon: <Smartphone className="h-10 w-10" strokeWidth={1} />, title: "Service Provider Apps", desc: "On-demand logistics apps", link: "/product-1" },
+    { icon: <Truck className="h-10 w-10" strokeWidth={1} />, title: "Truck Bidding System", desc: "Freight bidding system", link: "/" },
+    { icon: <Package className="h-10 w-10" strokeWidth={1} />, title: "Parcel Delivery App", desc: "Parcel tracking app", link: "/" },
+    { icon: <Bus className="h-10 w-10" strokeWidth={1} />, title: "School Bus Tracking", desc: "Student safety tracking", link: "/" },
+    { icon: <Car className="h-10 w-10" strokeWidth={1} />, title: "Cab Booking", desc: "Ride booking app", link: "/" },
+    { icon: <Smartphone className="h-10 w-10" strokeWidth={1} />, title: "Service Provider Apps", desc: "On-demand logistics apps", link: "/" },
   ],
 
   Health: [
-    { icon: <Building2 className="h-10 w-10" strokeWidth={1} />, title: "Clinic Management", desc: "Clinic management app", link: "/product-1" },
-    { icon: <Hospital className="h-10 w-10" strokeWidth={1} />, title: "Hospital Management", desc: "Hospital system app", link: "/product-1" },
+    { icon: <Building2 className="h-10 w-10" strokeWidth={1} />, title: "Clinic Management", desc: "Clinic management app", link: "/" },
+    { icon: <Hospital className="h-10 w-10" strokeWidth={1} />, title: "Hospital Management", desc: "Hospital system app", link: "/" },
   ],
 
   Education: [
-    { icon: <School className="h-10 w-10" strokeWidth={1} />, title: "School Management System", desc: "Digital school system", link: "/product-1" },
-    { icon: <ClipboardList className="h-10 w-10" strokeWidth={1} />, title: "Asset Management", desc: "Track school assets", link: "/product-1" },
-    { icon: <CreditCard className="h-10 w-10" strokeWidth={1} />, title: "Fees Management", desc: "School fee system", link: "/product-1" },
-    { icon: <Bus className="h-10 w-10" strokeWidth={1} />, title: "School Bus Tracking", desc: "Bus tracking system", link: "/product-1" },
+    { icon: <School className="h-10 w-10" strokeWidth={1} />, title: "School Management System", desc: "Digital school system", link: "/" },
+    { icon: <ClipboardList className="h-10 w-10" strokeWidth={1} />, title: "Asset Management", desc: "Track school assets", link: "/" },
+    { icon: <CreditCard className="h-10 w-10" strokeWidth={1} />, title: "Fees Management", desc: "School fee system", link: "/" },
+    { icon: <Bus className="h-10 w-10" strokeWidth={1} />, title: "School Bus Tracking", desc: "Bus tracking system", link: "/" },
   ],
 };
 

@@ -15,9 +15,7 @@ import "../public/css/libs.css";
 import "../public/css/style.css";
 import "../public/css/responsive.css";
 import Achievement from "@/components/ui/Achivement";
-import Hero from "@/components/home1/Hero";
 import Header from "@/components/Header";
-import Hero2 from "@/components/home1/Hero2";
 import { Herooo } from "@/components/home1/Hero6";
 import Footer from "@/components/Footer";
 
@@ -214,16 +212,9 @@ export default function Home() {
 
       <Header />
 
-      {/* HeroGeometric without Glow */}
-      {/* <HeroGeometric
-    badge="Scale Us Technologies"
-    title1="Your Partner in"
-    title2="Digital Innovation"
-  />
-   */}
-      {/* <Hero /> */}
+
       <Herooo/>
-      {/* <Hero2/> */}
+      
       <main
         id="bringer-main"
         className="custom-proud-css"
@@ -535,7 +526,7 @@ export default function Home() {
                   <span className="bringer-icon bringer-icon-explore"></span>
                 </div>
                 <Link
-                  href="/portfolio-post01"
+                  href="/portfolio-post/7eleven"
                   aria-label="View details of Portfolio Post 01"
                 ></Link>
               </SwiperSlide>
@@ -548,7 +539,7 @@ export default function Home() {
                   <img
                     className="bringer-lazy"
                     src="/img/null.png"
-                    data-src="/img/portfolio/portfolio02.jpg"
+                    data-src="/img/portfolio-single-img/natrax.png"
                     alt=""
                     width="1200"
                     height="1200"
@@ -556,13 +547,13 @@ export default function Home() {
                 </div>
                 <div className="bringer-portfolio-card-footer">
                   <div className="bringer-portfolio-card-title">
-                    <span className="bringer-meta">CRM Dashboard</span>
-                    <h6>OZI Fleet</h6>
+                    <span className="bringer-meta">Ticket Management Portal</span>
+                    <h6>Natrax</h6>
                   </div>
                   <span className="bringer-icon bringer-icon-explore"></span>
                 </div>
                 <Link
-                  href="/portfolio-post02"
+                  href="/portfolio-post/natrax"
                   aria-label="View details of Portfolio Post 02"
                 ></Link>
               </SwiperSlide>
@@ -575,7 +566,7 @@ export default function Home() {
                   <img
                     className="bringer-lazy"
                     src="/img/null.png"
-                    data-src="/img/portfolio/portfolio03.jpg"
+                    data-src="/img/portfolio-single-img/salah.png"
                     alt=""
                     width="1200"
                     height="1200"
@@ -583,13 +574,13 @@ export default function Home() {
                 </div>
                 <div className="bringer-portfolio-card-footer">
                   <div className="bringer-portfolio-card-title">
-                    <span className="bringer-meta">Web Development</span>
-                    <h6>Project Three</h6>
+                    <span className="bringer-meta">Website Development</span>
+                    <h6>Saliah Foods</h6>
                   </div>
                   <span className="bringer-icon bringer-icon-explore"></span>
                 </div>
                 <Link
-                  href="/portfolio-post03"
+                  href="/portfolio-post/saliah-foods"
                   aria-label="View details of Portfolio Post 03"
                 ></Link>
               </SwiperSlide>
@@ -602,7 +593,7 @@ export default function Home() {
                   <img
                     className="bringer-lazy"
                     src="/img/null.png"
-                    data-src="/img/portfolio/portfolio04.jpg"
+                    data-src="/img/portfolio-single-img/simpletap.png"
                     alt=""
                     width="1200"
                     height="1200"
@@ -610,13 +601,13 @@ export default function Home() {
                 </div>
                 <div className="bringer-portfolio-card-footer">
                   <div className="bringer-portfolio-card-title">
-                    <span className="bringer-meta">UI/UX Design</span>
-                    <h6>Project Four</h6>
+                    <span className="bringer-meta">SAAS Products</span>
+                    <h6>Simply Tap it</h6>
                   </div>
                   <span className="bringer-icon bringer-icon-explore"></span>
                 </div>
                 <Link
-                  href="/portfolio-post04"
+                  href="/portfolio-post/simplyTap"
                   aria-label="View details of Portfolio Post 04"
                 ></Link>
               </SwiperSlide>
@@ -631,7 +622,7 @@ export default function Home() {
               data-unload="fade-down"
               data-delay="100"
             >
-              <Link href="/portfolio-slider" className="bringer-button">
+              <Link href="/portfolio" className="bringer-button">
                 Discover Full Portfolio
               </Link>
             </div>

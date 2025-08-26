@@ -1,4 +1,5 @@
 <?php
+dd($_SERVER["REQUEST_METHOD"]);
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -11,6 +12,7 @@ require __DIR__ . '/src/PHPMailer.php';
 require __DIR__ . '/src/SMTP.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    dd("qfweugbwiugbuesilglueigerguiarlugb");
     $mail = new PHPMailer(true);
 
     try {

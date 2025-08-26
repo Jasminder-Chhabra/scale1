@@ -82,7 +82,7 @@ background: "rgba( 0, 0, 0, 0.45 )",
                 onMouseEnter={() => setActiveMenu('products')}
                 className={pathname.includes('products') ? 'current-menu-parent' : ''}  
               >
-                <a href="https://simplytapit.in">Products <ChevronDown className='inline' size="20px"  /></a>
+                <a href="">Products <ChevronDown className='inline' size="20px"  /></a>
                 <AnimatePresence>
                   {activeMenu === 'products' && <ProductsMenu />}
                 </AnimatePresence>

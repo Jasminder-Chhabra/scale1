@@ -1,46 +1,74 @@
 <?php
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    # Replace this email with your email address
+    # Your email
     $mail_to = "jasminder@scaleus.in";
-    
-    # Sender Data
-    $subject = "New Contact Form Submission";
-    $name = trim($_POST["name"]);
-    $email = trim($_POST["email"]);
-    $message = trim($_POST["message"]);
 
-    if (empty($name) || empty($email) || empty($message)) {
-        # Set a 400 (bad request) response code and exit
+    # Sanitize input
+    $name = htmlspecialchars(trim($_POST["name"]));
+    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
+    $techstack = htmlspecialchars($_POST["techstack"]);
+    $message = htmlspecialchars(trim($_POST["message"]));
+
+    # Validate fields
+    if (empty($name) || empty($email) || empty($message) || empty($techstack)) {
         http_response_code(400);
         echo "Please complete the form and try again.";
         exit;
     }
 
-    # Email content
-    $content = "Name: $name\n";
-    $content .= "Email: $email\n\n";
-    $content .= "Message:\n$message\n";
+    # Handle File Upload
+    $resume = $_FILES["resume"];
+    $allowed_ext = "pdf";
+    $max_size = 5 * 1024 * 1024; // 5 MB
 
-    # Email headers
+    if ($resume["error"] == UPLOAD_ERR_OK) {
+        $file_ext = strtolower(pathinfo($resume["name"], PATHINFO_EXTENSION));
+        if ($file_ext !== $allowed_ext) {
+            http_response_code(400);
+            echo "Only PDF files are allowed.";
+            exit;
+        }
+        if ($resume["size"] > $max_size) {
+            http_response_code(400);
+            echo "File size must not exceed 5MB.";
+            exit;
+        }
+
+        # Move file to server (optional: adjust path)
+        $upload_dir = __DIR__ . "/uploads/";
+        if (!is_dir($upload_dir)) mkdir($upload_dir, 0777, true);
+        $file_path = $upload_dir . basename($resume["name"]);
+        move_uploaded_file($resume["tmp_name"], $file_path);
+    } else {
+        http_response_code(400);
+        echo "Error uploading resume.";
+        exit;
+    }
+
+    # Email content
+    $subject = "New Contact Form Submission";
+    $content = "Name: $name\n";
+    $content .= "Email: $email\n";
+    $content .= "Tech Stack: $techstack\n\n";
+    $content .= "Message:\n$message\n";
+    $content .= "Resume: $file_path\n";
+
     $headers = "From: $name <$email>";
 
-    # Send the email
+    # Send Email (without attachment, just link to file)
     $success = mail($mail_to, $subject, $content, $headers);
+
     if ($success) {
-        # Set a 200 (okay) response code
         http_response_code(200);
-        echo "Thank you! Your message has been sent.";
+        echo "Thank you! Your application has been sent.";
     } else {
-        # Set a 500 (internal server error) response code
         http_response_code(500);
         echo "Oops! Something went wrong, and we couldn't send your message.";
     }
 
 } else {
-    # Not a POST request, set a 403 (forbidden) response code
     http_response_code(403);
-    echo "There was a problem with your submission, please try again.";
+    echo "Invalid request.";
 }
 ?>
