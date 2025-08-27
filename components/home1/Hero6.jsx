@@ -1,29 +1,29 @@
 import { Scene } from "@/components/hero-section";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { LucideIcon, Cpu, ShieldCheck, Layers, Zap, Eye } from "lucide-react";
+import { LucideIcon, Cpu, ShieldCheck, Layers, Zap, Eye, EarthLock, Presentation, Diamond, Gem, Brain } from "lucide-react";
 import Link from "next/link";
 
 const features = [
   {
     icon: Cpu,
-    title: "Performance",
-    description: "Ultra-fast data processing in every situation.",
+    title: "Ready-Made Solutions",
+    description: "Instant deployment, zero hassle.",
   },
   {
-    icon: ShieldCheck,
-    title: "Security",
-    description: "Advanced protection for complete peace of mind.",
+    icon: Brain,
+    title: "Digital Products",
+    description: "Smart tools, real results.",
   },
   {
-    icon: Layers,
-    title: "Modularity",
-    description: "Easy integration with existing architecture.",
+    icon: Gem,
+    title: "Client-Centric Approach",
+    description: "Your growth, our mission",
   },
   {
-    icon: Zap,
-    title: "Responsiveness",
-    description: "Instant response to every command.",
+    icon: EarthLock,
+    title: "Proven Track Record",
+    description: "100+ projects, global trust.",
   },
 
 ];
@@ -60,13 +60,13 @@ const Herooo = () => {
           {features.map((feature, idx) => (
             <div
               key={idx}
-              className="backdrop-blur-sm bg-white/5 border border-white/10 rounded-xl p-4 md:p-6 h-40 md:h-48 flex flex-col justify-start items-start space-y-2 md:space-y-3"
+              className="backdrop-blur-sm bg-white/5 border border-white/10 rounded-xl p-4 md:p-4 h-40 md:h-48 flex flex-col justify-center items-center space-y-2 md:space-y-3"
             >
-              <feature.icon size={18} className="text-white/80 md:w-5 md:h-5" />
+              <feature.icon strokeWidth={1}  size={30} className="text-white/80 md:w-8 md:h-8" />
               <h1 className="text-sm md:text-xl font-medium">{feature.title}</h1>
               <p className="text-xs md:text-sm text-neutral-400">{feature.description}</p>
             </div>
-          ))}
+          ))} 
         </div>
       </div>
   <div className="absolute inset-0 w-full h-full ">

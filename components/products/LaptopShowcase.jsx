@@ -68,7 +68,8 @@ const LaptopShowcase = ({ featureTabs, para, heading }) => {
                     <img
                       src={tab?.image}
                       alt={tab?.title}
-                      className="md:w-[605px] w-[335px] h-[200px] z-10 md:h-[380px] object-cover rounded-lg shadow-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                      className="md:w-[605px] w-[335px] h-[200px] z-10 md:h-[380px] object-cover rounded-lg shadow-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 "
+                      style={{objectFit : "inherit"}}
                     />
                   </div>
                 );
