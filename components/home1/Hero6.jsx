@@ -41,7 +41,7 @@ const Herooo = () => {
 
             </h1>
             <p className="text-lg text-neutral-300 max-w-2xl">
-             At Scaleus, we help businesses turn ideas into scalable digital solutions. From design to deployment, our team delivers smart, reliable, and future-ready tech that grows with you. <span className="md:inline hidden">
+             At Scale Us, we help businesses turn ideas into scalable digital solutions. From design to deployment, our team delivers smart, reliable, and future-ready tech that grows with you. <span className="md:inline hidden">
                Whether you're launching a startup or expanding an enterprise, we’re here to build what’s next.  
              </span>
             </p>

@@ -19,7 +19,7 @@ function Hero() {
             </h1>
 
             <p className="text-base sm:text-lg md:text-lg mb-6 sm:mb-8 opacity-80 max-w-xl mx-auto md:mx-0 text-balance" data-appear="fade-up" data-delay="100">
-At Scaleus, we help businesses turn ideas into scalable digital solutions. From design to deployment, our team delivers smart, reliable, and future-ready tech that grows with you. Whether you're launching a startup or expanding an enterprise, we’re here to build what’s next.            </p>
+At Scale Us, we help businesses turn ideas into scalable digital solutions. From design to deployment, our team delivers smart, reliable, and future-ready tech that grows with you. Whether you're launching a startup or expanding an enterprise, we’re here to build what’s next.            </p>
 
             <div className="flex flex-col sm:flex-row items-center sm:items-start sm:justify-start justify-center space-y-3 sm:space-y-0 sm:space-x-3 pointer-events-auto">
              <Link href="/services">

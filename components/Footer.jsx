@@ -105,10 +105,10 @@ const Footer = () => {
                   <h6>Hire Developers</h6>
                   <div className="bringer-menu-widget">
                     <ul>
-                      <li><Link href="/services/andriod" data-appear="fade-up" data-unload="fade-down">App Development</Link></li>
+                      <li><Link href="/services/android" data-appear="fade-up" data-unload="fade-down">App Development</Link></li>
                       <li><Link href="/services/frontend" data-appear="fade-up" data-unload="fade-down">Web Development</Link></li>
-                      <li><Link href="/services/design" data-appear="fade-up" data-unload="fade-down">SEO and UI/UX</Link></li>
-                      <li><Link href="/services/saas" data-appear="fade-up" data-unload="fade-down">Custom Development</Link></li>
+                      <li><Link href="/services/design" data-appear="fade-up" data-unload="fade-down"> UI/UX</Link></li>
+                      <li><Link href="/services/saas" data-appear="fade-up" data-unload="fade-down">SaaS Development</Link></li>
                       <li><Link href="/services" data-appear="fade-up" data-unload="fade-down">Services</Link></li>
                     </ul>
                   </div>

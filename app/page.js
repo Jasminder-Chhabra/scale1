@@ -106,7 +106,7 @@ export default function Home() {
         <meta property="og:image:alt" content="Scale Us Technologies Logo" />
         <meta property="og:url" content="https://www.scaleus.in" />
         <meta property="og:type" content="website" />
-        <link rel="icon" href="/img/favicon.svg" sizes="32x32" />
+        <link rel="icon" href="/favicon.svg" sizes="32x32" />
         {/* Inline styles moved from previous CSS imports */}
         <style>{`
           :root {
@@ -326,14 +326,14 @@ export default function Home() {
                     Your Trusted Technology Partner
                   </p>
                   <p data-appear="fade-up" data-unload="fade-down">
-                    Scale Us Technologies is an Indian tech web-based company
+                    Scale Us Technologies is an Indian web-based company Technology
                     dedicated to empowering businesses through cutting-edge
                     technology.
                   </p>
                   <p data-appear="fade-up" data-unload="fade-down">
                     From web development and eCommerce solutions to mobile app
                     development and UI/UX designing, our range of services
-                    ensures robust and visible digital presence.
+                    ensures a robust and visible digital presence.
                   </p>
                 </div>
                 <Link
@@ -397,8 +397,8 @@ export default function Home() {
                     data-unload="fade-down"
                     data-delay="100"
                   >
-                    We are a passionate team of developers who believe in the
-                    power of creativity.
+                   We are a passionate team of innovators who believe in the
+ power of creativity
                   </p>
                 </div>
               </div>
@@ -461,7 +461,7 @@ export default function Home() {
                       <span className="bringer-label">Step 04</span>
                       <h5>Launch & Beyond</h5>
                     </div>
-                    <div>Unleash your brand masterpiece to the world.</div>
+                    <div>Unleash your brand masterpiece into the world.</div>
                   </div>
                 </div>
               </div>
@@ -841,8 +841,8 @@ export default function Home() {
                       <span className="bringer-accent">.</span>
                     </h4>
                     <p>
-                      We build partnerships, understanding your vision, as an
-                      extension of your team.
+                    We build partnerships by understanding your
+ vision and working as an extension of your team.
                     </p>
                   </div>
                 </div>
@@ -906,7 +906,7 @@ export default function Home() {
                     <div className="bringer-portfolio-card-footer">
                       <div className="bringer-portfolio-card-title">
                         <span className="bringer-meta">Consulting Website</span>
-                        <h6>OZI CORP</h6>
+                        <h6 className="text-md">OZI CORP</h6>
                       </div>
                       <span className="bringer-icon bringer-icon-explore"></span>
                     </div>
@@ -929,7 +929,7 @@ export default function Home() {
                     <div className="bringer-portfolio-card-footer">
                       <div className="bringer-portfolio-card-title">
                         <span className="bringer-meta">Mobile Application</span>
-                        <h6>Seven Eleven</h6>
+                        <h6  className="text-md" >Seven Eleven</h6>
                       </div>
                       <span className="bringer-icon bringer-icon-explore"></span>
                     </div>
@@ -953,7 +953,7 @@ export default function Home() {
                     <div className="bringer-portfolio-card-footer">
                       <div className="bringer-portfolio-card-title">
                         <span className="bringer-meta">SAAS Product</span>
-                        <h6>Simply Tap It</h6>
+                        <h6  className="text-md" >Simply Tap It</h6>
                       </div>
                       <span className="bringer-icon bringer-icon-explore"></span>
                     </div>
@@ -977,7 +977,7 @@ export default function Home() {
                     <div className="bringer-portfolio-card-footer">
                       <div className="bringer-portfolio-card-title">
                         <span className="bringer-meta">Ticket Management Portal</span>
-                        <h6>Natrax</h6>
+                        <h6  className="text-md" >Natrax</h6>
                       </div>
                       <span className="bringer-icon bringer-icon-explore"></span>
                     </div>
@@ -1277,7 +1277,7 @@ export default function Home() {
                       });
                   });
                 }}
-                data-fill-error="Please, fill out the form."
+                data-fill-error="Please enter a valid email address"
                 className="bringer-contact-form is-short bringer-masked-media"
                 data-appear="fade-up"
                 data-unload="fade-down"
@@ -1290,13 +1290,14 @@ export default function Home() {
                     data-delay="100"
                   >
                     <div className="bringer-cta-title">
-                      Ready to set your Brand ablaze?
+                      Ready to set your brand ablaze?
                     </div>
                     <input
                       type="email"
                       id="subscribe_email"
                       name="subscribe_email"
-                      placeholder="email@example.com"
+                      placeholder="Enter your email 
+address"
                       required
                     />
                   </div>
