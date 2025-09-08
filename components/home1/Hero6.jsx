@@ -46,7 +46,7 @@ const Herooo = () => {
              </span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-center">
-          <Link href="/contact">
+          <Link href="/contact-us">
               <Button  className="text-sm px-8 py-3 rounded-xl bg-white text-black border border-white/10 shadow-none hover:bg-white/90 transition-none">
                 Get Started
               </Button>
