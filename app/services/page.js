@@ -13,31 +13,8 @@ import Header from '@/components/Header';
 import "./../globals.css"
 import { Preview } from '@/components/service/Service';
 import MobileServicesSection from '@/components/ui/DevelopmentWebsiteMobile';
-import AnimatedSection from '@/components/ui/DevelopmentService';
 export default function Services() {
-  // Right-Click Protection
-  useEffect(() => {
-    let timeoutId = null;
-
-    const handleContextMenu = (e) => {
-      e.preventDefault();
-      const rcpWrap = document.querySelector('.bringer-rcp-wrap');
-      if (rcpWrap) {
-        document.body.classList.add('rcp-show');
-        clearTimeout(timeoutId);
-        timeoutId = setTimeout(() => {
-          document.body.classList.remove('rcp-show');
-        }, 2000);
-      }
-    };
-
-    document.addEventListener('contextmenu', handleContextMenu);
-
-    return () => {
-      document.removeEventListener('contextmenu', handleContextMenu);
-      clearTimeout(timeoutId);
-    };
-  }, []);
+  
 
   return (
     <>

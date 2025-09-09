@@ -14,29 +14,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function Portfolio() {
-  // Right-Click Protection
-  useEffect(() => {
-    let timeoutId = null;
 
-    const handleContextMenu = (e) => {
-      e.preventDefault();
-      const rcpWrap = document.querySelector(".bringer-rcp-wrap");
-      if (rcpWrap) {
-        document.body.classList.add("rcp-show");
-        clearTimeout(timeoutId);
-        timeoutId = setTimeout(() => {
-          document.body.classList.remove("rcp-show");
-        }, 2000);
-      }
-    };
-
-    document.addEventListener("contextmenu", handleContextMenu);
-
-    return () => {
-      document.removeEventListener("contextmenu", handleContextMenu);
-      clearTimeout(timeoutId);
-    };
-  }, []);
 
   return (
     <>

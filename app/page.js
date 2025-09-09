@@ -1296,8 +1296,7 @@ export default function Home() {
                       type="email"
                       id="subscribe_email"
                       name="subscribe_email"
-                      placeholder="Enter your email 
-address"
+                      placeholder="Enter your email address"
                       required
                     />
                   </div>

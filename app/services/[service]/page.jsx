@@ -17,29 +17,7 @@ import AnimatedSection from '@/components/ui/DevelopmentService';
 import { useParams } from 'next/navigation';
 import ServiceData from "../../../lib/serviceData";
 export default function Services() {
-  // Right-Click Protection
-  useEffect(() => {
-    let timeoutId = null;
 
-    const handleContextMenu = (e) => {
-      e.preventDefault();
-      const rcpWrap = document.querySelector('.bringer-rcp-wrap');
-      if (rcpWrap) {
-        document.body.classList.add('rcp-show');
-        clearTimeout(timeoutId);
-        timeoutId = setTimeout(() => {
-          document.body.classList.remove('rcp-show');
-        }, 2000);
-      }
-    };
-
-    document.addEventListener('contextmenu', handleContextMenu);
-
-    return () => {
-      document.removeEventListener('contextmenu', handleContextMenu);
-      clearTimeout(timeoutId);
-    };
-  }, []);
 
 
   const slug = useParams();

@@ -1,5 +1,6 @@
 import "./globals.css";
 import ClientWrapper from "./ClientWrapper";
+import GlobalEffects from "@/components/GlobalEffect";
 
 export const metadata = {
   title: "Scale Us",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
       <body>
+        <GlobalEffects/>
         <ClientWrapper>{children}</ClientWrapper>
       </body>
     </html>
