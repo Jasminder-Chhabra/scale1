@@ -14,6 +14,7 @@ import '../../public/css/responsive.css';
 import ".././globals.css";
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 
 export default function ContactUs() {
 
@@ -126,7 +127,7 @@ export default function ContactUs() {
               </div>
             </div>
             <div className="bringer-parallax-media" data-parallax-speed="20" data-appear="fade-up" data-delay="200" data-unload="fade-up">
-              <img className="bringer-lazy" src="/img/null.png" data-src="/img/inner-pages/contacts01.webp" alt="Get in Touch" width="1920" height="960" />
+              <Image className="bringer-lazy" src="/img/null.png" data-src="/img/inner-pages/contacts01.webp" alt="Get in Touch" width="1920" height="960" />
             </div>
           </section>
 
@@ -147,13 +148,13 @@ export default function ContactUs() {
             </div>
             <div className="bringer-grid-3cols bringer-parallax-media bringer-m-grid-3cols stg-m-small-gap" data-stagger-appear="fade-up" data-delay="200" data-stagger-unload="fade-up">
               <a href="/img/inner-pages/contacts02.webp" className="bringer-lightbox-link" data-size="960x960">
-                <img className="bringer-lazy" src="/img/null.png" data-src="/img/inner-pages/contacts02.webp" alt="Scale Us" width="960" height="960" />
+                <Image className="bringer-lazy" src="/img/null.png" data-src="/img/inner-pages/contacts02.webp" alt="Scale Us" width="960" height="960" />
               </a>
               <a href="/img/inner-pages/contacts03.webp" className="bringer-lightbox-link" data-size="960x960">
-                <img className="bringer-lazy" src="/img/null.png" data-src="/img/inner-pages/contacts03.webp" alt="Scale Us" width="960" height="960" />
+                <Image className="bringer-lazy" src="/img/null.png" data-src="/img/inner-pages/contacts03.webp" alt="Scale Us" width="960" height="960" />
               </a>
               <a href="/img/inner-pages/contacts04.webp" className="bringer-lightbox-link" data-size="960x960">
-                <img className="bringer-lazy" src="/img/null.png" data-src="/img/inner-pages/contacts04.webp" alt="Scale Us" width="960" height="960" />
+                <Image className="bringer-lazy" src="/img/null.png" data-src="/img/inner-pages/contacts04.webp" alt="Scale Us" width="960" height="960" />
               </a>
             </div>
           </section>

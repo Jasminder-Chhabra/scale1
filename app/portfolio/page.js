@@ -185,7 +185,7 @@ export default function Portfolio() {
             >
               <div className="bringer-block bringer-portfolio-card">
                 <div className="bringer-portfolio-card-image">
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/portfolio/portfolio01.jpg"
@@ -207,7 +207,7 @@ export default function Portfolio() {
 
               <div className="bringer-block bringer-portfolio-card">
                 <div className="bringer-portfolio-card-image">
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/portfolio-img/7eleven/img1.jpg"
@@ -229,7 +229,7 @@ export default function Portfolio() {
 
               <div className="bringer-block bringer-portfolio-card">
                 <div className="bringer-portfolio-card-image">
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/portfolio-single-img/salah.png"
@@ -251,7 +251,7 @@ export default function Portfolio() {
 
               <div className="bringer-block bringer-portfolio-card">
                 <div className="bringer-portfolio-card-image">
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/portfolio-single-img/simpletap.png"
@@ -274,7 +274,7 @@ export default function Portfolio() {
               {/* bello Ricco */}
               <div className="bringer-block bringer-portfolio-card">
                 <div className="bringer-portfolio-card-image">
-                  <img
+                  <Image
                     className="bringer-lazy"
                     style={{ height: "347px" }}
                     src="/img/portfolio-img/belloRicco/img2.webp"
@@ -299,7 +299,7 @@ export default function Portfolio() {
               {/* berry Click */}
               <div className="bringer-block bringer-portfolio-card">
                 <div className="bringer-portfolio-card-image">
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/portfolio-single-img/berryclick.png"
@@ -346,7 +346,7 @@ export default function Portfolio() {
 
               <div className="bringer-block bringer-portfolio-card">
                 <div className="bringer-portfolio-card-image">
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/portfolio-single-img/shulk.png"
@@ -568,7 +568,7 @@ export default function Portfolio() {
                 data-delay="200"
                 data-unload="zoom-out"
               >
-                <img
+                <Image
                   src="/img/about-scaleus1.svg"
                   alt="Let's Chat"
                   width="960"

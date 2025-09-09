@@ -17,6 +17,7 @@ import "../../public/css/responsive.css";
 import Achievement from "@/components/ui/Achivement";
 import Header from "@/components/Header";
 import { Herooo } from "@/components/home1/Hero6";
+import Image from "next/image";
 
 export default function Home() {
   // Form Submission
@@ -215,7 +216,7 @@ export default function Home() {
                 data-delay="100"
               >
                 <div className="bringer-block bringer-center">
-                  <img
+                  <Image
                     src="/img/partners/Scale-Us-Client-Government-of-India.svg"
                     alt="Partner Logo"
                     width="200"
@@ -223,7 +224,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img
+                  <Image
                     src="/img/partners/Scale-Us-Client-Seven-Eleven.svg"
                     alt="Partner Logo"
                     width="200"
@@ -231,7 +232,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img
+                  <Image
                     src="/img/partners/Scale-Us-Client-Amazon.svg"
                     alt="Partner Logo"
                     width="200"
@@ -239,7 +240,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img
+                  <Image
                     src="/img/partners/Scale-Us-Client-Daily-Hunt.svg"
                     alt="Partner Logo"
                     width="200"
@@ -247,7 +248,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img
+                  <Image
                     src="/img/partners/Scale-Us-Client-Saliah-Foods.svg"
                     alt="Partner Logo"
                     width="200"
@@ -255,7 +256,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="bringer-block bringer-center">
-                  <img
+                  <Image
                     src="/img/partners/Scale-Us-Client-OZI.svg"
                     alt="Partner Logo"
                     width="200"
@@ -274,7 +275,7 @@ export default function Home() {
               >
                 <div className="bringer-parallax-media">
                  
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/home/about02.webp"
@@ -384,7 +385,7 @@ export default function Home() {
                 data-unload="fade-left"
               >
                 <div className="bringer-parallax-media">
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/home/steps.webp"
                     data-src="/img/home/steps.webp"
@@ -483,7 +484,7 @@ export default function Home() {
                 data-unload="fade-down"
               >
                 <div className="bringer-portfolio-card-image">
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/portfolio/portfolio01.jpg"
@@ -510,7 +511,7 @@ export default function Home() {
                 data-unload="fade-down"
               >
                 <div className="bringer-portfolio-card-image">
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/portfolio/portfolio02.jpg"
@@ -537,7 +538,7 @@ export default function Home() {
                 data-unload="fade-down"
               >
                 <div className="bringer-portfolio-card-image">
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/portfolio/portfolio03.jpg"
@@ -564,7 +565,7 @@ export default function Home() {
                 data-unload="fade-down"
               >
                 <div className="bringer-portfolio-card-image">
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/portfolio/portfolio04.jpg"
@@ -633,7 +634,7 @@ export default function Home() {
                   data-appear="fade-left"
                   data-unload="fade-right"
                 >
-                  <img
+                  <Image
                     src="/img/home/service01.webp"
                     alt="Mobile-App-Developer"
                     width="584"
@@ -656,7 +657,7 @@ export default function Home() {
                   data-appear="fade-left"
                   data-unload="fade-right"
                 >
-                  <img
+                  <Image
                     src="/img/home/service02.webp"
                     alt="Website Developer"
                     width="584"
@@ -679,7 +680,7 @@ export default function Home() {
                   data-appear="fade-left"
                   data-unload="fade-right"
                 >
-                  <img
+                  <Image
                     src="/img/home/service003.webp"
                     alt="Web Designer"
                     width="584"
@@ -701,7 +702,7 @@ export default function Home() {
                   data-appear="fade-left"
                   data-unload="fade-right"
                 >
-                  <img
+                  <Image
                     src="/img/home/service004.webp"
                     alt="Software Developer"
                     width="584"
@@ -868,7 +869,7 @@ export default function Home() {
                 >
                   <div className="bringer-block bringer-portfolio-card">
                     <div className="bringer-portfolio-card-image">
-                      <img
+                      <Image
                         className="bringer-lazy"
                         src="/img/null.png"
                         data-src="/img/portfolio/portfolio01.jpg"
@@ -891,7 +892,7 @@ export default function Home() {
                   </div>
                   <div className="bringer-block bringer-portfolio-card">
                     <div className="bringer-portfolio-card-image">
-                      <img
+                      <Image
                         className="bringer-lazy"
                         src="/img/null.png"
                         data-src="/img/portfolio-img/7eleven/img1.jpg"
@@ -915,7 +916,7 @@ export default function Home() {
 
                      <div className="bringer-block bringer-portfolio-card">
                     <div className="bringer-portfolio-card-image">
-                      <img
+                      <Image
                         className="bringer-lazy"
                         src="/img/null.png"
                         data-src="/img/portfolio-single-img/simpletap.png"
@@ -939,7 +940,7 @@ export default function Home() {
 
                      <div className="bringer-block bringer-portfolio-card">
                     <div className="bringer-portfolio-card-image">
-                      <img
+                      <Image
                         className="bringer-lazy"
                         src="/img/null.png"
                         data-src="/img/portfolio-single-img/natrax.png"
@@ -971,7 +972,7 @@ export default function Home() {
             data-unload="fade-down"
           >
             <div className="bringer-expand-on-scroll">
-              <img
+              <Image
                 src="/img/pixel-profile-images/movebg.svg"
                 alt="Testimonials"
                 data-appear="fade-up"
@@ -1177,7 +1178,7 @@ export default function Home() {
                   data-unload="zoom-out"
                   data-delay="100"
                 >
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/about-scaleus1.svg"
@@ -1192,7 +1193,7 @@ export default function Home() {
                   data-unload="zoom-out"
                   data-delay="200"
                 >
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/about-scaleus2.svg"
@@ -1321,7 +1322,7 @@ export default function Home() {
               <div className="stg-col-5 stg-tp-col-12 stg-tp-bottom-gap-l">
                 <div className="bringer-info-widget">
                   <Link href="/" className="bringer-logo footer-logo">
-                    <img
+                    <Image
                       src="/img/Scale Us Logo.svg"
                       alt="Scale-Us-Logo"
                       width="200"

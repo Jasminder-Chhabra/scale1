@@ -23,6 +23,7 @@ import AnimatedSection from "@/components/ui/DevelopmentService";
 import MobileServicesSection from "@/components/ui/DevelopmentWebsiteMobile";
 import Footer from "@/components/Footer";
 import CategoryListDemo from "@/components/AboutSec";
+import Image from "next/image";
 
 export default function AboutUs() {
 
@@ -295,7 +296,7 @@ export default function AboutUs() {
                       data-delay="200"
                       data-unload="zoom-out"
                     >
-                      <img
+                      <Image
                         src="/img/about-scaleus1.svg"
                         alt="Let's Chat"
                         width="960"
@@ -617,7 +618,7 @@ export default function AboutUs() {
             >
               <SwiperSlide className="bringer-block bringer-carousel-card">
                 <div className="bringer-carousel-card-image">
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/team/team04.webp"
@@ -644,7 +645,7 @@ export default function AboutUs() {
               </SwiperSlide>
               <SwiperSlide className="bringer-block bringer-carousel-card">
                 <div className="bringer-carousel-card-image">
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/team/team02.webp"
@@ -671,7 +672,7 @@ export default function AboutUs() {
               </SwiperSlide>
               <SwiperSlide className="bringer-block bringer-carousel-card">
                 <div className="bringer-carousel-card-image">
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/team/team01.webp"
@@ -698,7 +699,7 @@ export default function AboutUs() {
               </SwiperSlide>
               <SwiperSlide className="bringer-block bringer-carousel-card">
                 <div className="bringer-carousel-card-image">
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/team/team02.webp"
@@ -725,7 +726,7 @@ export default function AboutUs() {
               </SwiperSlide>
               <SwiperSlide className="bringer-block bringer-carousel-card">
                 <div className="bringer-carousel-card-image">
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/team/team03.webp"
@@ -752,7 +753,7 @@ export default function AboutUs() {
               </SwiperSlide>
               <SwiperSlide className="bringer-block bringer-carousel-card">
                 <div className="bringer-carousel-card-image">
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/team/team04.webp"
@@ -779,7 +780,7 @@ export default function AboutUs() {
               </SwiperSlide>
               <SwiperSlide className="bringer-block bringer-carousel-card">
                 <div className="bringer-carousel-card-image">
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src="/img/team/team01.webp"
@@ -1008,7 +1009,7 @@ export default function AboutUs() {
                 data-delay="200"
                 data-unload="zoom-out"
               >
-                <img
+                <Image
                   src="/img/about-scaleus1.svg"
                   alt="Let's Chat"
                   width="960"

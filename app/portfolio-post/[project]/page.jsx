@@ -158,7 +158,7 @@ export default function PortfolioPost02() {
           <section>
             <div className="bringer-bento-grid stg-bottom-gap-l">
               <div className="is-large" data-appear="fade-right" data-unload="fade-left">
-                <img
+                <Image
                   className="bringer-lazy h-[300px] md:h-[400px] lg:h-[500px]"
                   src={images.section1bigimg}
                   data-src={images.section1bigimg}
@@ -208,7 +208,7 @@ export default function PortfolioPost02() {
                 data-delay="200"
                 data-unload="fade-right"
               >
-                <img
+                <Image
                   className="bringer-lazy  h-[220px] md:block hidden"
                     src={images.section1smallimg}
                     style={{height : "260px"}}
@@ -242,7 +242,7 @@ export default function PortfolioPost02() {
                 data-appear="fade-left"
                 data-unload="fade-right"
               >
-                <img
+                <Image
                   className="bringer-lazy h-[300px]"
                   src={images.challangeImg}
                   data-src={images.challangeImg}
@@ -316,7 +316,7 @@ export default function PortfolioPost02() {
                 data-delay="100"
                 data-unload="fade-left"
               >
-                <img
+                <Image
                   className="bringer-lazy  "
                   style={{height : "260px"}}
                   src={images.solutionImg1}
@@ -333,7 +333,7 @@ export default function PortfolioPost02() {
                 data-delay="200"
                 data-unload="fade-right"
               >
-                <img
+                <Image
                   className="bringer-lazy object-contain"
                    style={{height : "260px"}}
                   src={images.solutionImg2}
@@ -363,7 +363,7 @@ export default function PortfolioPost02() {
                 </div>
               </div>
               <div className="stg-col-4" data-appear="fade-left" data-unload="fade-right">
-                <img
+                <Image
                   className="bringer-lazy h-[250px] object-cover"
                   src={images.resultImg}
                   data-src={images.resultImg}

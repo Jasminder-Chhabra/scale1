@@ -227,7 +227,7 @@ export default function Services() {
               >
                 <div className="bringer-parallax-media">
                  
-                  <img
+                  <Image
                     className="bringer-lazy"
                     src="/img/null.png"
                     data-src={img}
@@ -304,7 +304,7 @@ export default function Services() {
               data-appear={isEven ? "fade-left" : "fade-right"}
             >
               <div className="bringer-parallax-media">
-                <img
+                <Image
                   className="bringer-lazy md:h-[150px]"
                   src="/img/null.png"
                   data-src={item.img}
@@ -521,10 +521,10 @@ export default function Services() {
                 <h3>We develop solutions that make the world listen.</h3>
               </div>
               <div className="is-small" data-appear="zoom-out" data-delay="200" data-unload="zoom-out">
-                <img src="/img/IMG_1546 1.svg" alt="Let's Chat" width="960" height="960" loading="lazy" />
+                <Image src="/img/IMG_1546 1.svg" alt="Let's Chat" width="960" height="960" loading="lazy" />
               </div>
               <div className="is-small" data-appear="zoom-out" data-delay="200" data-unload="zoom-out">
-                <img src="/img/Layer_1 (1).svg" alt="Let's Chat" width="960" height="960" loading="lazy" />
+                <Image src="/img/Layer_1 (1).svg" alt="Let's Chat" width="960" height="960" loading="lazy" />
               </div>
             </div>
           </section>
@@ -543,7 +543,7 @@ export default function Services() {
               <div className="stg-col-5 stg-tp-col-12 stg-tp-bottom-gap-l">
                 <div className="bringer-info-widget">
                   <Link href="/" className="bringer-logo footer-logo">
-                    <img src="/img/Scale Us Logo.svg" alt="Scale-Us-Logo" width="200" height="88" />
+                    <Image src="/img/Scale Us Logo.svg" alt="Scale-Us-Logo" width="200" height="88" />
                   </Link>
                   <div className="bringer-info-description" data-appear="fade-up" data-unload="fade-down">
                     We are a passionate team at Scale Us, dedicated to empowering individuals and businesses through creative digital solutions. We specialize in creating compelling online presences that showcase your work and convey your unique story.

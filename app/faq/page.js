@@ -40,7 +40,7 @@ export default function FAQ() {
               <div className="stg-col-4"></div>
             </div>
             <div className="bringer-parallax-media stg-bottom-gap-l" data-appear="fade-up" data-unload="fade-out">
-              <img
+              <Image
                 className="bringer-lazy"
                 src="/img/null.png"
                 data-src="/img/inner-pages/old img/faq-hero.jpg"
