@@ -144,7 +144,7 @@ export default function Policy() {
                 <h1 className="bringer-page-title" data-appear="fade-up" data-unload="fade-up">Privacy Policy
 </h1>
                 <p className="bringer-large-text" data-appear="fade-up" data-unload="fade-up">
-At Scale Us, accessible from <a href="https://scaleus.in/" >https://scaleus.in/</a> one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Scale Us and how we use it.
+At Scale Us, accessible from <Link href="https://scaleus.in/" >https://scaleus.in/</a> one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Scale Us and how we use it.
 
 
 
@@ -159,7 +159,7 @@ At Scale Us, accessible from <a href="https://scaleus.in/" >https://scaleus.in/<
         <p  data-appear="fade-up" data-unload="fade-up">
          This privacy notice for Scale Us, Inc. ("we," "us," or "our"), describes how and why we might collect, store, use, and/or share ("process") your information when you use our services ("Services"), such as when you:
 
-Visit our website at <a href="https://scaleus.in/" >https://scaleus.in/</a>, or any website of ours that links to this privacy notice
+Visit our website at <Link href="https://scaleus.in/" >https://scaleus.in/</a>, or any website of ours that links to this privacy notice
 
 Engage with us in other related ways, including any sales, marketing, or events
 Questions or concerns? Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have questions or concerns, please contact us at contact@scaleus.in
@@ -236,7 +236,7 @@ We also may partner with certain third parties to collect, analyze, and use some
         <h2 className="text-3xl font-semibold mb-2 text-md">Cookies and Web Beacons</h2>
         <p  data-appear="fade-up" data-unload="fade-up">
           Like most websites, Scale Us uses cookies to store visitor preferences and accessed pages to enhance user experience.
-          For general cookie info, see <a href="https://www.cookieconsent.com/what-are-cookies/" className="text-purple-600 underline">What Are Cookies</a>.
+          For general cookie info, see <Link href="https://www.cookieconsent.com/what-are-cookies/" className="text-purple-600 underline">What Are Cookies</a>.
         </p>
       </div>
 
@@ -307,7 +307,7 @@ We also may partner with certain third parties to collect, analyze, and use some
       </div>
 
       <footer className="text-sm text-gray-500 mt-12"  data-appear="fade-up" data-unload="fade-up">
-        <p>If you have any questions about this policy, contact us at <a href="mailto:contact@scaleus.com" className="text-purple-600 underline">contact@scaleus.com</a>.</p>
+        <p>If you have any questions about this policy, contact us at <Link href="mailto:contact@scaleus.com" className="text-purple-600 underline">contact@scaleus.com</a>.</p>
       </footer>
           </section>
     

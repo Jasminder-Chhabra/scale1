@@ -15,12 +15,7 @@ import "../../public/css/libs.css";
 import "../../public/css/style.css";
 import "../../public/css/responsive.css";
 import Achievement from "@/components/ui/Achivement";
-import Hero from "@/components/home1/Hero";
 import Header from "@/components/Header";
-import { AuroraBackground } from "@/components/ui/aurora-background";
-import { DemoVariant1 } from "@/components/home1/Hero4";
-import { DemoOne } from "@/components/home1/Hero5";
-import { AuroraHero } from "@/components/futurastic-hero-section";
 import { Herooo } from "@/components/home1/Hero6";
 
 export default function Home() {

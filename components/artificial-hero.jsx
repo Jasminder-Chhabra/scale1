@@ -384,15 +384,15 @@ export const Component = () => {
             letterSpacing: '1px',
             textTransform: 'uppercase'
           }}>
-          <a href="#" style={{ color: 'white', textDecoration: 'none', opacity: 0.9 }}>
+          <Link href="#" style={{ color: 'white', textDecoration: 'none', opacity: 0.9 }}>
             Creative Journey
-          </a>
-          <a href="#" style={{ color: 'white', textDecoration: 'none', opacity: 0.9 }}>
+          </Link>
+          <Link href="#" style={{ color: 'white', textDecoration: 'none', opacity: 0.9 }}>
             About
-          </a>
-          <a href="#" style={{ color: 'white', textDecoration: 'none', opacity: 0.9 }}>
+          </Link>
+          <Link href="#" style={{ color: 'white', textDecoration: 'none', opacity: 0.9 }}>
             Sound
-          </a>
+          </Link>
         </div>
         
         <div

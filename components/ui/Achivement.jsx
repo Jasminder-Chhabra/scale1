@@ -14,7 +14,7 @@ export default function Achievement() {
     <div className="pb-16 md:py-4 md:px-0 px-8" >
       <div className="mx-auto grid max-w-7xl grid-cols-2 gap-10  sm:grid-cols-2 lg:grid-cols-4">
         {stats.map((stat, i) => (
-          <div className='relative'>
+          <div className='relative' key={i}>
       <GlowEffect
         colors={['#FF5733', '#33FF57', '#3357FF', '#F1C40F']}
         mode='colorShift'

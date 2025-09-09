@@ -1185,7 +1185,7 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="bringer-masked-content at-bottom-right">
-                    <a
+                    <Link
                       href="#page06"
                       className="bringer-square-button"
                       data-appear="zoom-in"
@@ -1194,7 +1194,7 @@ export default function Home() {
                       aria-label="Go to page 06"
                     >
                       <span className="bringer-icon bringer-icon-arrow-down"></span>
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div

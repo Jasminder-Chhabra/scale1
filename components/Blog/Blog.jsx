@@ -53,7 +53,7 @@ export default function BlogDetails({ params }) {
             <ul className="space-y-3 list-none" data-delay="75" data-appear="fade-down">
               {blogs.map((relatedBlog, index) => (
                 <li key={index} className="list-none mb-3 text-white">
-                  <a
+                  <Link
                     href={`/blogs/${relatedBlog.slug}`}
                     className="text-white font-medium in-view"
                     style={{color :"white"}}
@@ -62,7 +62,7 @@ export default function BlogDetails({ params }) {
                   >
                     
                     {index+1}. {relatedBlog.heading}
-                  </a>
+                  </Link>
                 </li>
               )).slice(0 , 4)}
             </ul>

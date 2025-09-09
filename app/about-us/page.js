@@ -322,7 +322,7 @@ export default function AboutUs() {
                   />
                 </div>
                 <div className="bringer-masked-content at-bottom-right">
-                  <a
+                  <Link
                     href="#section9"
                     className="bringer-square-button"
                     data-appear="fade-left"
@@ -340,7 +340,7 @@ export default function AboutUs() {
                         height="960"
                       />
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="stg-row stg-valign-bottom">

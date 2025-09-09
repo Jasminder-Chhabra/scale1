@@ -186,12 +186,12 @@ export default function PortfolioPost02() {
                   </ul>
                 </li>
                 <li>
-                  <a href="https://simplytapit.in">Products</a>
+                  <Link href="https://simplytapit.in">Products</Link>
                   <ul className="sub-menu">
-                    <li><a href="https://ai.scaleus.in">Magic AI</a></li>
-                    <li><a href="https://simplytapit.in">Simply Tap It</a></li>
-                    <li><a href="https://people.scaleus.in">People Hub</a></li>
-                    <li><a href="https://shop.scaleus.in">e-Commerce Store</a></li>
+                    <li><Link href="https://ai.scaleus.in">Magic AI</Link></li>
+                    <li><Link href="https://simplytapit.in">Simply Tap It</Link></li>
+                    <li><Link href="https://people.scaleus.in">People Hub</Link></li>
+                    <li><Link href="https://shop.scaleus.in">e-Commerce Store</Link></li>
                   </ul>
                 </li>
                 <li className="current-menu-parent"><Link href="/portfolio">Portfolio</Link></li>
@@ -207,13 +207,13 @@ export default function PortfolioPost02() {
           <Link href="/" className="bringer-logo">
             <img src="/img/Scale Us Logo.svg" alt="Scale Us Logo" width="88" height="24" />
           </Link>
-          <a href="#" className="bringer-mobile-menu-toggler" aria-label="Toggle mobile menu">
+          <Link href="#" className="bringer-mobile-menu-toggler" aria-label="Toggle mobile menu">
             <i className="bringer-menu-toggler-icon">
               <span></span>
               <span></span>
               <span></span>
             </i>
-          </a>
+          </Link>
         </div>
       </header>
 
@@ -472,7 +472,7 @@ export default function PortfolioPost02() {
                       data-stagger-delay="75"
                     >
                       <li>
-                        <a
+                      <Link
                           href="https://www.linkedin.com/company/scale-us-technologies"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -480,10 +480,10 @@ export default function PortfolioPost02() {
                           onClick={(e) => { e.preventDefault(); window.open('https://www.linkedin.com/company/scale-us-technologies', '_blank'); }}
                         >
                           <i></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                        <Link
                           href="https://instagram.com/scaleus.in"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -491,10 +491,10 @@ export default function PortfolioPost02() {
                           onClick={(e) => { e.preventDefault(); window.open('https://instagram.com/scaleus.in', '_blank'); }}
                         >
                           <i></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                      <Link
                           href="https://x.com/scale_us_tech"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -502,10 +502,10 @@ export default function PortfolioPost02() {
                           onClick={(e) => { e.preventDefault(); window.open('https://x.com/scale_us_tech', '_blank'); }}
                         >
                           <i></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                      <Link
                           href="https://www.youtube.com/@Scale-Us-Technologies"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -513,10 +513,10 @@ export default function PortfolioPost02() {
                           onClick={(e) => { e.preventDefault(); window.open('https://www.youtube.com/@Scale-Us-Technologies', '_blank'); }}
                         >
                           <i></i>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a
+                      <Link
                           href="https://www.facebook.com/ScaleUsTechnologies"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -524,7 +524,7 @@ export default function PortfolioPost02() {
                           onClick={(e) => { e.preventDefault(); window.open('https://www.facebook.com/ScaleUsTechnologies', '_blank'); }}
                         >
                           <i></i>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -562,10 +562,10 @@ export default function PortfolioPost02() {
                     <h6>Resources</h6>
                     <div className="bringer-menu-widget">
                       <ul>
-                        <li><a href="#" data-appear="fade-up" data-unload="fade-down">Terms of Use</a></li>
-                        <li><a href="#" data-appear="fade-up" data-unload="fade-down">Privacy Policy</a></li>
-                        <li><a href="#" data-appear="fade-up" data-unload="fade-down">Brochure</a></li>
-                        <li><a href="#" data-appear="fade-up" data-unload="fade-down">Become Partner</a></li>
+                        <li><Link href="#" data-appear="fade-up" data-unload="fade-down">Terms of Use</Link></li>
+                        <li><Link href="#" data-appear="fade-up" data-unload="fade-down">Privacy Policy</Link></li>
+                        <li><Link href="#" data-appear="fade-up" data-unload="fade-down">Brochure</Link></li>
+                        <li><Link href="#" data-appear="fade-up" data-unload="fade-down">Become Partner</Link></li>
                       </ul>
                     </div>
                   </div>

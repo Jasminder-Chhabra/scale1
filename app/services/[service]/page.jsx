@@ -578,7 +578,7 @@ export default function Services() {
                     data-stagger-delay="75"
                   >
                     <li>
-                      <a
+                      <Link
                         href="https://www.linkedin.com/company/scale-us-technologies"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -589,10 +589,10 @@ export default function Services() {
                         }}
                       >
                         <i></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://instagram.com/scaleus.in"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -603,10 +603,10 @@ export default function Services() {
                         }}
                       >
                         <i></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://x.com/scale_us_tech"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -617,10 +617,10 @@ export default function Services() {
                         }}
                       >
                         <i></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://www.youtube.com/@Scale-Us-Technologies"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -631,10 +631,10 @@ export default function Services() {
                         }}
                       >
                         <i></i>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://www.facebook.com/ScaleUsTechnologies"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -645,7 +645,7 @@ export default function Services() {
                         }}
                       >
                         <i></i>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -683,10 +683,10 @@ export default function Services() {
                   <h6>Resources</h6>
                   <div className="bringer-menu-widget">
                     <ul>
-                      <li><a href="#" data-appear="fade-up" data-unload="fade-down">Terms of Use</a></li>
-                      <li><a href="#" data-appear="fade-up" data-unload="fade-down">Privacy Policy</a></li>
-                      <li><a href="#" data-appear="fade-up" data-unload="fade-down">Brochure</a></li>
-                      <li><a href="#" data-appear="fade-up" data-unload="fade-down">Become Partner</a></li>
+                      <li><Link href="#" data-appear="fade-up" data-unload="fade-down">Terms of Use</Link></li>
+                      <li><Link href="#" data-appear="fade-up" data-unload="fade-down">Privacy Policy</Link></li>
+                      <li><Link href="#" data-appear="fade-up" data-unload="fade-down">Brochure</Link></li>
+                      <li><Link href="#" data-appear="fade-up" data-unload="fade-down">Become Partner</Link></li>
                     </ul>
                   </div>
                 </div>
