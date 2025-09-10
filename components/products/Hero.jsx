@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import { GlowEffect } from '@/components/ui/glow-effect';
+import Image from 'next/image';
 
 const Hero = ({data}) => {
   // console.log("data",data )
@@ -56,9 +57,11 @@ const Hero = ({data}) => {
       viewport={{ once: true }}
       className="flex justify-center items-center "
     >
-      <img
+      <Image
         src={data.img}
         alt="Handyman app"
+        height={100}
+        width={100}
         className="w-full rounded-2xl h-[550px] object-contain"
       />
     </motion.div>
